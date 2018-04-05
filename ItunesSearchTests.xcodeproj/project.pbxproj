@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD585820761C0E00AD3566 /* AppDelegate.swift */; };
-		7CCD585B20761C0E00AD3566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD585A20761C0E00AD3566 /* ViewController.swift */; };
 		7CCD585E20761C0E00AD3566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD585C20761C0E00AD3566 /* Main.storyboard */; };
 		7CCD586020761C1000AD3566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD585F20761C1000AD3566 /* Assets.xcassets */; };
 		7CCD586320761C1000AD3566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD586120761C1000AD3566 /* LaunchScreen.storyboard */; };
+		CB8268902076943600DDC995 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82688E2076943600DDC995 /* Storyboards.swift */; };
+		CB8268912076943600DDC995 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82688F2076943600DDC995 /* ReusableView.swift */; };
+		CB8268952076944500DDC995 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268932076944500DDC995 /* ModuleInput.swift */; };
+		CB8268962076944500DDC995 /* ModuleInputHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268942076944500DDC995 /* ModuleInputHolder.swift */; };
+		CB82689A2076944D00DDC995 /* ArrayResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268982076944D00DDC995 /* ArrayResult.swift */; };
+		CB82689B2076944D00DDC995 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268992076944D00DDC995 /* Result.swift */; };
+		CB82689F2076945300DDC995 /* CommonAlertsFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82689D2076945300DDC995 /* CommonAlertsFactoryImpl.swift */; };
+		CB8268A02076945300DDC995 /* CommonAlertsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82689E2076945300DDC995 /* CommonAlertsFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7CCD585520761C0E00AD3566 /* ItunesSearchTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesSearchTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCD585820761C0E00AD3566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7CCD585A20761C0E00AD3566 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7CCD585D20761C0E00AD3566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CCD585F20761C1000AD3566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CCD586220761C1000AD3566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CCD586420761C1000AD3566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB82688E2076943600DDC995 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		CB82688F2076943600DDC995 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		CB8268932076944500DDC995 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
+		CB8268942076944500DDC995 /* ModuleInputHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInputHolder.swift; sourceTree = "<group>"; };
+		CB8268982076944D00DDC995 /* ArrayResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayResult.swift; sourceTree = "<group>"; };
+		CB8268992076944D00DDC995 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		CB82689D2076945300DDC995 /* CommonAlertsFactoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAlertsFactoryImpl.swift; sourceTree = "<group>"; };
+		CB82689E2076945300DDC995 /* CommonAlertsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAlertsFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,77 @@
 		7CCD585720761C0E00AD3566 /* ItunesSearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB8268872076937A00DDC995 /* Classes */,
+				CB8268862076936700DDC995 /* Resources */,
+			);
+			path = ItunesSearchTests;
+			sourceTree = "<group>";
+		};
+		CB8268862076936700DDC995 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				7CCD585820761C0E00AD3566 /* AppDelegate.swift */,
-				7CCD585A20761C0E00AD3566 /* ViewController.swift */,
 				7CCD585C20761C0E00AD3566 /* Main.storyboard */,
 				7CCD585F20761C1000AD3566 /* Assets.xcassets */,
 				7CCD586120761C1000AD3566 /* LaunchScreen.storyboard */,
 				7CCD586420761C1000AD3566 /* Info.plist */,
 			);
-			path = ItunesSearchTests;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB8268872076937A00DDC995 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CB826888207693C500DDC995 /* Helpers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CB826888207693C500DDC995 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB82689C2076945300DDC995 /* AlertsFactory */,
+				CB8268972076944D00DDC995 /* EnumResult */,
+				CB8268922076944500DDC995 /* ModuleInput */,
+				CB82688D2076943600DDC995 /* Storyboard */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CB82688D2076943600DDC995 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CB82688E2076943600DDC995 /* Storyboards.swift */,
+				CB82688F2076943600DDC995 /* ReusableView.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CB8268922076944500DDC995 /* ModuleInput */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268932076944500DDC995 /* ModuleInput.swift */,
+				CB8268942076944500DDC995 /* ModuleInputHolder.swift */,
+			);
+			path = ModuleInput;
+			sourceTree = "<group>";
+		};
+		CB8268972076944D00DDC995 /* EnumResult */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268982076944D00DDC995 /* ArrayResult.swift */,
+				CB8268992076944D00DDC995 /* Result.swift */,
+			);
+			path = EnumResult;
+			sourceTree = "<group>";
+		};
+		CB82689C2076945300DDC995 /* AlertsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				CB82689D2076945300DDC995 /* CommonAlertsFactoryImpl.swift */,
+				CB82689E2076945300DDC995 /* CommonAlertsFactory.swift */,
+			);
+			path = AlertsFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +212,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CCD585B20761C0E00AD3566 /* ViewController.swift in Sources */,
+				CB8268A02076945300DDC995 /* CommonAlertsFactory.swift in Sources */,
+				CB8268912076943600DDC995 /* ReusableView.swift in Sources */,
+				CB8268902076943600DDC995 /* Storyboards.swift in Sources */,
+				CB8268952076944500DDC995 /* ModuleInput.swift in Sources */,
+				CB8268962076944500DDC995 /* ModuleInputHolder.swift in Sources */,
+				CB82689B2076944D00DDC995 /* Result.swift in Sources */,
+				CB82689A2076944D00DDC995 /* ArrayResult.swift in Sources */,
+				CB82689F2076945300DDC995 /* CommonAlertsFactoryImpl.swift in Sources */,
 				7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33NC89QWWR;
-				INFOPLIST_FILE = ItunesSearchTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ItunesSearchTests/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33NC89QWWR;
-				INFOPLIST_FILE = ItunesSearchTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ItunesSearchTests/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
