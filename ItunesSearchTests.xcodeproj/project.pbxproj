@@ -19,6 +19,17 @@
 		CB82689B2076944D00DDC995 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268992076944D00DDC995 /* Result.swift */; };
 		CB82689F2076945300DDC995 /* CommonAlertsFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82689D2076945300DDC995 /* CommonAlertsFactoryImpl.swift */; };
 		CB8268A02076945300DDC995 /* CommonAlertsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82689E2076945300DDC995 /* CommonAlertsFactory.swift */; };
+		CB8268A92076991100DDC995 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268A82076991100DDC995 /* SettingsViewController.swift */; };
+		CB8268AB2076993500DDC995 /* SettingsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268AA2076993500DDC995 /* SettingsViewInput.swift */; };
+		CB8268AD2076994A00DDC995 /* SettingsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268AC2076994A00DDC995 /* SettingsViewOutput.swift */; };
+		CB8268AF2076996300DDC995 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268AE2076996300DDC995 /* SettingsPresenter.swift */; };
+		CB8268B12076997600DDC995 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268B02076997600DDC995 /* SettingsInteractor.swift */; };
+		CB8268B32076998D00DDC995 /* SettingsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268B22076998D00DDC995 /* SettingsInteractorInput.swift */; };
+		CB8268B5207699A600DDC995 /* SettingsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268B4207699A600DDC995 /* SettingsInteractorOutput.swift */; };
+		CB8268B7207699B900DDC995 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268B6207699B900DDC995 /* SettingsRouter.swift */; };
+		CB8268B9207699CA00DDC995 /* SettingsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268B8207699CA00DDC995 /* SettingsRouterInput.swift */; };
+		CB8268BC207699E100DDC995 /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268BB207699E100DDC995 /* SettingsConfigurator.swift */; };
+		CB8268BE20769A0900DDC995 /* SettingsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268BD20769A0900DDC995 /* SettingsInitializer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +47,17 @@
 		CB8268992076944D00DDC995 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		CB82689D2076945300DDC995 /* CommonAlertsFactoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAlertsFactoryImpl.swift; sourceTree = "<group>"; };
 		CB82689E2076945300DDC995 /* CommonAlertsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAlertsFactory.swift; sourceTree = "<group>"; };
+		CB8268A82076991100DDC995 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CB8268AA2076993500DDC995 /* SettingsViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewInput.swift; sourceTree = "<group>"; };
+		CB8268AC2076994A00DDC995 /* SettingsViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewOutput.swift; sourceTree = "<group>"; };
+		CB8268AE2076996300DDC995 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		CB8268B02076997600DDC995 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		CB8268B22076998D00DDC995 /* SettingsInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractorInput.swift; sourceTree = "<group>"; };
+		CB8268B4207699A600DDC995 /* SettingsInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractorOutput.swift; sourceTree = "<group>"; };
+		CB8268B6207699B900DDC995 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		CB8268B8207699CA00DDC995 /* SettingsRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouterInput.swift; sourceTree = "<group>"; };
+		CB8268BB207699E100DDC995 /* SettingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
+		CB8268BD20769A0900DDC995 /* SettingsInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInitializer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +111,7 @@
 		CB8268872076937A00DDC995 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CB8268A1207698C400DDC995 /* Modules */,
 				CB826888207693C500DDC995 /* Helpers */,
 			);
 			path = Classes;
@@ -139,6 +162,72 @@
 				CB82689E2076945300DDC995 /* CommonAlertsFactory.swift */,
 			);
 			path = AlertsFactory;
+			sourceTree = "<group>";
+		};
+		CB8268A1207698C400DDC995 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268A2207698D600DDC995 /* Settings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CB8268A2207698D600DDC995 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268A7207698EF00DDC995 /* Configurator */,
+				CB8268A6207698EB00DDC995 /* Router */,
+				CB8268A5207698E500DDC995 /* Interactor */,
+				CB8268A4207698E100DDC995 /* Presenter */,
+				CB8268A3207698DD00DDC995 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CB8268A3207698DD00DDC995 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268A82076991100DDC995 /* SettingsViewController.swift */,
+				CB8268AA2076993500DDC995 /* SettingsViewInput.swift */,
+				CB8268AC2076994A00DDC995 /* SettingsViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB8268A4207698E100DDC995 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268AE2076996300DDC995 /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CB8268A5207698E500DDC995 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268B02076997600DDC995 /* SettingsInteractor.swift */,
+				CB8268B22076998D00DDC995 /* SettingsInteractorInput.swift */,
+				CB8268B4207699A600DDC995 /* SettingsInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CB8268A6207698EB00DDC995 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268B6207699B900DDC995 /* SettingsRouter.swift */,
+				CB8268B8207699CA00DDC995 /* SettingsRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CB8268A7207698EF00DDC995 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268BB207699E100DDC995 /* SettingsConfigurator.swift */,
+				CB8268BD20769A0900DDC995 /* SettingsInitializer.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,14 +301,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB8268AD2076994A00DDC995 /* SettingsViewOutput.swift in Sources */,
+				CB8268BE20769A0900DDC995 /* SettingsInitializer.swift in Sources */,
 				CB8268A02076945300DDC995 /* CommonAlertsFactory.swift in Sources */,
 				CB8268912076943600DDC995 /* ReusableView.swift in Sources */,
+				CB8268B12076997600DDC995 /* SettingsInteractor.swift in Sources */,
+				CB8268B7207699B900DDC995 /* SettingsRouter.swift in Sources */,
 				CB8268902076943600DDC995 /* Storyboards.swift in Sources */,
+				CB8268A92076991100DDC995 /* SettingsViewController.swift in Sources */,
+				CB8268B5207699A600DDC995 /* SettingsInteractorOutput.swift in Sources */,
+				CB8268B9207699CA00DDC995 /* SettingsRouterInput.swift in Sources */,
 				CB8268952076944500DDC995 /* ModuleInput.swift in Sources */,
 				CB8268962076944500DDC995 /* ModuleInputHolder.swift in Sources */,
+				CB8268AF2076996300DDC995 /* SettingsPresenter.swift in Sources */,
 				CB82689B2076944D00DDC995 /* Result.swift in Sources */,
+				CB8268BC207699E100DDC995 /* SettingsConfigurator.swift in Sources */,
 				CB82689A2076944D00DDC995 /* ArrayResult.swift in Sources */,
+				CB8268AB2076993500DDC995 /* SettingsViewInput.swift in Sources */,
 				CB82689F2076945300DDC995 /* CommonAlertsFactoryImpl.swift in Sources */,
+				CB8268B32076998D00DDC995 /* SettingsInteractorInput.swift in Sources */,
 				7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
