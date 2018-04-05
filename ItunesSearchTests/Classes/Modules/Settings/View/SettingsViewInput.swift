@@ -10,4 +10,6 @@ import Foundation
 
 protocol SettingsViewInput: class {
     
+    func prepareTableView()
+    
 }

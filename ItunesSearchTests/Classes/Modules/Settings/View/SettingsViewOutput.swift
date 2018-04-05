@@ -10,4 +10,12 @@ import Foundation
 
 protocol SettingsViewOutput: class {
     
+    /// View did load trigger
+    func viewIsReady()
+    
+    /// Select setting row
+    ///
+    /// - Parameter indexPath: index of setting cell
+    func didSelectSettingRow(at indexPath: IndexPath)
+    
 }

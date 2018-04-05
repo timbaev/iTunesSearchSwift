@@ -30,6 +30,18 @@
 		CB8268B9207699CA00DDC995 /* SettingsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268B8207699CA00DDC995 /* SettingsRouterInput.swift */; };
 		CB8268BC207699E100DDC995 /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268BB207699E100DDC995 /* SettingsConfigurator.swift */; };
 		CB8268BE20769A0900DDC995 /* SettingsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268BD20769A0900DDC995 /* SettingsInitializer.swift */; };
+		CB8268E72076C61800DDC995 /* MediaTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268E62076C61800DDC995 /* MediaTypeViewController.swift */; };
+		CB8268E92076C66C00DDC995 /* MediaTypeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268E82076C66C00DDC995 /* MediaTypeViewInput.swift */; };
+		CB8268EB2076C68500DDC995 /* MediaTypeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268EA2076C68500DDC995 /* MediaTypeViewOutput.swift */; };
+		CB8268ED2076C8B600DDC995 /* MediaTypePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268EC2076C8B600DDC995 /* MediaTypePresenter.swift */; };
+		CB8268EF2076C8F300DDC995 /* MediaTypeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268EE2076C8F300DDC995 /* MediaTypeInteractor.swift */; };
+		CB8268F12076C90700DDC995 /* MediaTypeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268F02076C90700DDC995 /* MediaTypeInteractorInput.swift */; };
+		CB8268F32076C92800DDC995 /* MediaTypeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268F22076C92800DDC995 /* MediaTypeInteractorOutput.swift */; };
+		CB8268F62076C9C200DDC995 /* MediaTypeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268F52076C9C200DDC995 /* MediaTypeRouter.swift */; };
+		CB8268F82076C9D900DDC995 /* MediaTypeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268F72076C9D900DDC995 /* MediaTypeRouterInput.swift */; };
+		CB8268FA2076CD0B00DDC995 /* MediaTypeInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268F92076CD0B00DDC995 /* MediaTypeInitializer.swift */; };
+		CB8268FC2076CD6A00DDC995 /* MediaTypeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268FB2076CD6A00DDC995 /* MediaTypeConfigurator.swift */; };
+		CB8268FE2076D30800DDC995 /* MediaTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268FD2076D30800DDC995 /* MediaTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +70,18 @@
 		CB8268B8207699CA00DDC995 /* SettingsRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouterInput.swift; sourceTree = "<group>"; };
 		CB8268BB207699E100DDC995 /* SettingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
 		CB8268BD20769A0900DDC995 /* SettingsInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInitializer.swift; sourceTree = "<group>"; };
+		CB8268E62076C61800DDC995 /* MediaTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeViewController.swift; sourceTree = "<group>"; };
+		CB8268E82076C66C00DDC995 /* MediaTypeViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeViewInput.swift; sourceTree = "<group>"; };
+		CB8268EA2076C68500DDC995 /* MediaTypeViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeViewOutput.swift; sourceTree = "<group>"; };
+		CB8268EC2076C8B600DDC995 /* MediaTypePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypePresenter.swift; sourceTree = "<group>"; };
+		CB8268EE2076C8F300DDC995 /* MediaTypeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInteractor.swift; sourceTree = "<group>"; };
+		CB8268F02076C90700DDC995 /* MediaTypeInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInteractorInput.swift; sourceTree = "<group>"; };
+		CB8268F22076C92800DDC995 /* MediaTypeInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInteractorOutput.swift; sourceTree = "<group>"; };
+		CB8268F52076C9C200DDC995 /* MediaTypeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeRouter.swift; sourceTree = "<group>"; };
+		CB8268F72076C9D900DDC995 /* MediaTypeRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeRouterInput.swift; sourceTree = "<group>"; };
+		CB8268F92076CD0B00DDC995 /* MediaTypeInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInitializer.swift; sourceTree = "<group>"; };
+		CB8268FB2076CD6A00DDC995 /* MediaTypeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeConfigurator.swift; sourceTree = "<group>"; };
+		CB8268FD2076D30800DDC995 /* MediaTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +191,7 @@
 		CB8268A1207698C400DDC995 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CB8268E02076C59E00DDC995 /* MediaType */,
 				CB8268A2207698D600DDC995 /* Settings */,
 			);
 			path = Modules;
@@ -228,6 +253,73 @@
 				CB8268BD20769A0900DDC995 /* SettingsInitializer.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		CB8268E02076C59E00DDC995 /* MediaType */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268F42076C9B700DDC995 /* Router */,
+				CB8268E52076C5E200DDC995 /* Entity */,
+				CB8268E32076C5CB00DDC995 /* Configurator */,
+				CB8268E42076C5DC00DDC995 /* Interactor */,
+				CB8268E22076C5C400DDC995 /* Presenter */,
+				CB8268E12076C5B600DDC995 /* View */,
+			);
+			path = MediaType;
+			sourceTree = "<group>";
+		};
+		CB8268E12076C5B600DDC995 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268E62076C61800DDC995 /* MediaTypeViewController.swift */,
+				CB8268E82076C66C00DDC995 /* MediaTypeViewInput.swift */,
+				CB8268EA2076C68500DDC995 /* MediaTypeViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB8268E22076C5C400DDC995 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268EC2076C8B600DDC995 /* MediaTypePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CB8268E32076C5CB00DDC995 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268F92076CD0B00DDC995 /* MediaTypeInitializer.swift */,
+				CB8268FB2076CD6A00DDC995 /* MediaTypeConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		CB8268E42076C5DC00DDC995 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268EE2076C8F300DDC995 /* MediaTypeInteractor.swift */,
+				CB8268F02076C90700DDC995 /* MediaTypeInteractorInput.swift */,
+				CB8268F22076C92800DDC995 /* MediaTypeInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CB8268E52076C5E200DDC995 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268FD2076D30800DDC995 /* MediaTypes.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CB8268F42076C9B700DDC995 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CB8268F52076C9C200DDC995 /* MediaTypeRouter.swift */,
+				CB8268F72076C9D900DDC995 /* MediaTypeRouterInput.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,25 +393,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB8268FE2076D30800DDC995 /* MediaTypes.swift in Sources */,
 				CB8268AD2076994A00DDC995 /* SettingsViewOutput.swift in Sources */,
 				CB8268BE20769A0900DDC995 /* SettingsInitializer.swift in Sources */,
 				CB8268A02076945300DDC995 /* CommonAlertsFactory.swift in Sources */,
 				CB8268912076943600DDC995 /* ReusableView.swift in Sources */,
+				CB8268EF2076C8F300DDC995 /* MediaTypeInteractor.swift in Sources */,
+				CB8268FA2076CD0B00DDC995 /* MediaTypeInitializer.swift in Sources */,
 				CB8268B12076997600DDC995 /* SettingsInteractor.swift in Sources */,
 				CB8268B7207699B900DDC995 /* SettingsRouter.swift in Sources */,
+				CB8268F62076C9C200DDC995 /* MediaTypeRouter.swift in Sources */,
 				CB8268902076943600DDC995 /* Storyboards.swift in Sources */,
+				CB8268F12076C90700DDC995 /* MediaTypeInteractorInput.swift in Sources */,
 				CB8268A92076991100DDC995 /* SettingsViewController.swift in Sources */,
 				CB8268B5207699A600DDC995 /* SettingsInteractorOutput.swift in Sources */,
 				CB8268B9207699CA00DDC995 /* SettingsRouterInput.swift in Sources */,
+				CB8268E92076C66C00DDC995 /* MediaTypeViewInput.swift in Sources */,
+				CB8268EB2076C68500DDC995 /* MediaTypeViewOutput.swift in Sources */,
 				CB8268952076944500DDC995 /* ModuleInput.swift in Sources */,
 				CB8268962076944500DDC995 /* ModuleInputHolder.swift in Sources */,
+				CB8268F82076C9D900DDC995 /* MediaTypeRouterInput.swift in Sources */,
 				CB8268AF2076996300DDC995 /* SettingsPresenter.swift in Sources */,
 				CB82689B2076944D00DDC995 /* Result.swift in Sources */,
 				CB8268BC207699E100DDC995 /* SettingsConfigurator.swift in Sources */,
+				CB8268FC2076CD6A00DDC995 /* MediaTypeConfigurator.swift in Sources */,
 				CB82689A2076944D00DDC995 /* ArrayResult.swift in Sources */,
+				CB8268F32076C92800DDC995 /* MediaTypeInteractorOutput.swift in Sources */,
 				CB8268AB2076993500DDC995 /* SettingsViewInput.swift in Sources */,
 				CB82689F2076945300DDC995 /* CommonAlertsFactoryImpl.swift in Sources */,
 				CB8268B32076998D00DDC995 /* SettingsInteractorInput.swift in Sources */,
+				CB8268ED2076C8B600DDC995 /* MediaTypePresenter.swift in Sources */,
+				CB8268E72076C61800DDC995 /* MediaTypeViewController.swift in Sources */,
 				7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

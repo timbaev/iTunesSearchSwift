@@ -8,12 +8,25 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController, SettingsViewInput {
+class SettingsViewController: UITableViewController, SettingsViewInput {
     
     var presenter: SettingsViewOutput!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.viewIsReady()
+    }
+    
+    func prepareTableView() {
+        tableView.delegate = self
     }
 
+}
+
+extension SettingsViewController {
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelectSettingRow(at: indexPath)
+    }
+    
 }

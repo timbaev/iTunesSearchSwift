@@ -10,4 +10,7 @@ import Foundation
 
 protocol SettingsRouterInput {
     
+    /// Show choose media type screen
+    func showMediaTypesScreen()
+    
 }

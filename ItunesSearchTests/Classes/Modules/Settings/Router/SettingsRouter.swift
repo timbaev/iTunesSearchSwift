@@ -11,5 +11,10 @@ import UIKit
 class SettingsRouter: SettingsRouterInput {
     
     weak var viewController: UIViewController!
+    var showMediaTypesIdentifier = "showMediaTypes"
+    
+    func showMediaTypesScreen() {
+        viewController.performSegue(withIdentifier: showMediaTypesIdentifier, sender: nil)
+    }
     
 }
