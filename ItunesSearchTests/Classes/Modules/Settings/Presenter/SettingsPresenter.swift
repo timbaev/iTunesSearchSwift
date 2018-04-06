@@ -32,7 +32,7 @@ class SettingsPreseter: SettingsViewOutput, SettingsInteractorOutput {
         if (settingIndex == mediaTypeIndex) {
             router.showMediaTypesScreen()
         } else if (settingIndex == countSettingIndex) {
-            
+            router.showCountOfMediaScreen()
         }
     }
     

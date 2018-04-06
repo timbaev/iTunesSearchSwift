@@ -11,6 +11,17 @@
 		7CCD585E20761C0E00AD3566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD585C20761C0E00AD3566 /* Main.storyboard */; };
 		7CCD586020761C1000AD3566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD585F20761C1000AD3566 /* Assets.xcassets */; };
 		7CCD586320761C1000AD3566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD586120761C1000AD3566 /* LaunchScreen.storyboard */; };
+		CB1FA1B620781BF3001B5C7D /* CountOfMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B520781BF3001B5C7D /* CountOfMediaViewController.swift */; };
+		CB1FA1B820781C30001B5C7D /* CountOfMediaViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B720781C30001B5C7D /* CountOfMediaViewInput.swift */; };
+		CB1FA1BA20781C4C001B5C7D /* CountOfMediaViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B920781C4C001B5C7D /* CountOfMediaViewOutput.swift */; };
+		CB1FA1BC20781C62001B5C7D /* CountOfMediaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1BB20781C62001B5C7D /* CountOfMediaPresenter.swift */; };
+		CB1FA1BE20781C77001B5C7D /* CountOfMediaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1BD20781C77001B5C7D /* CountOfMediaInteractor.swift */; };
+		CB1FA1C020781C90001B5C7D /* CountOfMediaInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1BF20781C90001B5C7D /* CountOfMediaInteractorInput.swift */; };
+		CB1FA1C220781CA7001B5C7D /* CountOfMediaInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C120781CA7001B5C7D /* CountOfMediaInteractorOutput.swift */; };
+		CB1FA1C420781CC5001B5C7D /* CountOfMediaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C320781CC5001B5C7D /* CountOfMediaRouter.swift */; };
+		CB1FA1C620781CD7001B5C7D /* CountOfMediaRotuerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C520781CD7001B5C7D /* CountOfMediaRotuerInput.swift */; };
+		CB1FA1C820781CF0001B5C7D /* CountOfMediaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C720781CF0001B5C7D /* CountOfMediaConfigurator.swift */; };
+		CB1FA1CA20781D18001B5C7D /* CountOfMediaInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C920781D18001B5C7D /* CountOfMediaInitializer.swift */; };
 		CB8268902076943600DDC995 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82688E2076943600DDC995 /* Storyboards.swift */; };
 		CB8268912076943600DDC995 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82688F2076943600DDC995 /* ReusableView.swift */; };
 		CB8268952076944500DDC995 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268932076944500DDC995 /* ModuleInput.swift */; };
@@ -53,6 +64,17 @@
 		7CCD585F20761C1000AD3566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CCD586220761C1000AD3566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CCD586420761C1000AD3566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB1FA1B520781BF3001B5C7D /* CountOfMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewController.swift; sourceTree = "<group>"; };
+		CB1FA1B720781C30001B5C7D /* CountOfMediaViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewInput.swift; sourceTree = "<group>"; };
+		CB1FA1B920781C4C001B5C7D /* CountOfMediaViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewOutput.swift; sourceTree = "<group>"; };
+		CB1FA1BB20781C62001B5C7D /* CountOfMediaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaPresenter.swift; sourceTree = "<group>"; };
+		CB1FA1BD20781C77001B5C7D /* CountOfMediaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaInteractor.swift; sourceTree = "<group>"; };
+		CB1FA1BF20781C90001B5C7D /* CountOfMediaInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaInteractorInput.swift; sourceTree = "<group>"; };
+		CB1FA1C120781CA7001B5C7D /* CountOfMediaInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaInteractorOutput.swift; sourceTree = "<group>"; };
+		CB1FA1C320781CC5001B5C7D /* CountOfMediaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaRouter.swift; sourceTree = "<group>"; };
+		CB1FA1C520781CD7001B5C7D /* CountOfMediaRotuerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaRotuerInput.swift; sourceTree = "<group>"; };
+		CB1FA1C720781CF0001B5C7D /* CountOfMediaConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaConfigurator.swift; sourceTree = "<group>"; };
+		CB1FA1C920781D18001B5C7D /* CountOfMediaInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaInitializer.swift; sourceTree = "<group>"; };
 		CB82688E2076943600DDC995 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		CB82688F2076943600DDC995 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		CB8268932076944500DDC995 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
@@ -122,6 +144,64 @@
 				CB8268862076936700DDC995 /* Resources */,
 			);
 			path = ItunesSearchTests;
+			sourceTree = "<group>";
+		};
+		CB1FA1AF20781BA7001B5C7D /* CountOfMedia */ = {
+			isa = PBXGroup;
+			children = (
+				CB1FA1B420781BD1001B5C7D /* Configurator */,
+				CB1FA1B320781BCB001B5C7D /* Router */,
+				CB1FA1B220781BC5001B5C7D /* Interactor */,
+				CB1FA1B120781BBF001B5C7D /* Presenter */,
+				CB1FA1B020781BBA001B5C7D /* View */,
+			);
+			path = CountOfMedia;
+			sourceTree = "<group>";
+		};
+		CB1FA1B020781BBA001B5C7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB1FA1B520781BF3001B5C7D /* CountOfMediaViewController.swift */,
+				CB1FA1B720781C30001B5C7D /* CountOfMediaViewInput.swift */,
+				CB1FA1B920781C4C001B5C7D /* CountOfMediaViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB1FA1B120781BBF001B5C7D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CB1FA1BB20781C62001B5C7D /* CountOfMediaPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CB1FA1B220781BC5001B5C7D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CB1FA1BD20781C77001B5C7D /* CountOfMediaInteractor.swift */,
+				CB1FA1BF20781C90001B5C7D /* CountOfMediaInteractorInput.swift */,
+				CB1FA1C120781CA7001B5C7D /* CountOfMediaInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CB1FA1B320781BCB001B5C7D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CB1FA1C320781CC5001B5C7D /* CountOfMediaRouter.swift */,
+				CB1FA1C520781CD7001B5C7D /* CountOfMediaRotuerInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CB1FA1B420781BD1001B5C7D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				CB1FA1C720781CF0001B5C7D /* CountOfMediaConfigurator.swift */,
+				CB1FA1C920781D18001B5C7D /* CountOfMediaInitializer.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		CB8268862076936700DDC995 /* Resources */ = {
@@ -196,6 +276,7 @@
 		CB8268A1207698C400DDC995 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CB1FA1AF20781BA7001B5C7D /* CountOfMedia */,
 				CB8268E02076C59E00DDC995 /* MediaType */,
 				CB8268A2207698D600DDC995 /* Settings */,
 			);
@@ -415,9 +496,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1FA1BE20781C77001B5C7D /* CountOfMediaInteractor.swift in Sources */,
 				CB8268FE2076D30800DDC995 /* MediaTypes.swift in Sources */,
+				CB1FA1C420781CC5001B5C7D /* CountOfMediaRouter.swift in Sources */,
 				CB8268AD2076994A00DDC995 /* SettingsViewOutput.swift in Sources */,
 				CB8268BE20769A0900DDC995 /* SettingsInitializer.swift in Sources */,
+				CB1FA1B820781C30001B5C7D /* CountOfMediaViewInput.swift in Sources */,
+				CB1FA1C220781CA7001B5C7D /* CountOfMediaInteractorOutput.swift in Sources */,
 				CB8268A02076945300DDC995 /* CommonAlertsFactory.swift in Sources */,
 				CB8268912076943600DDC995 /* ReusableView.swift in Sources */,
 				CB8268EF2076C8F300DDC995 /* MediaTypeInteractor.swift in Sources */,
@@ -426,7 +511,9 @@
 				CB8268B7207699B900DDC995 /* SettingsRouter.swift in Sources */,
 				CB8268F62076C9C200DDC995 /* MediaTypeRouter.swift in Sources */,
 				CB8268902076943600DDC995 /* Storyboards.swift in Sources */,
+				CB1FA1B620781BF3001B5C7D /* CountOfMediaViewController.swift in Sources */,
 				CB8268F12076C90700DDC995 /* MediaTypeInteractorInput.swift in Sources */,
+				CB1FA1C020781C90001B5C7D /* CountOfMediaInteractorInput.swift in Sources */,
 				CB8268A92076991100DDC995 /* SettingsViewController.swift in Sources */,
 				CB8268B5207699A600DDC995 /* SettingsInteractorOutput.swift in Sources */,
 				CB8268B9207699CA00DDC995 /* SettingsRouterInput.swift in Sources */,
@@ -435,9 +522,11 @@
 				CB8268952076944500DDC995 /* ModuleInput.swift in Sources */,
 				CB8268962076944500DDC995 /* ModuleInputHolder.swift in Sources */,
 				CB8268F82076C9D900DDC995 /* MediaTypeRouterInput.swift in Sources */,
+				CB1FA1C620781CD7001B5C7D /* CountOfMediaRotuerInput.swift in Sources */,
 				CB8268AF2076996300DDC995 /* SettingsPresenter.swift in Sources */,
 				CB82689B2076944D00DDC995 /* Result.swift in Sources */,
 				CB8268BC207699E100DDC995 /* SettingsConfigurator.swift in Sources */,
+				CB1FA1C820781CF0001B5C7D /* CountOfMediaConfigurator.swift in Sources */,
 				CB8269022076EC4B00DDC995 /* SettingsUserDefaults.swift in Sources */,
 				CB8268FC2076CD6A00DDC995 /* MediaTypeConfigurator.swift in Sources */,
 				CB82689A2076944D00DDC995 /* ArrayResult.swift in Sources */,
@@ -445,7 +534,10 @@
 				CB8269042076EC6700DDC995 /* SettingsUserDefaultsImpl.swift in Sources */,
 				CB8268AB2076993500DDC995 /* SettingsViewInput.swift in Sources */,
 				CB82689F2076945300DDC995 /* CommonAlertsFactoryImpl.swift in Sources */,
+				CB1FA1BC20781C62001B5C7D /* CountOfMediaPresenter.swift in Sources */,
 				CB8268B32076998D00DDC995 /* SettingsInteractorInput.swift in Sources */,
+				CB1FA1CA20781D18001B5C7D /* CountOfMediaInitializer.swift in Sources */,
+				CB1FA1BA20781C4C001B5C7D /* CountOfMediaViewOutput.swift in Sources */,
 				CB8268ED2076C8B600DDC995 /* MediaTypePresenter.swift in Sources */,
 				CB8268E72076C61800DDC995 /* MediaTypeViewController.swift in Sources */,
 				7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */,
