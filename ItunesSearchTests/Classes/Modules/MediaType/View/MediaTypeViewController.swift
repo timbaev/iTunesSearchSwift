@@ -12,14 +12,25 @@ class MediaTypeViewController: UIViewController, MediaTypeViewInput {
     
     var presenter: MediaTypeViewOutput!
     
-    //TableView datasource fields
+    @IBOutlet weak var tableView: UITableView!
+    
+    //MARK: - TableView datasource fields
+    
     var cellIdentifier = "mediaTypeCell"
     var currentNumberOfRows: Int?
     var currentMediaTitle: String?
+    var lastSelectedIndex: IndexPath?
+    
+    //MARK: - Lifecycle methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewIsReady()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter.onViewDidAppear()
     }
     
     //MARK: - View input
@@ -30,6 +41,16 @@ class MediaTypeViewController: UIViewController, MediaTypeViewInput {
     
     func set(mediaTitle currentMediaTitle: String) {
         self.currentMediaTitle = currentMediaTitle
+    }
+    
+    func setCheckedCell(at indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) else { return }
+        cell.accessoryType = .checkmark
+    }
+    
+    func setUncheckedCell(at indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) else { return }
+        cell.accessoryType = .none
     }
     
 }
@@ -45,7 +66,12 @@ extension MediaTypeViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         presenter.updateMediaTypeTitle(at: indexPath)
         cell.textLabel?.text = currentMediaTitle
+        cell.selectionStyle = .none
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelectMediaType(at: indexPath)
     }
     
 }

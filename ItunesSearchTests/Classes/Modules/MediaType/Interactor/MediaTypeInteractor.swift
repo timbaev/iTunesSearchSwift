@@ -11,10 +11,18 @@ import Foundation
 class MediaTypeInteractor: MediaTypeInteractorInput {
     
     weak var presenter: MediaTypeInteractorOutput!
+    var settingsUserDefaultsManager: SettingsUserDefaultsManager!
+    
     var mediaTypes = [MediaTypes]()
     
     func prepareMediaTypes() {
-        self.mediaTypes = MediaTypes.allValues
+        mediaTypes = MediaTypes.allValues
+    }
+    
+    func prepareCheckmark() {
+        guard let savedMediaType = settingsUserDefaultsManager.getMediaType(),
+            let indexOfMediaType = mediaTypes.index(where: { $0 == savedMediaType }) else { return }
+        presenter.setCheckedCell(at: indexOfMediaType)
     }
     
     func getCountOfMediaTypes() {
@@ -24,6 +32,11 @@ class MediaTypeInteractor: MediaTypeInteractorInput {
     func getTitleForMediaType(at index: Int) {
         let title = mediaTypes[index].rawValue
         presenter.didGetTitleForMediaType(title)
+    }
+    
+    func saveMediaTypeSetting(with index: Int) {
+        let mediaType = mediaTypes[index]
+        settingsUserDefaultsManager.save(mediaType: mediaType)
     }
     
 }

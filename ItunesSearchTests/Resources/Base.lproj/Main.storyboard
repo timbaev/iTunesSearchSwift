@@ -55,6 +55,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Odm-u0-kE0"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="aZw-b1-Vn4" id="b8a-25-tIO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZR-dg-sYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="wwg-66-9Ze" customClass="MediaTypeInitializer" customModule="ItunesSearchTests" customModuleProvider="target">

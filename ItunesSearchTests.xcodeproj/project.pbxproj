@@ -42,6 +42,8 @@
 		CB8268FA2076CD0B00DDC995 /* MediaTypeInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268F92076CD0B00DDC995 /* MediaTypeInitializer.swift */; };
 		CB8268FC2076CD6A00DDC995 /* MediaTypeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268FB2076CD6A00DDC995 /* MediaTypeConfigurator.swift */; };
 		CB8268FE2076D30800DDC995 /* MediaTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268FD2076D30800DDC995 /* MediaTypes.swift */; };
+		CB8269022076EC4B00DDC995 /* SettingsUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8269012076EC4B00DDC995 /* SettingsUserDefaults.swift */; };
+		CB8269042076EC6700DDC995 /* SettingsUserDefaultsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8269032076EC6700DDC995 /* SettingsUserDefaultsImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		CB8268F92076CD0B00DDC995 /* MediaTypeInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInitializer.swift; sourceTree = "<group>"; };
 		CB8268FB2076CD6A00DDC995 /* MediaTypeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeConfigurator.swift; sourceTree = "<group>"; };
 		CB8268FD2076D30800DDC995 /* MediaTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypes.swift; sourceTree = "<group>"; };
+		CB8269012076EC4B00DDC995 /* SettingsUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserDefaults.swift; sourceTree = "<group>"; };
+		CB8269032076EC6700DDC995 /* SettingsUserDefaultsImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserDefaultsImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 		CB8268872076937A00DDC995 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CB8268FF2076EC1A00DDC995 /* Managers */,
 				CB8268A1207698C400DDC995 /* Modules */,
 				CB826888207693C500DDC995 /* Helpers */,
 			);
@@ -322,6 +327,23 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		CB8268FF2076EC1A00DDC995 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CB8269002076EC2300DDC995 /* UserDefaults */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CB8269002076EC2300DDC995 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				CB8269012076EC4B00DDC995 /* SettingsUserDefaults.swift */,
+				CB8269032076EC6700DDC995 /* SettingsUserDefaultsImpl.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -416,9 +438,11 @@
 				CB8268AF2076996300DDC995 /* SettingsPresenter.swift in Sources */,
 				CB82689B2076944D00DDC995 /* Result.swift in Sources */,
 				CB8268BC207699E100DDC995 /* SettingsConfigurator.swift in Sources */,
+				CB8269022076EC4B00DDC995 /* SettingsUserDefaults.swift in Sources */,
 				CB8268FC2076CD6A00DDC995 /* MediaTypeConfigurator.swift in Sources */,
 				CB82689A2076944D00DDC995 /* ArrayResult.swift in Sources */,
 				CB8268F32076C92800DDC995 /* MediaTypeInteractorOutput.swift in Sources */,
+				CB8269042076EC6700DDC995 /* SettingsUserDefaultsImpl.swift in Sources */,
 				CB8268AB2076993500DDC995 /* SettingsViewInput.swift in Sources */,
 				CB82689F2076945300DDC995 /* CommonAlertsFactoryImpl.swift in Sources */,
 				CB8268B32076998D00DDC995 /* SettingsInteractorInput.swift in Sources */,

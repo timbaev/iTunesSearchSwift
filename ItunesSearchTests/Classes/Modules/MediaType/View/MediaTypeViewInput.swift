@@ -13,5 +13,7 @@ protocol MediaTypeViewInput: class {
     //Setters
     func set(numberOfRows currentNumberOfRows: Int)
     func set(mediaTitle currentMediaTitle: String)
+    func setCheckedCell(at indexPath: IndexPath)
+    func setUncheckedCell(at indexPath: IndexPath)
     
 }

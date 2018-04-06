@@ -20,4 +20,9 @@ protocol MediaTypeInteractorOutput: class {
     /// - Parameter title: title of media type
     func didGetTitleForMediaType(_ title: String)
     
+    /// Set checkmark to cell at index
+    ///
+    /// - Parameter index: index of cell
+    func setCheckedCell(at index: Int)
+    
 }

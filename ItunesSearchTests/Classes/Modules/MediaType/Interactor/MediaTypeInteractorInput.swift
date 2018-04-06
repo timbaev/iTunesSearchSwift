@@ -19,6 +19,14 @@ protocol MediaTypeInteractorInput: class {
     func getTitleForMediaType(at index: Int)
     
      /// Prepare data for cells
-     func prepareMediaTypes()
+    func prepareMediaTypes()
+    
+    /// Save media type settings
+    ///
+    /// - Parameter index: index of media type
+    func saveMediaTypeSetting(with index: Int)
+    
+    /// Prepare checkmark for tableView cell
+    func prepareCheckmark()
     
 }

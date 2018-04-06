@@ -13,6 +13,9 @@ protocol MediaTypeViewOutput: class {
     /// View did load trigger
     func viewIsReady()
     
+    /// View did appear trigger
+    func onViewDidAppear()
+    
     /// Get count of allow media types
     func getCountOfMediaTypes()
     
@@ -20,5 +23,15 @@ protocol MediaTypeViewOutput: class {
     ///
     /// - Parameter indexPath: index of cell with media type info
     func updateMediaTypeTitle(at indexPath: IndexPath)
+    
+    /// Select media type cell
+    ///
+    /// - Parameter indexPath: index of position of cell
+    func didSelectMediaType(at indexPath: IndexPath)
+    
+    /// Set checkmark to cell
+    ///
+    /// - Parameter index: index of media type
+    func setCheckedCell(at index: Int)
     
 }

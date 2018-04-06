@@ -15,6 +15,8 @@ class MediaTypeConfigurator {
         let interactor = MediaTypeInteractor()
         let rotuer = MediaTypeRouter()
         
+        let settingsUserDefaultsManager = SettingsUserDefaultsManagerImpl()
+        
         viewController.presenter = presenter
         
         presenter.view = viewController
@@ -22,6 +24,7 @@ class MediaTypeConfigurator {
         presenter.router = rotuer
         
         interactor.presenter = presenter
+        interactor.settingsUserDefaultsManager = settingsUserDefaultsManager
         
         rotuer.viewController = viewController
     }
