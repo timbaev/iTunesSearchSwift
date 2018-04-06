@@ -153,6 +153,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="OBX-6N-ro1"/>
                     <connections>
+                        <outlet property="mediaTypeLabel" destination="NlE-ia-6t3" id="Bpp-1u-Oq6"/>
                         <segue destination="3W0-18-HTy" kind="show" identifier="showMediaTypes" id="n6h-ma-dhH"/>
                     </connections>
                 </tableViewController>

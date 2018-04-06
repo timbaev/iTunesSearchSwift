@@ -23,6 +23,10 @@ class SettingsPreseter: SettingsViewOutput, SettingsInteractorOutput {
         view.prepareTableView()
     }
     
+    func onViewWillAppear() {
+        interactor.prepareSettingsScrren()
+    }
+    
     func didSelectSettingRow(at indexPath: IndexPath) {
         let settingIndex = indexPath.row
         if (settingIndex == mediaTypeIndex) {
@@ -30,6 +34,10 @@ class SettingsPreseter: SettingsViewOutput, SettingsInteractorOutput {
         } else if (settingIndex == countSettingIndex) {
             
         }
+    }
+    
+    func didGetSavedMediaType(_ mediaType: MediaTypes) {
+        view.set(mediaTypeTitle: mediaType.rawValue)
     }
     
 }

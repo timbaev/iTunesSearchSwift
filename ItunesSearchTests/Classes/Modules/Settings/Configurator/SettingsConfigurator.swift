@@ -15,6 +15,8 @@ class SettingsConfigurator {
         let interactor = SettingsInteractor()
         let router = SettingsRouter()
         
+        let settingsUserDefaultsManager = SettingsUserDefaultsManagerImpl()
+        
         viewController.presenter = presenter
         
         presenter.view = viewController
@@ -22,6 +24,7 @@ class SettingsConfigurator {
         presenter.router = router
         
         interactor.presenter = presenter
+        interactor.settingsUserDefaultsManager = settingsUserDefaultsManager
         
         router.viewController = viewController
     }

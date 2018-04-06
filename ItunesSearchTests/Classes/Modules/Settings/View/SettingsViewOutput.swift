@@ -13,6 +13,9 @@ protocol SettingsViewOutput: class {
     /// View did load trigger
     func viewIsReady()
     
+    /// Veiw will appear trigger
+    func onViewWillAppear()
+    
     /// Select setting row
     ///
     /// - Parameter indexPath: index of setting cell

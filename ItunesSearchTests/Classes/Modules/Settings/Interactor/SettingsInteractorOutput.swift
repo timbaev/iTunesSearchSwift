@@ -10,4 +10,9 @@ import Foundation
 
 protocol SettingsInteractorOutput: class {
     
+    /// Saved user's media type
+    ///
+    /// - Parameter mediaType: media type
+    func didGetSavedMediaType(_ mediaType: MediaTypes)
+    
 }

@@ -11,5 +11,11 @@ import Foundation
 class SettingsInteractor: SettingsInteractorInput {
     
     weak var presenter: SettingsInteractorOutput!
+    var settingsUserDefaultsManager: SettingsUserDefaultsManager!
+    
+    func prepareSettingsScrren() {
+        guard let mediaType = settingsUserDefaultsManager.getMediaType() else { return }
+        presenter.didGetSavedMediaType(mediaType)
+    }
     
 }

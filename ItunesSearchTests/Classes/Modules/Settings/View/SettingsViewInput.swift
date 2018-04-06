@@ -10,6 +10,10 @@ import Foundation
 
 protocol SettingsViewInput: class {
     
+    //Setters
+    func set(mediaTypeTitle title: String)
+    
+    /// Prepare table view parameters
     func prepareTableView()
     
 }
