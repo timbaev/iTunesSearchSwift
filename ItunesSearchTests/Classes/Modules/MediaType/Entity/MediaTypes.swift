@@ -12,10 +12,10 @@ enum MediaTypes: String {
     case movie
     case podcast
     case music
-    case musicVideo
+    case musicVideo = "music video"
     case audiobook
-    case shortFilm
-    case tvShow
+    case shortFilm = "short firm"
+    case tvShow = "tv show"
     case software
     case ebook
     
