@@ -14,4 +14,47 @@ class CountOfMediaPresenter: CountOfMediaViewOutput, CountOfMediaInteractorOutpu
     var interactor: CountOfMediaInteractorInput!
     var router: CountOfMediaRotuerInput!
     
+    private let numberOfComponents = 1
+    
+    //MARK: - View output
+    
+    func viewIsReady() {
+        interactor.prepareData()
+        view.preparePickerView()
+    }
+    
+    func onViewWillAppear() {
+        interactor.getSaveCountOfMedia()
+    }
+    
+    func updateNumberOfComponents() {
+        view.set(numberOfComponents: numberOfComponents)
+    }
+    
+    func updateNumberOfRows() {
+        interactor.getNumberOfCount()
+    }
+    
+    func updateTitleForRow(for index: Int) {
+        interactor.getTitleForRow(at: index)
+    }
+    
+    func didSelectCountOfMedia(at index: Int) {
+        interactor.saveCountOfMedia(with: index)
+    }
+    
+    //MARK: - Interactor ouput
+    
+    func didGettingNumberOfCount(_ number: Int) {
+        view.set(numberOfCountRows: number)
+    }
+    
+    func didGettingTitleForRow(_ title: String) {
+        view.set(titleOfRow: title)
+    }
+    
+    func didGettingCountOfMediaResults(indexOfResult: Int) {
+        view.set(selectedRow: indexOfResult)
+    }
+    
 }

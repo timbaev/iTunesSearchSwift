@@ -15,6 +15,8 @@ class CountOfMediaConfigurator {
         let interactor = CountOfMediaInteractor()
         let router = CountOfMediaRotuer()
         
+        let settingsUserDafaultsManager = SettingsUserDefaultsManagerImpl()
+        
         viewController.presenter = presenter
         
         presenter.view = viewController
@@ -22,6 +24,7 @@ class CountOfMediaConfigurator {
         presenter.router = router
         
         interactor.presenter = presenter
+        interactor.settingsUserDefaultsManager = settingsUserDafaultsManager
         
         router.viewController = viewController
     }

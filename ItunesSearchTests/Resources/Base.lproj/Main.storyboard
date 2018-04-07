@@ -89,6 +89,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EAr-jd-33x"/>
                     </view>
+                    <connections>
+                        <outlet property="countPickerView" destination="WcJ-Gz-pQV" id="Z3C-sF-enO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gd8-tU-dsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="1ci-pf-sla" customClass="CountOfMediaInitializer" customModule="ItunesSearchTests" customModuleProvider="target">
