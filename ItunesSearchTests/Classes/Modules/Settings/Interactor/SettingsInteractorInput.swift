@@ -10,4 +10,7 @@ import Foundation
 
 protocol SettingsInteractorInput: class {
     
+    /// Prepare data for settings screen
+    func prepareSettingsScrren()
+    
 }

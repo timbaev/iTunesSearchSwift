@@ -14,4 +14,37 @@ class SettingsPreseter: SettingsViewOutput, SettingsInteractorOutput {
     var interactor: SettingsInteractorInput!
     var router: SettingsRouterInput!
     
+    private let mediaTypeIndex = 0
+    private let countSettingIndex = 1
+    
+    //MARK: - View output
+    
+    func viewIsReady() {
+        view.prepareTableView()
+    }
+    
+    func onViewWillAppear() {
+        interactor.prepareSettingsScrren()
+    }
+    
+    func didSelectSettingRow(at indexPath: IndexPath) {
+        let settingIndex = indexPath.row
+        if (settingIndex == mediaTypeIndex) {
+            router.showMediaTypesScreen()
+        } else if (settingIndex == countSettingIndex) {
+            router.showCountOfMediaScreen()
+        }
+    }
+    
+    //MARK: - Interactor output
+    
+    func didGetSavedMediaType(_ mediaType: MediaTypes) {
+        view.set(mediaTypeTitle: mediaType.rawValue)
+    }
+    
+    func didGettingSavedCountOfResults(_ count: Int) {
+        let countString = "\(count)"
+        view.set(countOfMediaResultsTitle: countString)
+    }
+    
 }

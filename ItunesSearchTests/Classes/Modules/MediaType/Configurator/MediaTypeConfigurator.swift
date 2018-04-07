@@ -1,19 +1,19 @@
 //
-//  SettingsConfigurator.swift
+//  MediaTypeConfigurator.swift
 //  ItunesSearchTests
 //
-//  Created by Тимур Шафигуллин on 05.04.2018.
+//  Created by Тимур Шафигуллин on 06.04.2018.
 //  Copyright © 2018 iOSLab. All rights reserved.
 //
 
 import Foundation
 
-class SettingsConfigurator {
+class MediaTypeConfigurator {
     
-    func setupModule(with viewController: SettingsViewController) {
-        let presenter = SettingsPreseter()
-        let interactor = SettingsInteractor()
-        let router = SettingsRouter()
+    func setupModel(with viewController: MediaTypeViewController) {
+        let presenter = MediaTypePresenter()
+        let interactor = MediaTypeInteractor()
+        let rotuer = MediaTypeRouter()
         
         let settingsUserDefaultsManager = SettingsUserDefaultsManagerImpl()
         
@@ -21,12 +21,12 @@ class SettingsConfigurator {
         
         presenter.view = viewController
         presenter.interactor = interactor
-        presenter.router = router
+        presenter.router = rotuer
         
         interactor.presenter = presenter
         interactor.settingsUserDefaultsManager = settingsUserDefaultsManager
         
-        router.viewController = viewController
+        rotuer.viewController = viewController
     }
     
 }
