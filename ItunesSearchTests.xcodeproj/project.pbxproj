@@ -55,6 +55,17 @@
 		CB8268FE2076D30800DDC995 /* MediaTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268FD2076D30800DDC995 /* MediaTypes.swift */; };
 		CB8269022076EC4B00DDC995 /* SettingsUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8269012076EC4B00DDC995 /* SettingsUserDefaults.swift */; };
 		CB8269042076EC6700DDC995 /* SettingsUserDefaultsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8269032076EC6700DDC995 /* SettingsUserDefaultsImpl.swift */; };
+		CBD426C120793FB2005FDBF5 /* SearchMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426C020793FB2005FDBF5 /* SearchMediaViewController.swift */; };
+		CBD426C320793FD1005FDBF5 /* SearchMediaViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426C220793FD1005FDBF5 /* SearchMediaViewInput.swift */; };
+		CBD426C520793FE3005FDBF5 /* SearchMediaViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426C420793FE3005FDBF5 /* SearchMediaViewOutput.swift */; };
+		CBD426C720793FF4005FDBF5 /* SearchMediaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426C620793FF4005FDBF5 /* SearchMediaPresenter.swift */; };
+		CBD426C920794006005FDBF5 /* SearchMediaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426C820794006005FDBF5 /* SearchMediaInteractor.swift */; };
+		CBD426CB20794015005FDBF5 /* SearchMediaInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426CA20794015005FDBF5 /* SearchMediaInteractorInput.swift */; };
+		CBD426CD20794027005FDBF5 /* SearchMediaInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426CC20794027005FDBF5 /* SearchMediaInteractorOutput.swift */; };
+		CBD426CF20794042005FDBF5 /* SearchMediaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426CE20794042005FDBF5 /* SearchMediaRouter.swift */; };
+		CBD426D120794053005FDBF5 /* SearchMediaRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426D020794053005FDBF5 /* SearchMediaRouterInput.swift */; };
+		CBD426D320794082005FDBF5 /* SearchMediaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426D220794082005FDBF5 /* SearchMediaConfigurator.swift */; };
+		CBD426D5207940AB005FDBF5 /* SearchMediaInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426D4207940AB005FDBF5 /* SearchMediaInitializer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +119,17 @@
 		CB8268FD2076D30800DDC995 /* MediaTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypes.swift; sourceTree = "<group>"; };
 		CB8269012076EC4B00DDC995 /* SettingsUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserDefaults.swift; sourceTree = "<group>"; };
 		CB8269032076EC6700DDC995 /* SettingsUserDefaultsImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserDefaultsImpl.swift; sourceTree = "<group>"; };
+		CBD426C020793FB2005FDBF5 /* SearchMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaViewController.swift; sourceTree = "<group>"; };
+		CBD426C220793FD1005FDBF5 /* SearchMediaViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaViewInput.swift; sourceTree = "<group>"; };
+		CBD426C420793FE3005FDBF5 /* SearchMediaViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaViewOutput.swift; sourceTree = "<group>"; };
+		CBD426C620793FF4005FDBF5 /* SearchMediaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaPresenter.swift; sourceTree = "<group>"; };
+		CBD426C820794006005FDBF5 /* SearchMediaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractor.swift; sourceTree = "<group>"; };
+		CBD426CA20794015005FDBF5 /* SearchMediaInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractorInput.swift; sourceTree = "<group>"; };
+		CBD426CC20794027005FDBF5 /* SearchMediaInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractorOutput.swift; sourceTree = "<group>"; };
+		CBD426CE20794042005FDBF5 /* SearchMediaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaRouter.swift; sourceTree = "<group>"; };
+		CBD426D020794053005FDBF5 /* SearchMediaRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaRouterInput.swift; sourceTree = "<group>"; };
+		CBD426D220794082005FDBF5 /* SearchMediaConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaConfigurator.swift; sourceTree = "<group>"; };
+		CBD426D4207940AB005FDBF5 /* SearchMediaInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaInitializer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +298,7 @@
 		CB8268A1207698C400DDC995 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CBD426B920793F5E005FDBF5 /* SearchMedia */,
 				CB1FA1AF20781BA7001B5C7D /* CountOfMedia */,
 				CB8268E02076C59E00DDC995 /* MediaType */,
 				CB8268A2207698D600DDC995 /* Settings */,
@@ -425,6 +448,72 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		CBD426B920793F5E005FDBF5 /* SearchMedia */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426BF20793F8D005FDBF5 /* Configurator */,
+				CBD426BE20793F86005FDBF5 /* Entity */,
+				CBD426BD20793F81005FDBF5 /* Router */,
+				CBD426BC20793F7A005FDBF5 /* Interactor */,
+				CBD426BB20793F75005FDBF5 /* Presenter */,
+				CBD426BA20793F72005FDBF5 /* View */,
+			);
+			path = SearchMedia;
+			sourceTree = "<group>";
+		};
+		CBD426BA20793F72005FDBF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426C020793FB2005FDBF5 /* SearchMediaViewController.swift */,
+				CBD426C220793FD1005FDBF5 /* SearchMediaViewInput.swift */,
+				CBD426C420793FE3005FDBF5 /* SearchMediaViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBD426BB20793F75005FDBF5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426C620793FF4005FDBF5 /* SearchMediaPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CBD426BC20793F7A005FDBF5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426C820794006005FDBF5 /* SearchMediaInteractor.swift */,
+				CBD426CA20794015005FDBF5 /* SearchMediaInteractorInput.swift */,
+				CBD426CC20794027005FDBF5 /* SearchMediaInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CBD426BD20793F81005FDBF5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426CE20794042005FDBF5 /* SearchMediaRouter.swift */,
+				CBD426D020794053005FDBF5 /* SearchMediaRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CBD426BE20793F86005FDBF5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CBD426BF20793F8D005FDBF5 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426D220794082005FDBF5 /* SearchMediaConfigurator.swift */,
+				CBD426D4207940AB005FDBF5 /* SearchMediaInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -500,8 +589,11 @@
 				CB8268FE2076D30800DDC995 /* MediaTypes.swift in Sources */,
 				CB1FA1C420781CC5001B5C7D /* CountOfMediaRouter.swift in Sources */,
 				CB8268AD2076994A00DDC995 /* SettingsViewOutput.swift in Sources */,
+				CBD426CF20794042005FDBF5 /* SearchMediaRouter.swift in Sources */,
+				CBD426D320794082005FDBF5 /* SearchMediaConfigurator.swift in Sources */,
 				CB8268BE20769A0900DDC995 /* SettingsInitializer.swift in Sources */,
 				CB1FA1B820781C30001B5C7D /* CountOfMediaViewInput.swift in Sources */,
+				CBD426CB20794015005FDBF5 /* SearchMediaInteractorInput.swift in Sources */,
 				CB1FA1C220781CA7001B5C7D /* CountOfMediaInteractorOutput.swift in Sources */,
 				CB8268A02076945300DDC995 /* CommonAlertsFactory.swift in Sources */,
 				CB8268912076943600DDC995 /* ReusableView.swift in Sources */,
@@ -517,29 +609,37 @@
 				CB8268A92076991100DDC995 /* SettingsViewController.swift in Sources */,
 				CB8268B5207699A600DDC995 /* SettingsInteractorOutput.swift in Sources */,
 				CB8268B9207699CA00DDC995 /* SettingsRouterInput.swift in Sources */,
+				CBD426C120793FB2005FDBF5 /* SearchMediaViewController.swift in Sources */,
 				CB8268E92076C66C00DDC995 /* MediaTypeViewInput.swift in Sources */,
 				CB8268EB2076C68500DDC995 /* MediaTypeViewOutput.swift in Sources */,
+				CBD426C520793FE3005FDBF5 /* SearchMediaViewOutput.swift in Sources */,
 				CB8268952076944500DDC995 /* ModuleInput.swift in Sources */,
 				CB8268962076944500DDC995 /* ModuleInputHolder.swift in Sources */,
 				CB8268F82076C9D900DDC995 /* MediaTypeRouterInput.swift in Sources */,
 				CB1FA1C620781CD7001B5C7D /* CountOfMediaRotuerInput.swift in Sources */,
 				CB8268AF2076996300DDC995 /* SettingsPresenter.swift in Sources */,
 				CB82689B2076944D00DDC995 /* Result.swift in Sources */,
+				CBD426C720793FF4005FDBF5 /* SearchMediaPresenter.swift in Sources */,
 				CB8268BC207699E100DDC995 /* SettingsConfigurator.swift in Sources */,
+				CBD426CD20794027005FDBF5 /* SearchMediaInteractorOutput.swift in Sources */,
 				CB1FA1C820781CF0001B5C7D /* CountOfMediaConfigurator.swift in Sources */,
 				CB8269022076EC4B00DDC995 /* SettingsUserDefaults.swift in Sources */,
 				CB8268FC2076CD6A00DDC995 /* MediaTypeConfigurator.swift in Sources */,
 				CB82689A2076944D00DDC995 /* ArrayResult.swift in Sources */,
 				CB8268F32076C92800DDC995 /* MediaTypeInteractorOutput.swift in Sources */,
 				CB8269042076EC6700DDC995 /* SettingsUserDefaultsImpl.swift in Sources */,
+				CBD426C920794006005FDBF5 /* SearchMediaInteractor.swift in Sources */,
 				CB8268AB2076993500DDC995 /* SettingsViewInput.swift in Sources */,
 				CB82689F2076945300DDC995 /* CommonAlertsFactoryImpl.swift in Sources */,
 				CB1FA1BC20781C62001B5C7D /* CountOfMediaPresenter.swift in Sources */,
 				CB8268B32076998D00DDC995 /* SettingsInteractorInput.swift in Sources */,
 				CB1FA1CA20781D18001B5C7D /* CountOfMediaInitializer.swift in Sources */,
+				CBD426D5207940AB005FDBF5 /* SearchMediaInitializer.swift in Sources */,
 				CB1FA1BA20781C4C001B5C7D /* CountOfMediaViewOutput.swift in Sources */,
 				CB8268ED2076C8B600DDC995 /* MediaTypePresenter.swift in Sources */,
 				CB8268E72076C61800DDC995 /* MediaTypeViewController.swift in Sources */,
+				CBD426C320793FD1005FDBF5 /* SearchMediaViewInput.swift in Sources */,
+				CBD426D120794053005FDBF5 /* SearchMediaRouterInput.swift in Sources */,
 				7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
