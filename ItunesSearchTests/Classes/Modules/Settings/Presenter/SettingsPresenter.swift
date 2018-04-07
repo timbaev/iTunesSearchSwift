@@ -36,8 +36,15 @@ class SettingsPreseter: SettingsViewOutput, SettingsInteractorOutput {
         }
     }
     
+    //MARK: - Interactor output
+    
     func didGetSavedMediaType(_ mediaType: MediaTypes) {
         view.set(mediaTypeTitle: mediaType.rawValue)
+    }
+    
+    func didGettingSavedCountOfResults(_ count: Int) {
+        let countString = "\(count)"
+        view.set(countOfMediaResultsTitle: countString)
     }
     
 }

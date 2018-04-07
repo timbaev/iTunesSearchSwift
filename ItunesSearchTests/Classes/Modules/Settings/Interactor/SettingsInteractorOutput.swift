@@ -15,4 +15,9 @@ protocol SettingsInteractorOutput: class {
     /// - Parameter mediaType: media type
     func didGetSavedMediaType(_ mediaType: MediaTypes)
     
+    /// Saved user's count of results
+    ///
+    /// - Parameter count: count of media results
+    func didGettingSavedCountOfResults(_ count: Int)
+    
 }

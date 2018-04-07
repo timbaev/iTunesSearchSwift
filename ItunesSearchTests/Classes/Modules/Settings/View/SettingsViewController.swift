@@ -11,6 +11,7 @@ import UIKit
 class SettingsViewController: UITableViewController, SettingsViewInput {
     
     @IBOutlet weak var mediaTypeLabel: UILabel!
+    @IBOutlet weak var countOfMediaResultsLabel: UILabel!
     
     var presenter: SettingsViewOutput!
     
@@ -34,6 +35,10 @@ class SettingsViewController: UITableViewController, SettingsViewInput {
     
     func set(mediaTypeTitle title: String) {
         mediaTypeLabel.text = title
+    }
+    
+    func set(countOfMediaResultsTitle title: String) {
+        countOfMediaResultsLabel.text = title
     }
 
 }
