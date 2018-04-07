@@ -13,7 +13,8 @@ class MediaTypeInteractor: MediaTypeInteractorInput {
     weak var presenter: MediaTypeInteractorOutput!
     var settingsUserDefaultsManager: SettingsUserDefaultsManager!
     
-    var mediaTypes = [MediaTypes]()
+    private var mediaTypes = [MediaTypes]()
+    private let defaultPosition = 0
     
     func prepareMediaTypes() {
         mediaTypes = MediaTypes.allValues
@@ -21,7 +22,10 @@ class MediaTypeInteractor: MediaTypeInteractorInput {
     
     func prepareCheckmark() {
         guard let savedMediaType = settingsUserDefaultsManager.getMediaType(),
-            let indexOfMediaType = mediaTypes.index(where: { $0 == savedMediaType }) else { return }
+            let indexOfMediaType = mediaTypes.index(where: { $0 == savedMediaType }) else {
+                presenter.setCheckedCell(at: defaultPosition)
+                return
+        }
         presenter.setCheckedCell(at: indexOfMediaType)
     }
     
