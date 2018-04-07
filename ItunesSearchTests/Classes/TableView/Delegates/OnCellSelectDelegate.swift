@@ -1,5 +1,5 @@
 //
-//  SearchMediaViewOutput.swift
+//  OnCellSelectDelegate.swift
 //  ItunesSearchTests
 //
 //  Created by Тимур Шафигуллин on 07.04.2018.
@@ -8,9 +8,8 @@
 
 import Foundation
 
-protocol SearchMediaViewOutput: class {
+protocol OnCellSelectDelegate {
     
-    /// ViewDidLoad trigger
-    func viewIsReady()
+    func didSelectCell(at indexPath: IndexPath)
     
 }

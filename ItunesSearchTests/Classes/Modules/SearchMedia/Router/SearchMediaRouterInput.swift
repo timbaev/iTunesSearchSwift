@@ -10,4 +10,9 @@ import Foundation
 
 protocol SearchMediaRouterInput: class {
     
+    /// Show error alert
+    ///
+    /// - Parameter message: message to display
+    func showErrorAlert(with message: String)
+    
 }

@@ -10,4 +10,9 @@ import Foundation
 
 protocol SearchMediaInteractorInput: class {
     
+    /// Search media
+    ///
+    /// - Parameter keyword: keyword for search
+    func searchMedia(with keyword: String)
+    
 }

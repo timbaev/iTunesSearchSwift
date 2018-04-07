@@ -11,5 +11,11 @@ import UIKit
 class SearchMediaRouter: SearchMediaRouterInput {
     
     weak var viewController: UIViewController!
+    var commonAlertsFactory: CommonAlertsFactory!
+    
+    func showErrorAlert(with message: String) {
+        let alert = commonAlertsFactory.getErrorAlert(with: message)
+        viewController.present(alert, animated: true, completion: nil)
+    }
     
 }

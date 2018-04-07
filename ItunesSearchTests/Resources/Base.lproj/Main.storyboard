@@ -125,6 +125,9 @@
                         <viewLayoutGuide key="safeArea" id="1IZ-N1-f4K"/>
                     </view>
                     <navigationItem key="navigationItem" title="Search media" id="f8N-dD-wnv"/>
+                    <connections>
+                        <outlet property="tableView" destination="HvM-X1-9xk" id="lwP-hP-TGy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iqu-k6-QPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="lri-2K-xje" customClass="SearchMediaInitializer" customModule="ItunesSearchTests" customModuleProvider="target">

@@ -1,5 +1,5 @@
 //
-//  SearchMediaViewOutput.swift
+//  Request.swift
 //  ItunesSearchTests
 //
 //  Created by Тимур Шафигуллин on 07.04.2018.
@@ -7,10 +7,12 @@
 //
 
 import Foundation
+import Alamofire
 
-protocol SearchMediaViewOutput: class {
+protocol Request {
     
-    /// ViewDidLoad trigger
-    func viewIsReady()
+    var method: HTTPMethod { get }
+    var endPoint: String { get }
+    var parameters: [String: Any] { get }
     
 }

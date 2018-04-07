@@ -14,4 +14,25 @@ class SearchMediaPresenter: SearchMediaViewOutput, SearchMediaInteractorOutput {
     var interactor: SearchMediaInteractorInput!
     var router: SearchMediaRouterInput!
     
+    //MARK: - View output
+    
+    func viewIsReady() {
+        view.prepareTableView()
+    }
+    
+    //MARK: - Interactor output
+    
+    func didLoadSearchMediaResult(with result: ArrayResult<Media>) {
+        switch result {
+        case .success(let mediaList):
+            let cellModels = mediaList.map { SearchMediaCellModelImpl(media: $0) }
+            view.set(cellModels: cellModels)
+            view.reloadTableView()
+            break
+        case .failure(let errorMessage):
+            router.showErrorAlert(with: errorMessage)
+            break
+        }
+    }
+    
 }

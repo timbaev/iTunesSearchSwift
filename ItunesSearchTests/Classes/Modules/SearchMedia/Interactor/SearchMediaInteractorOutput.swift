@@ -10,4 +10,9 @@ import Foundation
 
 protocol SearchMediaInteractorOutput: class {
     
+    /// Search media result
+    ///
+    /// - Parameter result: enum with media list or error message
+    func didLoadSearchMediaResult(with result: ArrayResult<Media>)
+    
 }

@@ -1,5 +1,5 @@
 //
-//  SearchMediaViewOutput.swift
+//  ApiProvier.swift
 //  ItunesSearchTests
 //
 //  Created by Тимур Шафигуллин on 07.04.2018.
@@ -8,9 +8,10 @@
 
 import Foundation
 
-protocol SearchMediaViewOutput: class {
+protocol ApiProvier {
     
-    /// ViewDidLoad trigger
-    func viewIsReady()
+    var baseURL: URL { get }
+    
+    func make(_ request: Request, completionBlock: @escaping (Data?) -> ())
     
 }
