@@ -20,4 +20,9 @@ protocol SettingsInteractorOutput: class {
     /// - Parameter count: count of media results
     func didGettingSavedCountOfResults(_ count: Int)
     
+    /// Saved user's device type
+    ///
+    /// - Parameter deviceType: device type
+    func didGetSavedDeviceType(_ deviceType: DeviceTypes)
+    
 }

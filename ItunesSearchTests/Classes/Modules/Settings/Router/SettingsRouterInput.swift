@@ -16,4 +16,7 @@ protocol SettingsRouterInput {
     /// Shpw count of media setting screen
     func showCountOfMediaScreen()
     
+    /// Show choose device types screen
+    func showDeviceTypeScreen()
+    
 }

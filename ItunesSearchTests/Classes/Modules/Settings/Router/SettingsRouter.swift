@@ -13,6 +13,7 @@ class SettingsRouter: SettingsRouterInput {
     weak var viewController: UIViewController!
     private let showMediaTypesIdentifier = "showMediaTypes"
     private let showCountOfMediaIdentifier = "showCountOfMedia"
+    private let showDeviceTypesIdentifier = "showDeviceTypes"
     
     func showMediaTypesScreen() {
         viewController.performSegue(withIdentifier: showMediaTypesIdentifier, sender: nil)
@@ -20,6 +21,10 @@ class SettingsRouter: SettingsRouterInput {
     
     func showCountOfMediaScreen() {
         viewController.performSegue(withIdentifier: showCountOfMediaIdentifier, sender: nil)
+    }
+    
+    func showDeviceTypeScreen() {
+        viewController.performSegue(withIdentifier: showDeviceTypesIdentifier, sender: nil)
     }
     
 }

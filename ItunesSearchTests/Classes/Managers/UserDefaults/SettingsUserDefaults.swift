@@ -30,4 +30,14 @@ protocol SettingsUserDefaultsManager {
     /// - Returns: count of results value
     func getCountOfResults() -> Int
     
+    /// Save picked device type
+    ///
+    /// - Parameter deviceType: device type
+    func save(deviceType: DeviceTypes)
+    
+    /// Get saved device type
+    ///
+    /// - Returns: device type
+    func getDeviceType() -> DeviceTypes?
+    
 }

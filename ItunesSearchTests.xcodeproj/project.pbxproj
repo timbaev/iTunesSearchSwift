@@ -60,6 +60,18 @@
 		CB8268FE2076D30800DDC995 /* MediaTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268FD2076D30800DDC995 /* MediaTypes.swift */; };
 		CB8269022076EC4B00DDC995 /* SettingsUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8269012076EC4B00DDC995 /* SettingsUserDefaults.swift */; };
 		CB8269042076EC6700DDC995 /* SettingsUserDefaultsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8269032076EC6700DDC995 /* SettingsUserDefaultsImpl.swift */; };
+		CBD22D31207A727900C28700 /* DeviceTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D30207A727900C28700 /* DeviceTypeViewController.swift */; };
+		CBD22D33207A729300C28700 /* DeviceTypeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D32207A729300C28700 /* DeviceTypeViewInput.swift */; };
+		CBD22D35207A72A400C28700 /* DeviceTypeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D34207A72A400C28700 /* DeviceTypeViewOutput.swift */; };
+		CBD22D37207A72B500C28700 /* DeviceTypePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D36207A72B500C28700 /* DeviceTypePresenter.swift */; };
+		CBD22D39207A72C300C28700 /* DeviceTypeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D38207A72C300C28700 /* DeviceTypeInteractor.swift */; };
+		CBD22D3B207A72D300C28700 /* DeviceTypeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D3A207A72D300C28700 /* DeviceTypeInteractorInput.swift */; };
+		CBD22D3D207A72E300C28700 /* DeviceTypeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D3C207A72E300C28700 /* DeviceTypeInteractorOutput.swift */; };
+		CBD22D3F207A72F300C28700 /* DeviceTypeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D3E207A72F300C28700 /* DeviceTypeRouter.swift */; };
+		CBD22D41207A730000C28700 /* DeviceTypeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D40207A730000C28700 /* DeviceTypeRouterInput.swift */; };
+		CBD22D43207A731300C28700 /* DeviceTypeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D42207A731300C28700 /* DeviceTypeConfigurator.swift */; };
+		CBD22D45207A733900C28700 /* DeviceTypeInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D44207A733900C28700 /* DeviceTypeInitializer.swift */; };
+		CBD22D47207A778D00C28700 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D46207A778D00C28700 /* DeviceType.swift */; };
 		CBD426C120793FB2005FDBF5 /* SearchMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426C020793FB2005FDBF5 /* SearchMediaViewController.swift */; };
 		CBD426C320793FD1005FDBF5 /* SearchMediaViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426C220793FD1005FDBF5 /* SearchMediaViewInput.swift */; };
 		CBD426C520793FE3005FDBF5 /* SearchMediaViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426C420793FE3005FDBF5 /* SearchMediaViewOutput.swift */; };
@@ -145,6 +157,18 @@
 		CB8268FD2076D30800DDC995 /* MediaTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypes.swift; sourceTree = "<group>"; };
 		CB8269012076EC4B00DDC995 /* SettingsUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserDefaults.swift; sourceTree = "<group>"; };
 		CB8269032076EC6700DDC995 /* SettingsUserDefaultsImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserDefaultsImpl.swift; sourceTree = "<group>"; };
+		CBD22D30207A727900C28700 /* DeviceTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeViewController.swift; sourceTree = "<group>"; };
+		CBD22D32207A729300C28700 /* DeviceTypeViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeViewInput.swift; sourceTree = "<group>"; };
+		CBD22D34207A72A400C28700 /* DeviceTypeViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeViewOutput.swift; sourceTree = "<group>"; };
+		CBD22D36207A72B500C28700 /* DeviceTypePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypePresenter.swift; sourceTree = "<group>"; };
+		CBD22D38207A72C300C28700 /* DeviceTypeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeInteractor.swift; sourceTree = "<group>"; };
+		CBD22D3A207A72D300C28700 /* DeviceTypeInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeInteractorInput.swift; sourceTree = "<group>"; };
+		CBD22D3C207A72E300C28700 /* DeviceTypeInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeInteractorOutput.swift; sourceTree = "<group>"; };
+		CBD22D3E207A72F300C28700 /* DeviceTypeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeRouter.swift; sourceTree = "<group>"; };
+		CBD22D40207A730000C28700 /* DeviceTypeRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeRouterInput.swift; sourceTree = "<group>"; };
+		CBD22D42207A731300C28700 /* DeviceTypeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeConfigurator.swift; sourceTree = "<group>"; };
+		CBD22D44207A733900C28700 /* DeviceTypeInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeInitializer.swift; sourceTree = "<group>"; };
+		CBD22D46207A778D00C28700 /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		CBD426C020793FB2005FDBF5 /* SearchMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaViewController.swift; sourceTree = "<group>"; };
 		CBD426C220793FD1005FDBF5 /* SearchMediaViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaViewInput.swift; sourceTree = "<group>"; };
 		CBD426C420793FE3005FDBF5 /* SearchMediaViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaViewOutput.swift; sourceTree = "<group>"; };
@@ -303,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				CB71E979207A5A1C001D0D87 /* ImageModel.swift */,
+				CBD22D46207A778D00C28700 /* DeviceType.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -385,6 +410,7 @@
 		CB8268A1207698C400DDC995 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CBD22D28207A720800C28700 /* DeviceType */,
 				CBD426B920793F5E005FDBF5 /* SearchMedia */,
 				CB1FA1AF20781BA7001B5C7D /* CountOfMedia */,
 				CB8268E02076C59E00DDC995 /* MediaType */,
@@ -534,6 +560,64 @@
 				CB8269032076EC6700DDC995 /* SettingsUserDefaultsImpl.swift */,
 			);
 			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		CBD22D28207A720800C28700 /* DeviceType */ = {
+			isa = PBXGroup;
+			children = (
+				CBD22D2D207A724600C28700 /* Configurator */,
+				CBD22D2C207A724100C28700 /* Router */,
+				CBD22D2B207A723C00C28700 /* Interactor */,
+				CBD22D2A207A723700C28700 /* Presenter */,
+				CBD22D29207A723400C28700 /* View */,
+			);
+			path = DeviceType;
+			sourceTree = "<group>";
+		};
+		CBD22D29207A723400C28700 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBD22D30207A727900C28700 /* DeviceTypeViewController.swift */,
+				CBD22D32207A729300C28700 /* DeviceTypeViewInput.swift */,
+				CBD22D34207A72A400C28700 /* DeviceTypeViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBD22D2A207A723700C28700 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CBD22D36207A72B500C28700 /* DeviceTypePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CBD22D2B207A723C00C28700 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CBD22D38207A72C300C28700 /* DeviceTypeInteractor.swift */,
+				CBD22D3A207A72D300C28700 /* DeviceTypeInteractorInput.swift */,
+				CBD22D3C207A72E300C28700 /* DeviceTypeInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CBD22D2C207A724100C28700 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CBD22D3E207A72F300C28700 /* DeviceTypeRouter.swift */,
+				CBD22D40207A730000C28700 /* DeviceTypeRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CBD22D2D207A724600C28700 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				CBD22D42207A731300C28700 /* DeviceTypeConfigurator.swift */,
+				CBD22D44207A733900C28700 /* DeviceTypeInitializer.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		CBD426B920793F5E005FDBF5 /* SearchMedia */ = {
@@ -863,6 +947,7 @@
 				CB8268FE2076D30800DDC995 /* MediaTypes.swift in Sources */,
 				CB1FA1C420781CC5001B5C7D /* CountOfMediaRouter.swift in Sources */,
 				CB8268AD2076994A00DDC995 /* SettingsViewOutput.swift in Sources */,
+				CBD22D31207A727900C28700 /* DeviceTypeViewController.swift in Sources */,
 				CBD426CF20794042005FDBF5 /* SearchMediaRouter.swift in Sources */,
 				CBD426D320794082005FDBF5 /* SearchMediaConfigurator.swift in Sources */,
 				CB8268BE20769A0900DDC995 /* SettingsInitializer.swift in Sources */,
@@ -874,11 +959,14 @@
 				CB1FA1C220781CA7001B5C7D /* CountOfMediaInteractorOutput.swift in Sources */,
 				CB8268A02076945300DDC995 /* CommonAlertsFactory.swift in Sources */,
 				CB8268912076943600DDC995 /* ReusableView.swift in Sources */,
+				CBD22D3D207A72E300C28700 /* DeviceTypeInteractorOutput.swift in Sources */,
+				CBD22D39207A72C300C28700 /* DeviceTypeInteractor.swift in Sources */,
 				CB8268EF2076C8F300DDC995 /* MediaTypeInteractor.swift in Sources */,
 				CB8268FA2076CD0B00DDC995 /* MediaTypeInitializer.swift in Sources */,
 				CB8268B12076997600DDC995 /* SettingsInteractor.swift in Sources */,
 				CB8268B7207699B900DDC995 /* SettingsRouter.swift in Sources */,
 				CBD426F32079593D005FDBF5 /* MediaSearchRequest.swift in Sources */,
+				CBD22D35207A72A400C28700 /* DeviceTypeViewOutput.swift in Sources */,
 				CBD426E3207949FF005FDBF5 /* OnCellSelectDelegate.swift in Sources */,
 				CBD426F520795A39005FDBF5 /* ApiProvier.swift in Sources */,
 				CB8268F62076C9C200DDC995 /* MediaTypeRouter.swift in Sources */,
@@ -887,6 +975,7 @@
 				CB1FA1B620781BF3001B5C7D /* CountOfMediaViewController.swift in Sources */,
 				CB8268F12076C90700DDC995 /* MediaTypeInteractorInput.swift in Sources */,
 				CB1FA1C020781C90001B5C7D /* CountOfMediaInteractorInput.swift in Sources */,
+				CBD22D3B207A72D300C28700 /* DeviceTypeInteractorInput.swift in Sources */,
 				CB8268A92076991100DDC995 /* SettingsViewController.swift in Sources */,
 				CB71E97A207A5A1C001D0D87 /* ImageModel.swift in Sources */,
 				CBD4270020796D68005FDBF5 /* Media.swift in Sources */,
@@ -904,13 +993,17 @@
 				CB8268F82076C9D900DDC995 /* MediaTypeRouterInput.swift in Sources */,
 				CB1FA1C620781CD7001B5C7D /* CountOfMediaRotuerInput.swift in Sources */,
 				CB8268AF2076996300DDC995 /* SettingsPresenter.swift in Sources */,
+				CBD22D37207A72B500C28700 /* DeviceTypePresenter.swift in Sources */,
+				CBD22D43207A731300C28700 /* DeviceTypeConfigurator.swift in Sources */,
 				CB82689B2076944D00DDC995 /* Result.swift in Sources */,
 				CBD426C720793FF4005FDBF5 /* SearchMediaPresenter.swift in Sources */,
 				CB8268BC207699E100DDC995 /* SettingsConfigurator.swift in Sources */,
 				CBD426CD20794027005FDBF5 /* SearchMediaInteractorOutput.swift in Sources */,
+				CBD22D41207A730000C28700 /* DeviceTypeRouterInput.swift in Sources */,
 				CB1FA1C820781CF0001B5C7D /* CountOfMediaConfigurator.swift in Sources */,
 				CB8269022076EC4B00DDC995 /* SettingsUserDefaults.swift in Sources */,
 				CB8268FC2076CD6A00DDC995 /* MediaTypeConfigurator.swift in Sources */,
+				CBD22D3F207A72F300C28700 /* DeviceTypeRouter.swift in Sources */,
 				CB82689A2076944D00DDC995 /* ArrayResult.swift in Sources */,
 				CBD426E02079478B005FDBF5 /* SearchMediaCellModel.swift in Sources */,
 				CB8268F32076C92800DDC995 /* MediaTypeInteractorOutput.swift in Sources */,
@@ -920,11 +1013,14 @@
 				CB82689F2076945300DDC995 /* CommonAlertsFactoryImpl.swift in Sources */,
 				CB1FA1BC20781C62001B5C7D /* CountOfMediaPresenter.swift in Sources */,
 				CBD427032079728E005FDBF5 /* MediaParser.swift in Sources */,
+				CBD22D45207A733900C28700 /* DeviceTypeInitializer.swift in Sources */,
 				CB8268B32076998D00DDC995 /* SettingsInteractorInput.swift in Sources */,
 				CB1FA1CA20781D18001B5C7D /* CountOfMediaInitializer.swift in Sources */,
 				CBD426D5207940AB005FDBF5 /* SearchMediaInitializer.swift in Sources */,
 				CBD426EC207952F8005FDBF5 /* UITableView+Extension.swift in Sources */,
 				CB1FA1BA20781C4C001B5C7D /* CountOfMediaViewOutput.swift in Sources */,
+				CBD22D47207A778D00C28700 /* DeviceType.swift in Sources */,
+				CBD22D33207A729300C28700 /* DeviceTypeViewInput.swift in Sources */,
 				CB8268ED2076C8B600DDC995 /* MediaTypePresenter.swift in Sources */,
 				CB8268E72076C61800DDC995 /* MediaTypeViewController.swift in Sources */,
 				CB71E972207A3CEE001D0D87 /* DownloadImageDelegate.swift in Sources */,
