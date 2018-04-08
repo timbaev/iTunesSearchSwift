@@ -12,7 +12,7 @@ protocol SearchMediaCellModel {
     
     var name: String { get set }
     var author: String { get set }
-    var description: String { get set }
+    var description: String? { get set }
     var imageURL: URL { get set }
     var price: Double { get set }
     

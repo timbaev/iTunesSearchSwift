@@ -12,7 +12,7 @@ struct SearchMediaCellModelImpl: SearchMediaCellModel {
     
     var name: String
     var author: String
-    var description: String
+    var description: String?
     var imageURL: URL
     var price: Double
     

@@ -16,9 +16,23 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
     
     let defaultMediaType: MediaTypes = .movie
     let defaultCountOfResults = 1
-    let defaultCountry = "RU"
+    let defaultCountry = "US"
+    let minimalTextSearchLength = 3
+    let searchDelay = 0.5
     
-    func searchMedia(with keyword: String) {
+    var timer: Timer?
+    
+    func searchMedia(with text: String) {
+        timer?.invalidate()
+        
+        guard text.count > minimalTextSearchLength else { return }
+        timer = Timer.scheduledTimer(withTimeInterval: searchDelay, repeats: false, block: { [weak self] (timer) in
+            guard let strongSelf = self else { return }
+            strongSelf.delayedSearchMedia(with: text)
+        })
+    }
+    
+    func delayedSearchMedia(with keyword: String) {
         var mediaType = defaultMediaType
         var countOfResults = defaultCountOfResults
         
@@ -36,9 +50,7 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
             media  : mediaType.rawValue,
             limit  : countOfResults,
             country: defaultCountry,
-            success: { [weak self] (result) in
-                guard let strongSelf = self else { return }
-                
+            success: { (result) in
                 let mediaList = result.map {
                     Media(
                         name       : $0.trackName,
@@ -49,10 +61,15 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
                     )
                 }
                 
-                strongSelf.presenter.didLoadSearchMediaResult(with: .success(mediaList))
-        }) { [weak self] (errorMessage) in
-            guard let strongSelf = self else { return }
-            strongSelf.presenter.didLoadSearchMediaResult(with: .failure(errorMessage))
+                DispatchQueue.main.async { [weak self] in
+                    guard let strongSelf = self else { return }
+                    strongSelf.presenter.didLoadSearchMediaResult(with: .success(mediaList))
+                }
+        }) { (errorMessage) in
+            DispatchQueue.main.async { [weak self] in
+                guard let strongSelf = self else { return }
+                strongSelf.presenter.didLoadSearchMediaResult(with: .failure(errorMessage))
+            }
         }
     }
     

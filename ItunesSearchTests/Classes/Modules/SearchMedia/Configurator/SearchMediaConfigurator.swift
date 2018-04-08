@@ -15,15 +15,25 @@ class SearchMediaConfigurator {
         let interactor = SearchMediaInteractor()
         let router = SearchMediaRouter()
         
+        let searchMediaDatasource = SearchMediaDatasource()
+        let settingsUserDefaultsManager = SettingsUserDefaultsManagerImpl()
+        let mediaApiProvider = MediaApiProvider()
+        let mediaService = MediaServiceImpl(apiProvider: mediaApiProvider)
+        let commonAlertsFactory = CommonAlertsFactoryImpl()
+        
         viewController.presenter = presenter
+        viewController.searchMediaDatasource = searchMediaDatasource
         
         presenter.view = viewController
         presenter.interactor = interactor
         presenter.router = router
         
         interactor.presenter = presenter
+        interactor.settingsUserDefaultsManager = settingsUserDefaultsManager
+        interactor.mediaServie = mediaService
         
         router.viewController = viewController
+        router.commonAlertsFactory = commonAlertsFactory
     }
     
 }

@@ -18,6 +18,16 @@ class SearchMediaPresenter: SearchMediaViewOutput, SearchMediaInteractorOutput {
     
     func viewIsReady() {
         view.prepareTableView()
+        view.prepareSearchController()
+    }
+    
+    func didUpdateSearchText(_ text: String) {
+        if text.isEmpty {
+            view.clearAllData()
+            view.reloadTableView()
+        } else {
+            interactor.searchMedia(with: text)
+        }
     }
     
     //MARK: - Interactor output

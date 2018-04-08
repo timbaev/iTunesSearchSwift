@@ -13,4 +13,9 @@ protocol SearchMediaViewOutput: class {
     /// ViewDidLoad trigger
     func viewIsReady()
     
+    /// Update search query trigger
+    ///
+    /// - Parameter text: text for search
+    func didUpdateSearchText(_ text: String)
+    
 }

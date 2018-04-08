@@ -11,6 +11,9 @@ import UIKit
 class SearchMediaViewController: UIViewController, SearchMediaViewInput {
     
     @IBOutlet weak var tableView: UITableView!
+    lazy var searchController: UISearchController = {
+        return UISearchController(searchResultsController: nil)
+    }()
     
     var presenter: SearchMediaViewOutput!
     var searchMediaDatasource: SearchMediaDatasourceInput!
@@ -30,6 +33,13 @@ class SearchMediaViewController: UIViewController, SearchMediaViewInput {
         tableView.dataSource = searchMediaDatasource
     }
     
+    func prepareSearchController() {
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+    }
+    
     func set(cellModels models: [SearchMediaCellModel]) {
         searchMediaDatasource.set(cellModels: models)
     }
@@ -38,4 +48,17 @@ class SearchMediaViewController: UIViewController, SearchMediaViewInput {
         tableView.reloadData()
     }
     
+    func clearAllData() {
+        searchMediaDatasource.clear()
+    }
+    
+}
+
+extension SearchMediaViewController: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let searchText = searchController.searchBar.text else { return }
+        presenter.didUpdateSearchText(searchText)
+    }
+
 }

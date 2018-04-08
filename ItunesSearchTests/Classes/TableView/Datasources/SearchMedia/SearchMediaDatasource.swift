@@ -19,6 +19,10 @@ class SearchMediaDatasource: NSObject, SearchMediaDatasourceInput {
         cellModels = models
     }
     
+    func clear() {
+        cellModels.removeAll()
+    }
+    
     //MARK: - TableView datasource and delegate
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

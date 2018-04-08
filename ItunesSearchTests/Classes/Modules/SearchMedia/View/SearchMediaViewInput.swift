@@ -19,4 +19,10 @@ protocol SearchMediaViewInput: class {
     /// Reload table view
     func reloadTableView()
     
+    /// Remove all data from tableView
+    func clearAllData()
+    
+    /// Configure search bar
+    func prepareSearchController()
+    
 }

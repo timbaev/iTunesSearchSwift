@@ -12,7 +12,7 @@ protocol SearchMediaInteractorInput: class {
     
     /// Search media
     ///
-    /// - Parameter keyword: keyword for search
-    func searchMedia(with keyword: String)
+    /// - Parameter text: text for search
+    func searchMedia(with text: String)
     
 }

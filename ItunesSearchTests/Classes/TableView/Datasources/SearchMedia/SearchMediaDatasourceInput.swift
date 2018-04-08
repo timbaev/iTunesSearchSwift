@@ -15,4 +15,7 @@ protocol SearchMediaDatasourceInput: UITableViewDelegate, UITableViewDataSource 
     //Setters
     func set(cellModels models: [SearchMediaCellModel])
     
+    /// Delete all data
+    func clear()
+    
 }
