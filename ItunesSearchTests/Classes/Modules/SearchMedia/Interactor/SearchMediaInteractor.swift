@@ -75,7 +75,8 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
                         author     : $0.artistName,
                         description: $0.shortDescription,
                         price      : $0.trackPrice,
-                        imageURL   : $0.artworkUrl60
+                        imageURL   : $0.artworkUrl60,
+                        viewURL    : $0.trackViewUrl
                     )
                 }
                 

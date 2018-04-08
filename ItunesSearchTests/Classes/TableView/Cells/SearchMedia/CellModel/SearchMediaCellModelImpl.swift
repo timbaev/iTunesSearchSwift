@@ -15,6 +15,7 @@ struct SearchMediaCellModelImpl: SearchMediaCellModel {
     var description: String?
     var imageURL: URL
     var price: Double
+    var viewURL: URL
     
     init(media: Media) {
         self.name = media.name
@@ -22,6 +23,7 @@ struct SearchMediaCellModelImpl: SearchMediaCellModel {
         self.description = media.description
         self.price = media.price
         self.imageURL = media.imageURL
+        self.viewURL = media.viewURL
     }
     
 }

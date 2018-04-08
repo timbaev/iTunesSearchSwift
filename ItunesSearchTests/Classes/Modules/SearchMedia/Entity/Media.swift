@@ -15,5 +15,6 @@ struct Media {
     let description: String?
     let price: Double
     let imageURL: URL
+    let viewURL: URL
     
 }
