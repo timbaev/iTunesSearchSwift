@@ -15,4 +15,11 @@ protocol SearchMediaInteractorOutput: class {
     /// - Parameter result: enum with media list or error message
     func didLoadSearchMediaResult(with result: ArrayResult<Media>)
     
+    /// Image loading result
+    ///
+    /// - Parameters:
+    ///   - result: image model with image
+    ///   - indexPath: index of cell with image
+    func didLoadImage(with result: Result<ImageModel>, at indexPath: IndexPath)
+    
 }

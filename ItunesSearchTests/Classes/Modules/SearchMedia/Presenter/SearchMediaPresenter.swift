@@ -19,6 +19,7 @@ class SearchMediaPresenter: SearchMediaViewOutput, SearchMediaInteractorOutput {
     func viewIsReady() {
         view.prepareTableView()
         view.prepareSearchController()
+        view.prepareDatasource()
     }
     
     func didUpdateSearchText(_ text: String) {
@@ -43,6 +44,25 @@ class SearchMediaPresenter: SearchMediaViewOutput, SearchMediaInteractorOutput {
             router.showErrorAlert(with: errorMessage)
             break
         }
+    }
+    
+    func didLoadImage(with result: Result<ImageModel>, at indexPath: IndexPath) {
+        switch result {
+        case .success(let imageModel):
+            view.set(image: imageModel.image, at: indexPath)
+            break
+        case .failure(let errorMessage):
+            router.showErrorAlert(with: errorMessage)
+            break
+        }
+    }
+    
+}
+
+extension SearchMediaPresenter: DownloadImageDelgate {
+    
+    func downloadImage(from url: URL, at indexPath: IndexPath) {
+        interactor.downloadImage(from: url, at: indexPath)
     }
     
 }

@@ -13,6 +13,7 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
     weak var presenter: SearchMediaInteractorOutput!
     var settingsUserDefaultsManager: SettingsUserDefaultsManager!
     var mediaServie: MediaService!
+    var imageDownloadManager: ImageDownloadManager!
     
     let defaultMediaType: MediaTypes = .movie
     let defaultCountOfResults = 1
@@ -21,6 +22,8 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
     let searchDelay = 0.5
     
     var timer: Timer?
+    
+    //MARK: - Interactor input
     
     func searchMedia(with text: String) {
         timer?.invalidate()
@@ -32,7 +35,22 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
         })
     }
     
-    func delayedSearchMedia(with keyword: String) {
+    func downloadImage(from url: URL, at indexPath: IndexPath) {
+        imageDownloadManager.downloadImage(from: url, success: { [weak self] (image) in
+            guard let strongSelf = self else { return }
+            guard let image = image else { return }
+            
+            let imageModel = ImageModel(image: image)
+            strongSelf.presenter.didLoadImage(with: .success(imageModel), at: indexPath)
+        }) { [weak self] (errorMessage) in
+            guard let strongSelf = self else { return }
+            strongSelf.presenter.didLoadImage(with: .failure(errorMessage), at: indexPath)
+        }
+    }
+    
+    //MARK: - Private methods
+    
+    private func delayedSearchMedia(with keyword: String) {
         var mediaType = defaultMediaType
         var countOfResults = defaultCountOfResults
         

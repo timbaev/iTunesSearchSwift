@@ -52,6 +52,15 @@ class SearchMediaViewController: UIViewController, SearchMediaViewInput {
         searchMediaDatasource.clear()
     }
     
+    func prepareDatasource() {
+        searchMediaDatasource.downloadImageDelegate = presenter as? DownloadImageDelgate
+    }
+    
+    func set(image: UIImage, at indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) else { return }
+        searchMediaDatasource.set(image: image, to: cell)
+    }
+    
 }
 
 extension SearchMediaViewController: UISearchResultsUpdating {

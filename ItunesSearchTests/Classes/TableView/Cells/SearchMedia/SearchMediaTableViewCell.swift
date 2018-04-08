@@ -22,6 +22,11 @@ class SearchMediaTableViewCell: UITableViewCell {
         mediaImageView.clipsToBounds = true
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        mediaImageView.image = nil
+    }
+    
     func prepareCell(with cellModel: SearchMediaCellModel) {
         nameLabel.text = cellModel.name
         authorLabel.text = cellModel.author

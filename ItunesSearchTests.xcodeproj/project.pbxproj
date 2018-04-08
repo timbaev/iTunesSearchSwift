@@ -23,6 +23,10 @@
 		CB1FA1C620781CD7001B5C7D /* CountOfMediaRotuerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C520781CD7001B5C7D /* CountOfMediaRotuerInput.swift */; };
 		CB1FA1C820781CF0001B5C7D /* CountOfMediaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C720781CF0001B5C7D /* CountOfMediaConfigurator.swift */; };
 		CB1FA1CA20781D18001B5C7D /* CountOfMediaInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C920781D18001B5C7D /* CountOfMediaInitializer.swift */; };
+		CB71E972207A3CEE001D0D87 /* DownloadImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E971207A3CEE001D0D87 /* DownloadImageDelegate.swift */; };
+		CB71E976207A5810001D0D87 /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E974207A5810001D0D87 /* ImageDownloadManager.swift */; };
+		CB71E977207A5810001D0D87 /* ImageDownloadManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E975207A5810001D0D87 /* ImageDownloadManagerImpl.swift */; };
+		CB71E97A207A5A1C001D0D87 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E979207A5A1C001D0D87 /* ImageModel.swift */; };
 		CB8268902076943600DDC995 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82688E2076943600DDC995 /* Storyboards.swift */; };
 		CB8268912076943600DDC995 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82688F2076943600DDC995 /* ReusableView.swift */; };
 		CB8268952076944500DDC995 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268932076944500DDC995 /* ModuleInput.swift */; };
@@ -104,6 +108,10 @@
 		CB1FA1C520781CD7001B5C7D /* CountOfMediaRotuerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaRotuerInput.swift; sourceTree = "<group>"; };
 		CB1FA1C720781CF0001B5C7D /* CountOfMediaConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaConfigurator.swift; sourceTree = "<group>"; };
 		CB1FA1C920781D18001B5C7D /* CountOfMediaInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaInitializer.swift; sourceTree = "<group>"; };
+		CB71E971207A3CEE001D0D87 /* DownloadImageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageDelegate.swift; sourceTree = "<group>"; };
+		CB71E974207A5810001D0D87 /* ImageDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
+		CB71E975207A5810001D0D87 /* ImageDownloadManagerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManagerImpl.swift; sourceTree = "<group>"; };
+		CB71E979207A5A1C001D0D87 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		CB82688E2076943600DDC995 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		CB82688F2076943600DDC995 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		CB8268932076944500DDC995 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
@@ -282,6 +290,23 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		CB71E973207A5810001D0D87 /* ImageDownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				CB71E974207A5810001D0D87 /* ImageDownloadManager.swift */,
+				CB71E975207A5810001D0D87 /* ImageDownloadManagerImpl.swift */,
+			);
+			path = ImageDownloadManager;
+			sourceTree = "<group>";
+		};
+		CB71E978207A5A08001D0D87 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CB71E979207A5A1C001D0D87 /* ImageModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		CB8268862076936700DDC995 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +322,7 @@
 		CB8268872076937A00DDC995 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CB71E978207A5A08001D0D87 /* Entities */,
 				CBD427012079727C005FDBF5 /* Parsers */,
 				CBD426F920795D2C005FDBF5 /* Services */,
 				CBD426ED207955BB005FDBF5 /* API */,
@@ -495,6 +521,7 @@
 		CB8268FF2076EC1A00DDC995 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				CB71E973207A5810001D0D87 /* ImageDownloadManager */,
 				CB8269002076EC2300DDC995 /* UserDefaults */,
 			);
 			path = Managers;
@@ -625,6 +652,7 @@
 			isa = PBXGroup;
 			children = (
 				CBD426E2207949FF005FDBF5 /* OnCellSelectDelegate.swift */,
+				CB71E971207A3CEE001D0D87 /* DownloadImageDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -810,10 +838,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -836,6 +866,7 @@
 				CBD426CF20794042005FDBF5 /* SearchMediaRouter.swift in Sources */,
 				CBD426D320794082005FDBF5 /* SearchMediaConfigurator.swift in Sources */,
 				CB8268BE20769A0900DDC995 /* SettingsInitializer.swift in Sources */,
+				CB71E977207A5810001D0D87 /* ImageDownloadManagerImpl.swift in Sources */,
 				CB1FA1B820781C30001B5C7D /* CountOfMediaViewInput.swift in Sources */,
 				CBD4270620797A6F005FDBF5 /* SearchMediaCellModelImpl.swift in Sources */,
 				CBD426CB20794015005FDBF5 /* SearchMediaInteractorInput.swift in Sources */,
@@ -857,6 +888,7 @@
 				CB8268F12076C90700DDC995 /* MediaTypeInteractorInput.swift in Sources */,
 				CB1FA1C020781C90001B5C7D /* CountOfMediaInteractorInput.swift in Sources */,
 				CB8268A92076991100DDC995 /* SettingsViewController.swift in Sources */,
+				CB71E97A207A5A1C001D0D87 /* ImageModel.swift in Sources */,
 				CBD4270020796D68005FDBF5 /* Media.swift in Sources */,
 				CBD426F12079561F005FDBF5 /* Request.swift in Sources */,
 				CB8268B5207699A600DDC995 /* SettingsInteractorOutput.swift in Sources */,
@@ -895,7 +927,9 @@
 				CB1FA1BA20781C4C001B5C7D /* CountOfMediaViewOutput.swift in Sources */,
 				CB8268ED2076C8B600DDC995 /* MediaTypePresenter.swift in Sources */,
 				CB8268E72076C61800DDC995 /* MediaTypeViewController.swift in Sources */,
+				CB71E972207A3CEE001D0D87 /* DownloadImageDelegate.swift in Sources */,
 				CBD426C320793FD1005FDBF5 /* SearchMediaViewInput.swift in Sources */,
+				CB71E976207A5810001D0D87 /* ImageDownloadManager.swift in Sources */,
 				CBD426D120794053005FDBF5 /* SearchMediaRouterInput.swift in Sources */,
 				7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */,
 			);

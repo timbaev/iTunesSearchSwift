@@ -6,12 +6,13 @@
 //  Copyright © 2018 iOSLab. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol SearchMediaViewInput: class {
     
     //Setters
     func set(cellModels models: [SearchMediaCellModel])
+    func set(image: UIImage, at indexPath: IndexPath)
     
     /// Configure tabel view
     func prepareTableView()
@@ -24,5 +25,8 @@ protocol SearchMediaViewInput: class {
     
     /// Configure search bar
     func prepareSearchController()
+    
+    /// Configure tableView datasource and delegates
+    func prepareDatasource()
     
 }

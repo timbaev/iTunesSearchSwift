@@ -20,6 +20,7 @@ class SearchMediaConfigurator {
         let mediaApiProvider = MediaApiProvider()
         let mediaService = MediaServiceImpl(apiProvider: mediaApiProvider)
         let commonAlertsFactory = CommonAlertsFactoryImpl()
+        let imageDownloadManager = ImageDownloadManagerImpl()
         
         viewController.presenter = presenter
         viewController.searchMediaDatasource = searchMediaDatasource
@@ -31,6 +32,7 @@ class SearchMediaConfigurator {
         interactor.presenter = presenter
         interactor.settingsUserDefaultsManager = settingsUserDefaultsManager
         interactor.mediaServie = mediaService
+        interactor.imageDownloadManager = imageDownloadManager
         
         router.viewController = viewController
         router.commonAlertsFactory = commonAlertsFactory
