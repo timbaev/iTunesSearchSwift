@@ -43,4 +43,9 @@ class SearchMediaDatasource: NSObject, SearchMediaDatasourceInput {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = cellModels[indexPath.row]
+        selectDelegate?.showPreview(with: model.viewURL)
+    }
+    
 }

@@ -59,10 +59,20 @@ class SearchMediaPresenter: SearchMediaViewOutput, SearchMediaInteractorOutput {
     
 }
 
+//MARK: - Download image delegate
 extension SearchMediaPresenter: DownloadImageDelgate {
     
     func downloadImage(from url: URL, at indexPath: IndexPath) {
         interactor.downloadImage(from: url, at: indexPath)
+    }
+    
+}
+
+//MARK: - Cell select delegate
+extension SearchMediaPresenter: OnCellSelectDelegate {
+    
+    func showPreview(with url: URL) {
+        router.showWebPage(with: url)
     }
     
 }

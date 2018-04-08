@@ -44,8 +44,13 @@ struct MediaParser: Codable {
                 self.trackPrice = try values.decode(Double.self, forKey: .collectionPrice)
             }
             
+            if let trackViewUrl = try values.decodeIfPresent(URL.self, forKey: .trackViewUrl) {
+                self.trackViewUrl = trackViewUrl
+            } else {
+                self.trackViewUrl = try values.decode(URL.self, forKey: .collectionViewUrl)
+            }
+            
             self.artworkUrl60 = try values.decode(URL.self, forKey: .artworkUrl60)
-            self.trackViewUrl = try values.decode(URL.self, forKey: .trackViewUrl)
         }
         
         func encode(to encoder: Encoder) throws {
@@ -68,6 +73,7 @@ struct MediaParser: Codable {
             case collectionPrice
             case artworkUrl60
             case trackViewUrl
+            case collectionViewUrl
         }
     }
     

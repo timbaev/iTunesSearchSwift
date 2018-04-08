@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class SearchMediaRouter: SearchMediaRouterInput {
     
@@ -16,6 +17,11 @@ class SearchMediaRouter: SearchMediaRouterInput {
     func showErrorAlert(with message: String) {
         let alert = commonAlertsFactory.getErrorAlert(with: message)
         viewController.present(alert, animated: true, completion: nil)
+    }
+    
+    func showWebPage(with url: URL) {
+        let svc = SFSafariViewController(url: url)
+        viewController.present(svc, animated: true, completion: nil)
     }
     
 }

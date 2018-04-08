@@ -10,6 +10,6 @@ import Foundation
 
 protocol OnCellSelectDelegate {
     
-    func didSelectCell(at indexPath: IndexPath)
+    func showPreview(with url: URL)
     
 }

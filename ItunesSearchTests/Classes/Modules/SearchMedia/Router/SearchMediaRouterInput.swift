@@ -15,4 +15,9 @@ protocol SearchMediaRouterInput: class {
     /// - Parameter message: message to display
     func showErrorAlert(with message: String)
     
+    /// Show web page in safari controller
+    ///
+    /// - Parameter url: url of web page
+    func showWebPage(with url: URL)
+    
 }
