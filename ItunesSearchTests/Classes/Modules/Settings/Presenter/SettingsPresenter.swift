@@ -14,8 +14,12 @@ class SettingsPreseter: SettingsViewOutput, SettingsInteractorOutput {
     var interactor: SettingsInteractorInput!
     var router: SettingsRouterInput!
     
+    private let mainSection = 0
+    private let softwareSection = 1
+    
     private let mediaTypeIndex = 0
     private let countSettingIndex = 1
+    private let deviceTypeIndex = 0
     
     //MARK: - View output
     
@@ -29,10 +33,18 @@ class SettingsPreseter: SettingsViewOutput, SettingsInteractorOutput {
     
     func didSelectSettingRow(at indexPath: IndexPath) {
         let settingIndex = indexPath.row
-        if (settingIndex == mediaTypeIndex) {
-            router.showMediaTypesScreen()
-        } else if (settingIndex == countSettingIndex) {
-            router.showCountOfMediaScreen()
+        let settingSection = indexPath.section
+        
+        if settingSection == mainSection {
+            if settingIndex == mediaTypeIndex {
+                router.showMediaTypesScreen()
+            } else if settingIndex == countSettingIndex {
+                router.showCountOfMediaScreen()
+            }
+        } else if settingSection == softwareSection {
+            if settingIndex == deviceTypeIndex {
+                router.showDeviceTypeScreen()
+            }
         }
     }
     
@@ -45,6 +57,10 @@ class SettingsPreseter: SettingsViewOutput, SettingsInteractorOutput {
     func didGettingSavedCountOfResults(_ count: Int) {
         let countString = "\(count)"
         view.set(countOfMediaResultsTitle: countString)
+    }
+    
+    func didGetSavedDeviceType(_ deviceType: DeviceTypes) {
+        view.set(deviceTypeTitle: deviceType.rawValue)
     }
     
 }

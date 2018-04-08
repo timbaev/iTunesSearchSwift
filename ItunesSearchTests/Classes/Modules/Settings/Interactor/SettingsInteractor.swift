@@ -26,6 +26,9 @@ class SettingsInteractor: SettingsInteractorInput {
         } else {
             presenter.didGettingSavedCountOfResults(countOfResults)
         }
+        
+        guard let deviceType = settingsUserDefaultsManager.getDeviceType() else { return }
+        presenter.didGetSavedDeviceType(deviceType)
     }
     
 }

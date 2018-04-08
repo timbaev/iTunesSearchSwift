@@ -13,6 +13,7 @@ protocol SettingsViewInput: class {
     //Setters
     func set(mediaTypeTitle title: String)
     func set(countOfMediaResultsTitle title: String)
+    func set(deviceTypeTitle title: String)
     
     /// Prepare table view parameters
     func prepareTableView()

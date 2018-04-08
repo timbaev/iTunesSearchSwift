@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A05BBC9DB4E21A803FA8709 /* Pods_ItunesSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E517AFF0D8A36F5CA115F3 /* Pods_ItunesSearchTests.framework */; };
 		7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD585820761C0E00AD3566 /* AppDelegate.swift */; };
 		7CCD585E20761C0E00AD3566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD585C20761C0E00AD3566 /* Main.storyboard */; };
 		7CCD586020761C1000AD3566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD585F20761C1000AD3566 /* Assets.xcassets */; };
@@ -22,6 +23,10 @@
 		CB1FA1C620781CD7001B5C7D /* CountOfMediaRotuerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C520781CD7001B5C7D /* CountOfMediaRotuerInput.swift */; };
 		CB1FA1C820781CF0001B5C7D /* CountOfMediaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C720781CF0001B5C7D /* CountOfMediaConfigurator.swift */; };
 		CB1FA1CA20781D18001B5C7D /* CountOfMediaInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C920781D18001B5C7D /* CountOfMediaInitializer.swift */; };
+		CB71E972207A3CEE001D0D87 /* DownloadImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E971207A3CEE001D0D87 /* DownloadImageDelegate.swift */; };
+		CB71E976207A5810001D0D87 /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E974207A5810001D0D87 /* ImageDownloadManager.swift */; };
+		CB71E977207A5810001D0D87 /* ImageDownloadManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E975207A5810001D0D87 /* ImageDownloadManagerImpl.swift */; };
+		CB71E97A207A5A1C001D0D87 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E979207A5A1C001D0D87 /* ImageModel.swift */; };
 		CB8268902076943600DDC995 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82688E2076943600DDC995 /* Storyboards.swift */; };
 		CB8268912076943600DDC995 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82688F2076943600DDC995 /* ReusableView.swift */; };
 		CB8268952076944500DDC995 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268932076944500DDC995 /* ModuleInput.swift */; };
@@ -55,9 +60,49 @@
 		CB8268FE2076D30800DDC995 /* MediaTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8268FD2076D30800DDC995 /* MediaTypes.swift */; };
 		CB8269022076EC4B00DDC995 /* SettingsUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8269012076EC4B00DDC995 /* SettingsUserDefaults.swift */; };
 		CB8269042076EC6700DDC995 /* SettingsUserDefaultsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8269032076EC6700DDC995 /* SettingsUserDefaultsImpl.swift */; };
+		CBD22D31207A727900C28700 /* DeviceTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D30207A727900C28700 /* DeviceTypeViewController.swift */; };
+		CBD22D33207A729300C28700 /* DeviceTypeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D32207A729300C28700 /* DeviceTypeViewInput.swift */; };
+		CBD22D35207A72A400C28700 /* DeviceTypeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D34207A72A400C28700 /* DeviceTypeViewOutput.swift */; };
+		CBD22D37207A72B500C28700 /* DeviceTypePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D36207A72B500C28700 /* DeviceTypePresenter.swift */; };
+		CBD22D39207A72C300C28700 /* DeviceTypeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D38207A72C300C28700 /* DeviceTypeInteractor.swift */; };
+		CBD22D3B207A72D300C28700 /* DeviceTypeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D3A207A72D300C28700 /* DeviceTypeInteractorInput.swift */; };
+		CBD22D3D207A72E300C28700 /* DeviceTypeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D3C207A72E300C28700 /* DeviceTypeInteractorOutput.swift */; };
+		CBD22D3F207A72F300C28700 /* DeviceTypeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D3E207A72F300C28700 /* DeviceTypeRouter.swift */; };
+		CBD22D41207A730000C28700 /* DeviceTypeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D40207A730000C28700 /* DeviceTypeRouterInput.swift */; };
+		CBD22D43207A731300C28700 /* DeviceTypeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D42207A731300C28700 /* DeviceTypeConfigurator.swift */; };
+		CBD22D45207A733900C28700 /* DeviceTypeInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D44207A733900C28700 /* DeviceTypeInitializer.swift */; };
+		CBD22D47207A778D00C28700 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D46207A778D00C28700 /* DeviceType.swift */; };
+		CBD426C120793FB2005FDBF5 /* SearchMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426C020793FB2005FDBF5 /* SearchMediaViewController.swift */; };
+		CBD426C320793FD1005FDBF5 /* SearchMediaViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426C220793FD1005FDBF5 /* SearchMediaViewInput.swift */; };
+		CBD426C520793FE3005FDBF5 /* SearchMediaViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426C420793FE3005FDBF5 /* SearchMediaViewOutput.swift */; };
+		CBD426C720793FF4005FDBF5 /* SearchMediaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426C620793FF4005FDBF5 /* SearchMediaPresenter.swift */; };
+		CBD426C920794006005FDBF5 /* SearchMediaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426C820794006005FDBF5 /* SearchMediaInteractor.swift */; };
+		CBD426CB20794015005FDBF5 /* SearchMediaInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426CA20794015005FDBF5 /* SearchMediaInteractorInput.swift */; };
+		CBD426CD20794027005FDBF5 /* SearchMediaInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426CC20794027005FDBF5 /* SearchMediaInteractorOutput.swift */; };
+		CBD426CF20794042005FDBF5 /* SearchMediaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426CE20794042005FDBF5 /* SearchMediaRouter.swift */; };
+		CBD426D120794053005FDBF5 /* SearchMediaRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426D020794053005FDBF5 /* SearchMediaRouterInput.swift */; };
+		CBD426D320794082005FDBF5 /* SearchMediaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426D220794082005FDBF5 /* SearchMediaConfigurator.swift */; };
+		CBD426D5207940AB005FDBF5 /* SearchMediaInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426D4207940AB005FDBF5 /* SearchMediaInitializer.swift */; };
+		CBD426DA2079462C005FDBF5 /* SearchMediaDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426D92079462C005FDBF5 /* SearchMediaDatasource.swift */; };
+		CBD426DC207946C5005FDBF5 /* SearchMediaDatasourceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426DB207946C5005FDBF5 /* SearchMediaDatasourceInput.swift */; };
+		CBD426E02079478B005FDBF5 /* SearchMediaCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426DF2079478B005FDBF5 /* SearchMediaCellModel.swift */; };
+		CBD426E3207949FF005FDBF5 /* OnCellSelectDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426E2207949FF005FDBF5 /* OnCellSelectDelegate.swift */; };
+		CBD426E820794B13005FDBF5 /* SearchMediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426E620794B13005FDBF5 /* SearchMediaTableViewCell.swift */; };
+		CBD426E920794B13005FDBF5 /* SearchMediaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD426E720794B13005FDBF5 /* SearchMediaTableViewCell.xib */; };
+		CBD426EC207952F8005FDBF5 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426EB207952F8005FDBF5 /* UITableView+Extension.swift */; };
+		CBD426F12079561F005FDBF5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426F02079561F005FDBF5 /* Request.swift */; };
+		CBD426F32079593D005FDBF5 /* MediaSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426F22079593D005FDBF5 /* MediaSearchRequest.swift */; };
+		CBD426F520795A39005FDBF5 /* ApiProvier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426F420795A39005FDBF5 /* ApiProvier.swift */; };
+		CBD426F720795AC3005FDBF5 /* MediaApiProvier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426F620795AC3005FDBF5 /* MediaApiProvier.swift */; };
+		CBD426FC20795D45005FDBF5 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426FB20795D45005FDBF5 /* MediaService.swift */; };
+		CBD426FE20795DF6005FDBF5 /* MediaServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426FD20795DF6005FDBF5 /* MediaServiceImpl.swift */; };
+		CBD4270020796D68005FDBF5 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD426FF20796D68005FDBF5 /* Media.swift */; };
+		CBD427032079728E005FDBF5 /* MediaParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD427022079728E005FDBF5 /* MediaParser.swift */; };
+		CBD4270620797A6F005FDBF5 /* SearchMediaCellModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD4270520797A6F005FDBF5 /* SearchMediaCellModelImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22C8112535BE9CE237C1B876 /* Pods-ItunesSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		7CCD585520761C0E00AD3566 /* ItunesSearchTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesSearchTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCD585820761C0E00AD3566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CCD585D20761C0E00AD3566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +120,10 @@
 		CB1FA1C520781CD7001B5C7D /* CountOfMediaRotuerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaRotuerInput.swift; sourceTree = "<group>"; };
 		CB1FA1C720781CF0001B5C7D /* CountOfMediaConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaConfigurator.swift; sourceTree = "<group>"; };
 		CB1FA1C920781D18001B5C7D /* CountOfMediaInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaInitializer.swift; sourceTree = "<group>"; };
+		CB71E971207A3CEE001D0D87 /* DownloadImageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageDelegate.swift; sourceTree = "<group>"; };
+		CB71E974207A5810001D0D87 /* ImageDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
+		CB71E975207A5810001D0D87 /* ImageDownloadManagerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManagerImpl.swift; sourceTree = "<group>"; };
+		CB71E979207A5A1C001D0D87 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		CB82688E2076943600DDC995 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		CB82688F2076943600DDC995 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		CB8268932076944500DDC995 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
@@ -108,6 +157,47 @@
 		CB8268FD2076D30800DDC995 /* MediaTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypes.swift; sourceTree = "<group>"; };
 		CB8269012076EC4B00DDC995 /* SettingsUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserDefaults.swift; sourceTree = "<group>"; };
 		CB8269032076EC6700DDC995 /* SettingsUserDefaultsImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserDefaultsImpl.swift; sourceTree = "<group>"; };
+		CBD22D30207A727900C28700 /* DeviceTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeViewController.swift; sourceTree = "<group>"; };
+		CBD22D32207A729300C28700 /* DeviceTypeViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeViewInput.swift; sourceTree = "<group>"; };
+		CBD22D34207A72A400C28700 /* DeviceTypeViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeViewOutput.swift; sourceTree = "<group>"; };
+		CBD22D36207A72B500C28700 /* DeviceTypePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypePresenter.swift; sourceTree = "<group>"; };
+		CBD22D38207A72C300C28700 /* DeviceTypeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeInteractor.swift; sourceTree = "<group>"; };
+		CBD22D3A207A72D300C28700 /* DeviceTypeInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeInteractorInput.swift; sourceTree = "<group>"; };
+		CBD22D3C207A72E300C28700 /* DeviceTypeInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeInteractorOutput.swift; sourceTree = "<group>"; };
+		CBD22D3E207A72F300C28700 /* DeviceTypeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeRouter.swift; sourceTree = "<group>"; };
+		CBD22D40207A730000C28700 /* DeviceTypeRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeRouterInput.swift; sourceTree = "<group>"; };
+		CBD22D42207A731300C28700 /* DeviceTypeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeConfigurator.swift; sourceTree = "<group>"; };
+		CBD22D44207A733900C28700 /* DeviceTypeInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeInitializer.swift; sourceTree = "<group>"; };
+		CBD22D46207A778D00C28700 /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		CBD426C020793FB2005FDBF5 /* SearchMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaViewController.swift; sourceTree = "<group>"; };
+		CBD426C220793FD1005FDBF5 /* SearchMediaViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaViewInput.swift; sourceTree = "<group>"; };
+		CBD426C420793FE3005FDBF5 /* SearchMediaViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaViewOutput.swift; sourceTree = "<group>"; };
+		CBD426C620793FF4005FDBF5 /* SearchMediaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaPresenter.swift; sourceTree = "<group>"; };
+		CBD426C820794006005FDBF5 /* SearchMediaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractor.swift; sourceTree = "<group>"; };
+		CBD426CA20794015005FDBF5 /* SearchMediaInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractorInput.swift; sourceTree = "<group>"; };
+		CBD426CC20794027005FDBF5 /* SearchMediaInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractorOutput.swift; sourceTree = "<group>"; };
+		CBD426CE20794042005FDBF5 /* SearchMediaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaRouter.swift; sourceTree = "<group>"; };
+		CBD426D020794053005FDBF5 /* SearchMediaRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaRouterInput.swift; sourceTree = "<group>"; };
+		CBD426D220794082005FDBF5 /* SearchMediaConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaConfigurator.swift; sourceTree = "<group>"; };
+		CBD426D4207940AB005FDBF5 /* SearchMediaInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaInitializer.swift; sourceTree = "<group>"; };
+		CBD426D92079462C005FDBF5 /* SearchMediaDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDatasource.swift; sourceTree = "<group>"; };
+		CBD426DB207946C5005FDBF5 /* SearchMediaDatasourceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDatasourceInput.swift; sourceTree = "<group>"; };
+		CBD426DF2079478B005FDBF5 /* SearchMediaCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaCellModel.swift; sourceTree = "<group>"; };
+		CBD426E2207949FF005FDBF5 /* OnCellSelectDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnCellSelectDelegate.swift; sourceTree = "<group>"; };
+		CBD426E620794B13005FDBF5 /* SearchMediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaTableViewCell.swift; sourceTree = "<group>"; };
+		CBD426E720794B13005FDBF5 /* SearchMediaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchMediaTableViewCell.xib; sourceTree = "<group>"; };
+		CBD426EB207952F8005FDBF5 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		CBD426F02079561F005FDBF5 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		CBD426F22079593D005FDBF5 /* MediaSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSearchRequest.swift; sourceTree = "<group>"; };
+		CBD426F420795A39005FDBF5 /* ApiProvier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvier.swift; sourceTree = "<group>"; };
+		CBD426F620795AC3005FDBF5 /* MediaApiProvier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaApiProvier.swift; sourceTree = "<group>"; };
+		CBD426FB20795D45005FDBF5 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
+		CBD426FD20795DF6005FDBF5 /* MediaServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaServiceImpl.swift; sourceTree = "<group>"; };
+		CBD426FF20796D68005FDBF5 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		CBD427022079728E005FDBF5 /* MediaParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaParser.swift; sourceTree = "<group>"; };
+		CBD4270520797A6F005FDBF5 /* SearchMediaCellModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaCellModelImpl.swift; sourceTree = "<group>"; };
+		D0E517AFF0D8A36F5CA115F3 /* Pods_ItunesSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItunesSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B73A7FA8C87D0E59A40839 /* Pods-ItunesSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,17 +205,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A05BBC9DB4E21A803FA8709 /* Pods_ItunesSearchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25F2EB74F9B4EE617769C22B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0E517AFF0D8A36F5CA115F3 /* Pods_ItunesSearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7CCD584C20761C0E00AD3566 = {
 			isa = PBXGroup;
 			children = (
 				7CCD585720761C0E00AD3566 /* ItunesSearchTests */,
 				7CCD585620761C0E00AD3566 /* Products */,
+				95FF245CB49EE33AA94EBF71 /* Pods */,
+				25F2EB74F9B4EE617769C22B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +245,15 @@
 				CB8268862076936700DDC995 /* Resources */,
 			);
 			path = ItunesSearchTests;
+			sourceTree = "<group>";
+		};
+		95FF245CB49EE33AA94EBF71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4B73A7FA8C87D0E59A40839 /* Pods-ItunesSearchTests.debug.xcconfig */,
+				22C8112535BE9CE237C1B876 /* Pods-ItunesSearchTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CB1FA1AF20781BA7001B5C7D /* CountOfMedia */ = {
@@ -204,6 +314,24 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		CB71E973207A5810001D0D87 /* ImageDownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				CB71E974207A5810001D0D87 /* ImageDownloadManager.swift */,
+				CB71E975207A5810001D0D87 /* ImageDownloadManagerImpl.swift */,
+			);
+			path = ImageDownloadManager;
+			sourceTree = "<group>";
+		};
+		CB71E978207A5A08001D0D87 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CB71E979207A5A1C001D0D87 /* ImageModel.swift */,
+				CBD22D46207A778D00C28700 /* DeviceType.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		CB8268862076936700DDC995 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +347,11 @@
 		CB8268872076937A00DDC995 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CB71E978207A5A08001D0D87 /* Entities */,
+				CBD427012079727C005FDBF5 /* Parsers */,
+				CBD426F920795D2C005FDBF5 /* Services */,
+				CBD426ED207955BB005FDBF5 /* API */,
+				CBD426D62079460C005FDBF5 /* TableView */,
 				CB8268FF2076EC1A00DDC995 /* Managers */,
 				CB8268A1207698C400DDC995 /* Modules */,
 				CB826888207693C500DDC995 /* Helpers */,
@@ -229,6 +362,7 @@
 		CB826888207693C500DDC995 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CBD426EA207952E6005FDBF5 /* Extensions */,
 				CB82689C2076945300DDC995 /* AlertsFactory */,
 				CB8268972076944D00DDC995 /* EnumResult */,
 				CB8268922076944500DDC995 /* ModuleInput */,
@@ -276,6 +410,8 @@
 		CB8268A1207698C400DDC995 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CBD22D28207A720800C28700 /* DeviceType */,
+				CBD426B920793F5E005FDBF5 /* SearchMedia */,
 				CB1FA1AF20781BA7001B5C7D /* CountOfMedia */,
 				CB8268E02076C59E00DDC995 /* MediaType */,
 				CB8268A2207698D600DDC995 /* Settings */,
@@ -411,6 +547,7 @@
 		CB8268FF2076EC1A00DDC995 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				CB71E973207A5810001D0D87 /* ImageDownloadManager */,
 				CB8269002076EC2300DDC995 /* UserDefaults */,
 			);
 			path = Managers;
@@ -425,6 +562,254 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		CBD22D28207A720800C28700 /* DeviceType */ = {
+			isa = PBXGroup;
+			children = (
+				CBD22D2D207A724600C28700 /* Configurator */,
+				CBD22D2C207A724100C28700 /* Router */,
+				CBD22D2B207A723C00C28700 /* Interactor */,
+				CBD22D2A207A723700C28700 /* Presenter */,
+				CBD22D29207A723400C28700 /* View */,
+			);
+			path = DeviceType;
+			sourceTree = "<group>";
+		};
+		CBD22D29207A723400C28700 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBD22D30207A727900C28700 /* DeviceTypeViewController.swift */,
+				CBD22D32207A729300C28700 /* DeviceTypeViewInput.swift */,
+				CBD22D34207A72A400C28700 /* DeviceTypeViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBD22D2A207A723700C28700 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CBD22D36207A72B500C28700 /* DeviceTypePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CBD22D2B207A723C00C28700 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CBD22D38207A72C300C28700 /* DeviceTypeInteractor.swift */,
+				CBD22D3A207A72D300C28700 /* DeviceTypeInteractorInput.swift */,
+				CBD22D3C207A72E300C28700 /* DeviceTypeInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CBD22D2C207A724100C28700 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CBD22D3E207A72F300C28700 /* DeviceTypeRouter.swift */,
+				CBD22D40207A730000C28700 /* DeviceTypeRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CBD22D2D207A724600C28700 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				CBD22D42207A731300C28700 /* DeviceTypeConfigurator.swift */,
+				CBD22D44207A733900C28700 /* DeviceTypeInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		CBD426B920793F5E005FDBF5 /* SearchMedia */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426BF20793F8D005FDBF5 /* Configurator */,
+				CBD426BE20793F86005FDBF5 /* Entity */,
+				CBD426BD20793F81005FDBF5 /* Router */,
+				CBD426BC20793F7A005FDBF5 /* Interactor */,
+				CBD426BB20793F75005FDBF5 /* Presenter */,
+				CBD426BA20793F72005FDBF5 /* View */,
+			);
+			path = SearchMedia;
+			sourceTree = "<group>";
+		};
+		CBD426BA20793F72005FDBF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426C020793FB2005FDBF5 /* SearchMediaViewController.swift */,
+				CBD426C220793FD1005FDBF5 /* SearchMediaViewInput.swift */,
+				CBD426C420793FE3005FDBF5 /* SearchMediaViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBD426BB20793F75005FDBF5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426C620793FF4005FDBF5 /* SearchMediaPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CBD426BC20793F7A005FDBF5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426C820794006005FDBF5 /* SearchMediaInteractor.swift */,
+				CBD426CA20794015005FDBF5 /* SearchMediaInteractorInput.swift */,
+				CBD426CC20794027005FDBF5 /* SearchMediaInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CBD426BD20793F81005FDBF5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426CE20794042005FDBF5 /* SearchMediaRouter.swift */,
+				CBD426D020794053005FDBF5 /* SearchMediaRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CBD426BE20793F86005FDBF5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426FF20796D68005FDBF5 /* Media.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CBD426BF20793F8D005FDBF5 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426D220794082005FDBF5 /* SearchMediaConfigurator.swift */,
+				CBD426D4207940AB005FDBF5 /* SearchMediaInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		CBD426D62079460C005FDBF5 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426E1207949D5005FDBF5 /* Delegates */,
+				CBD426D82079461A005FDBF5 /* Cells */,
+				CBD426D720794613005FDBF5 /* Datasources */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		CBD426D720794613005FDBF5 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426DE2079476F005FDBF5 /* SearchMedia */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		CBD426D82079461A005FDBF5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426DD20794767005FDBF5 /* SearchMedia */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CBD426DD20794767005FDBF5 /* SearchMedia */ = {
+			isa = PBXGroup;
+			children = (
+				CBD4270420797A59005FDBF5 /* CellModel */,
+				CBD426E620794B13005FDBF5 /* SearchMediaTableViewCell.swift */,
+				CBD426E720794B13005FDBF5 /* SearchMediaTableViewCell.xib */,
+			);
+			path = SearchMedia;
+			sourceTree = "<group>";
+		};
+		CBD426DE2079476F005FDBF5 /* SearchMedia */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426D92079462C005FDBF5 /* SearchMediaDatasource.swift */,
+				CBD426DB207946C5005FDBF5 /* SearchMediaDatasourceInput.swift */,
+			);
+			path = SearchMedia;
+			sourceTree = "<group>";
+		};
+		CBD426E1207949D5005FDBF5 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426E2207949FF005FDBF5 /* OnCellSelectDelegate.swift */,
+				CB71E971207A3CEE001D0D87 /* DownloadImageDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		CBD426EA207952E6005FDBF5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426EB207952F8005FDBF5 /* UITableView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CBD426ED207955BB005FDBF5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426EF207955F3005FDBF5 /* Providers */,
+				CBD426EE207955E8005FDBF5 /* Requests */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CBD426EE207955E8005FDBF5 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426F02079561F005FDBF5 /* Request.swift */,
+				CBD426F22079593D005FDBF5 /* MediaSearchRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		CBD426EF207955F3005FDBF5 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426F420795A39005FDBF5 /* ApiProvier.swift */,
+				CBD426F620795AC3005FDBF5 /* MediaApiProvier.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		CBD426F920795D2C005FDBF5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426FA20795D32005FDBF5 /* MediaService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CBD426FA20795D32005FDBF5 /* MediaService */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426FB20795D45005FDBF5 /* MediaService.swift */,
+				CBD426FD20795DF6005FDBF5 /* MediaServiceImpl.swift */,
+			);
+			path = MediaService;
+			sourceTree = "<group>";
+		};
+		CBD427012079727C005FDBF5 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				CBD427022079728E005FDBF5 /* MediaParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		CBD4270420797A59005FDBF5 /* CellModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBD426DF2079478B005FDBF5 /* SearchMediaCellModel.swift */,
+				CBD4270520797A6F005FDBF5 /* SearchMediaCellModelImpl.swift */,
+			);
+			path = CellModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -432,9 +817,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CCD586720761C1000AD3566 /* Build configuration list for PBXNativeTarget "ItunesSearchTests" */;
 			buildPhases = (
+				18A178265C5B5758DBB5EB2A /* [CP] Check Pods Manifest.lock */,
 				7CCD585120761C0E00AD3566 /* Sources */,
 				7CCD585220761C0E00AD3566 /* Frameworks */,
 				7CCD585320761C0E00AD3566 /* Resources */,
+				3AD9D83F9D481C8D75DF6A7A /* [CP] Embed Pods Frameworks */,
+				2C1A0C91515CEB7BDBFF1ED1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -485,61 +873,160 @@
 			files = (
 				7CCD586320761C1000AD3566 /* LaunchScreen.storyboard in Resources */,
 				7CCD586020761C1000AD3566 /* Assets.xcassets in Resources */,
+				CBD426E920794B13005FDBF5 /* SearchMediaTableViewCell.xib in Resources */,
 				7CCD585E20761C0E00AD3566 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18A178265C5B5758DBB5EB2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItunesSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C1A0C91515CEB7BDBFF1ED1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AD9D83F9D481C8D75DF6A7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7CCD585120761C0E00AD3566 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD426E820794B13005FDBF5 /* SearchMediaTableViewCell.swift in Sources */,
+				CBD426F720795AC3005FDBF5 /* MediaApiProvier.swift in Sources */,
 				CB1FA1BE20781C77001B5C7D /* CountOfMediaInteractor.swift in Sources */,
 				CB8268FE2076D30800DDC995 /* MediaTypes.swift in Sources */,
 				CB1FA1C420781CC5001B5C7D /* CountOfMediaRouter.swift in Sources */,
 				CB8268AD2076994A00DDC995 /* SettingsViewOutput.swift in Sources */,
+				CBD22D31207A727900C28700 /* DeviceTypeViewController.swift in Sources */,
+				CBD426CF20794042005FDBF5 /* SearchMediaRouter.swift in Sources */,
+				CBD426D320794082005FDBF5 /* SearchMediaConfigurator.swift in Sources */,
 				CB8268BE20769A0900DDC995 /* SettingsInitializer.swift in Sources */,
+				CB71E977207A5810001D0D87 /* ImageDownloadManagerImpl.swift in Sources */,
 				CB1FA1B820781C30001B5C7D /* CountOfMediaViewInput.swift in Sources */,
+				CBD4270620797A6F005FDBF5 /* SearchMediaCellModelImpl.swift in Sources */,
+				CBD426CB20794015005FDBF5 /* SearchMediaInteractorInput.swift in Sources */,
+				CBD426DA2079462C005FDBF5 /* SearchMediaDatasource.swift in Sources */,
 				CB1FA1C220781CA7001B5C7D /* CountOfMediaInteractorOutput.swift in Sources */,
 				CB8268A02076945300DDC995 /* CommonAlertsFactory.swift in Sources */,
 				CB8268912076943600DDC995 /* ReusableView.swift in Sources */,
+				CBD22D3D207A72E300C28700 /* DeviceTypeInteractorOutput.swift in Sources */,
+				CBD22D39207A72C300C28700 /* DeviceTypeInteractor.swift in Sources */,
 				CB8268EF2076C8F300DDC995 /* MediaTypeInteractor.swift in Sources */,
 				CB8268FA2076CD0B00DDC995 /* MediaTypeInitializer.swift in Sources */,
 				CB8268B12076997600DDC995 /* SettingsInteractor.swift in Sources */,
 				CB8268B7207699B900DDC995 /* SettingsRouter.swift in Sources */,
+				CBD426F32079593D005FDBF5 /* MediaSearchRequest.swift in Sources */,
+				CBD22D35207A72A400C28700 /* DeviceTypeViewOutput.swift in Sources */,
+				CBD426E3207949FF005FDBF5 /* OnCellSelectDelegate.swift in Sources */,
+				CBD426F520795A39005FDBF5 /* ApiProvier.swift in Sources */,
 				CB8268F62076C9C200DDC995 /* MediaTypeRouter.swift in Sources */,
+				CBD426FC20795D45005FDBF5 /* MediaService.swift in Sources */,
 				CB8268902076943600DDC995 /* Storyboards.swift in Sources */,
 				CB1FA1B620781BF3001B5C7D /* CountOfMediaViewController.swift in Sources */,
 				CB8268F12076C90700DDC995 /* MediaTypeInteractorInput.swift in Sources */,
 				CB1FA1C020781C90001B5C7D /* CountOfMediaInteractorInput.swift in Sources */,
+				CBD22D3B207A72D300C28700 /* DeviceTypeInteractorInput.swift in Sources */,
 				CB8268A92076991100DDC995 /* SettingsViewController.swift in Sources */,
+				CB71E97A207A5A1C001D0D87 /* ImageModel.swift in Sources */,
+				CBD4270020796D68005FDBF5 /* Media.swift in Sources */,
+				CBD426F12079561F005FDBF5 /* Request.swift in Sources */,
 				CB8268B5207699A600DDC995 /* SettingsInteractorOutput.swift in Sources */,
 				CB8268B9207699CA00DDC995 /* SettingsRouterInput.swift in Sources */,
+				CBD426C120793FB2005FDBF5 /* SearchMediaViewController.swift in Sources */,
+				CBD426DC207946C5005FDBF5 /* SearchMediaDatasourceInput.swift in Sources */,
 				CB8268E92076C66C00DDC995 /* MediaTypeViewInput.swift in Sources */,
 				CB8268EB2076C68500DDC995 /* MediaTypeViewOutput.swift in Sources */,
+				CBD426FE20795DF6005FDBF5 /* MediaServiceImpl.swift in Sources */,
+				CBD426C520793FE3005FDBF5 /* SearchMediaViewOutput.swift in Sources */,
 				CB8268952076944500DDC995 /* ModuleInput.swift in Sources */,
 				CB8268962076944500DDC995 /* ModuleInputHolder.swift in Sources */,
 				CB8268F82076C9D900DDC995 /* MediaTypeRouterInput.swift in Sources */,
 				CB1FA1C620781CD7001B5C7D /* CountOfMediaRotuerInput.swift in Sources */,
 				CB8268AF2076996300DDC995 /* SettingsPresenter.swift in Sources */,
+				CBD22D37207A72B500C28700 /* DeviceTypePresenter.swift in Sources */,
+				CBD22D43207A731300C28700 /* DeviceTypeConfigurator.swift in Sources */,
 				CB82689B2076944D00DDC995 /* Result.swift in Sources */,
+				CBD426C720793FF4005FDBF5 /* SearchMediaPresenter.swift in Sources */,
 				CB8268BC207699E100DDC995 /* SettingsConfigurator.swift in Sources */,
+				CBD426CD20794027005FDBF5 /* SearchMediaInteractorOutput.swift in Sources */,
+				CBD22D41207A730000C28700 /* DeviceTypeRouterInput.swift in Sources */,
 				CB1FA1C820781CF0001B5C7D /* CountOfMediaConfigurator.swift in Sources */,
 				CB8269022076EC4B00DDC995 /* SettingsUserDefaults.swift in Sources */,
 				CB8268FC2076CD6A00DDC995 /* MediaTypeConfigurator.swift in Sources */,
+				CBD22D3F207A72F300C28700 /* DeviceTypeRouter.swift in Sources */,
 				CB82689A2076944D00DDC995 /* ArrayResult.swift in Sources */,
+				CBD426E02079478B005FDBF5 /* SearchMediaCellModel.swift in Sources */,
 				CB8268F32076C92800DDC995 /* MediaTypeInteractorOutput.swift in Sources */,
 				CB8269042076EC6700DDC995 /* SettingsUserDefaultsImpl.swift in Sources */,
+				CBD426C920794006005FDBF5 /* SearchMediaInteractor.swift in Sources */,
 				CB8268AB2076993500DDC995 /* SettingsViewInput.swift in Sources */,
 				CB82689F2076945300DDC995 /* CommonAlertsFactoryImpl.swift in Sources */,
 				CB1FA1BC20781C62001B5C7D /* CountOfMediaPresenter.swift in Sources */,
+				CBD427032079728E005FDBF5 /* MediaParser.swift in Sources */,
+				CBD22D45207A733900C28700 /* DeviceTypeInitializer.swift in Sources */,
 				CB8268B32076998D00DDC995 /* SettingsInteractorInput.swift in Sources */,
 				CB1FA1CA20781D18001B5C7D /* CountOfMediaInitializer.swift in Sources */,
+				CBD426D5207940AB005FDBF5 /* SearchMediaInitializer.swift in Sources */,
+				CBD426EC207952F8005FDBF5 /* UITableView+Extension.swift in Sources */,
 				CB1FA1BA20781C4C001B5C7D /* CountOfMediaViewOutput.swift in Sources */,
+				CBD22D47207A778D00C28700 /* DeviceType.swift in Sources */,
+				CBD22D33207A729300C28700 /* DeviceTypeViewInput.swift in Sources */,
 				CB8268ED2076C8B600DDC995 /* MediaTypePresenter.swift in Sources */,
 				CB8268E72076C61800DDC995 /* MediaTypeViewController.swift in Sources */,
+				CB71E972207A3CEE001D0D87 /* DownloadImageDelegate.swift in Sources */,
+				CBD426C320793FD1005FDBF5 /* SearchMediaViewInput.swift in Sources */,
+				CB71E976207A5810001D0D87 /* ImageDownloadManager.swift in Sources */,
+				CBD426D120794053005FDBF5 /* SearchMediaRouterInput.swift in Sources */,
 				7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -682,10 +1169,11 @@
 		};
 		7CCD586820761C1000AD3566 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4B73A7FA8C87D0E59A40839 /* Pods-ItunesSearchTests.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33NC89QWWR;
+				DEVELOPMENT_TEAM = W56K4E4L5F;
 				INFOPLIST_FILE = "$(SRCROOT)/ItunesSearchTests/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -700,10 +1188,11 @@
 		};
 		7CCD586920761C1000AD3566 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22C8112535BE9CE237C1B876 /* Pods-ItunesSearchTests.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33NC89QWWR;
+				DEVELOPMENT_TEAM = W56K4E4L5F;
 				INFOPLIST_FILE = "$(SRCROOT)/ItunesSearchTests/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
