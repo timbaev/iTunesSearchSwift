@@ -16,7 +16,7 @@ enum MediaTypes: String {
     case audiobook
     case shortFilm
     case tvShow
-    case software
+    case software = "software,iPadSoftware"
     case ebook
     
     static let allValues: [MediaTypes] = [.movie, .podcast, .music, .musicVideo, .audiobook, .shortFilm, .tvShow, .software, .ebook]
