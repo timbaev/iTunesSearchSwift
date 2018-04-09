@@ -16,6 +16,7 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
     var imageDownloadManager: ImageDownloadManager!
     
     let defaultMediaType: MediaTypes = .movie
+    let defaultDeviceType: DeviceTypes = .iPhone
     let defaultCountOfResults = 1
     let defaultCountry = "US"
     let minimalTextSearchLength = 3
@@ -53,9 +54,14 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
     private func delayedSearchMedia(with keyword: String) {
         var mediaType = defaultMediaType
         var countOfResults = defaultCountOfResults
+        var deviceType = defaultDeviceType
         
         if let savedMediaType = settingsUserDefaultsManager.getMediaType() {
             mediaType = savedMediaType
+        }
+        
+        if let savedDeviceType = settingsUserDefaultsManager.getDeviceType() {
+            deviceType = savedDeviceType
         }
         
         let savedCountOfResults = settingsUserDefaultsManager.getCountOfResults()
@@ -68,8 +74,15 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
             media  : mediaType.rawValue,
             limit  : countOfResults,
             country: defaultCountry,
-            success: { (result) in
-                let mediaList = result.map {
+            success: { [weak self] (result) in
+                guard let strongSelf = self else { return }
+                
+                var filteredResult = result
+                if mediaType == .software {
+                    filteredResult = strongSelf.filter(result, deviceType: deviceType)
+                }
+                
+                let mediaList = filteredResult.map {
                     Media(
                         name       : $0.trackName,
                         author     : $0.artistName,
@@ -90,6 +103,30 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
                 strongSelf.presenter.didLoadSearchMediaResult(with: .failure(errorMessage))
             }
         }
+    }
+    
+    private func filter(_ results: [MediaParser.RawMediaReponse], deviceType: DeviceTypes) -> [MediaParser.RawMediaReponse] {
+        let filteredResult = results.filter { (rawMediaResponse) in
+            guard let supportedDevices = rawMediaResponse.supportedDevices else { return true }
+            if deviceType == .iPhone {
+                return !supportedDevices.contains(where: { (supportDevice) -> Bool in
+                    let pat = "iPad.*"
+                    let regex = try! NSRegularExpression(pattern: pat, options: [])
+                    let matches = regex.matches(in: supportDevice, options: [], range: NSRange(location: 0, length: supportDevice.count))
+                    return matches.count != 0
+                })
+            } else if deviceType == .iPad {
+                return !supportedDevices.contains(where: { (supportDevice) -> Bool in
+                    let pat = "iPhone.*"
+                    let regex = try! NSRegularExpression(pattern: pat, options: [])
+                    let matches = regex.matches(in: supportDevice, options: [], range: NSRange(location: 0, length: supportDevice.count))
+                    return matches.count != 0
+                })
+            } else {
+                return true
+            }
+        }
+        return filteredResult
     }
     
 }

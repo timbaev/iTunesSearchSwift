@@ -14,14 +14,18 @@ struct MediaParser: Codable {
     struct RawMediaReponse: Codable {
         let trackName: String
         let artistName: String
-        var shortDescription: String?
-        let trackPrice: Double
+        let shortDescription: String?
+        let trackPrice: Double?
         let artworkUrl60: URL
         let trackViewUrl: URL
+        let supportedDevices: [String]?
         
         init(from decoder: Decoder) throws {
             let values = try decoder.container(keyedBy: CodingKeys.self)
             self.artistName = try values.decode(String.self, forKey: .artistName)
+            
+            print("*** Parse debug ***")
+            print("artist name parsed: \(artistName)")
             
             if let trackName = try values.decodeIfPresent(String.self, forKey: .trackName) {
                 self.trackName = trackName
@@ -29,20 +33,25 @@ struct MediaParser: Codable {
                 self.trackName = try values.decode(String.self, forKey: .collectionName)
             }
             
-            self.shortDescription = nil
+            print("track name parsed: \(trackName)")
+            
             if let shortDescription = try values.decodeIfPresent(String.self, forKey: .shortDescription) {
                 self.shortDescription = shortDescription
-            } else if let description = try values.decodeIfPresent(String.self, forKey: .description) {
-                self.shortDescription = description
+            } else {
+                self.shortDescription = try values.decodeIfPresent(String.self, forKey: .description)
             }
+            
+            print("short description parsed: \(String(describing: shortDescription))")
             
             if let trackPrice = try values.decodeIfPresent(Double.self, forKey: .trackPrice) {
                 self.trackPrice = trackPrice
             } else if let price = try values.decodeIfPresent(Double.self, forKey: .price) {
                 self.trackPrice = price
             } else {
-                self.trackPrice = try values.decode(Double.self, forKey: .collectionPrice)
+                self.trackPrice = try values.decodeIfPresent(Double.self, forKey: .collectionPrice)
             }
+            
+            print("track price parsed: \(String(describing: trackPrice))")
             
             if let trackViewUrl = try values.decodeIfPresent(URL.self, forKey: .trackViewUrl) {
                 self.trackViewUrl = trackViewUrl
@@ -50,7 +59,18 @@ struct MediaParser: Codable {
                 self.trackViewUrl = try values.decode(URL.self, forKey: .collectionViewUrl)
             }
             
+            print("treck View Url parsed: \(trackViewUrl)")
+            
             self.artworkUrl60 = try values.decode(URL.self, forKey: .artworkUrl60)
+            
+            print("artwork Url parsed: \(artworkUrl60)")
+            
+            self.supportedDevices = try values.decodeIfPresent([String].self, forKey: .supportedDevices)
+            
+            print("supported device parsed")
+            
+            print("*** End parse debug ***")
+            print("")
         }
         
         func encode(to encoder: Encoder) throws {
@@ -74,6 +94,7 @@ struct MediaParser: Codable {
             case artworkUrl60
             case trackViewUrl
             case collectionViewUrl
+            case supportedDevices
         }
     }
     

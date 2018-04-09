@@ -30,7 +30,11 @@ class SearchMediaTableViewCell: UITableViewCell {
     func prepareCell(with cellModel: SearchMediaCellModel) {
         nameLabel.text = cellModel.name
         authorLabel.text = cellModel.author
-        priceLabel.text = "Price: \(cellModel.price)"
+        if let price = cellModel.price {
+            priceLabel.text = "Price: \(price)"
+        } else {
+            priceLabel.text = "Price: free"
+        }
         descriptionLabel.text = cellModel.description
     }
     

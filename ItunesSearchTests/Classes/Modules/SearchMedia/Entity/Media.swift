@@ -13,7 +13,7 @@ struct Media {
     let name: String
     let author: String
     let description: String?
-    let price: Double
+    let price: Double?
     let imageURL: URL
     let viewURL: URL
     
