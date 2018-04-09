@@ -16,7 +16,6 @@ class MediaApiProvider: ApiProvier {
     func make(_ request: Request, completionBlock: @escaping (Data?) -> ()) {
         let url = baseURL.appendingPathComponent(request.endPoint)
         Alamofire.request(url, method: request.method, parameters: request.parameters)
-            .validate()
             .responseData { (response) in
                 guard response.result.isSuccess else {
                     print("Error while make request: \(String(describing: response.result.error))")

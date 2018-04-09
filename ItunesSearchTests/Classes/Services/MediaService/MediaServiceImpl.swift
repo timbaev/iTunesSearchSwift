@@ -24,7 +24,7 @@ class MediaServiceImpl: MediaService {
         country: String,
         success: @escaping ([MediaParser.RawMediaReponse]) -> (),
         failure: @escaping (String) -> ()) {
-            let request = MediaSearchRequest(media: media, limit: limit, term: keyword, country: country)
+            let request = MediaSearchRequest(entity: media, limit: limit, term: keyword, country: country)
             apiProvider.make(request) { [weak self] (data) in
                 guard let strongSelf = self else { return }
                 guard let data = data,

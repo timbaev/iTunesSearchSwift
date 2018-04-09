@@ -14,7 +14,7 @@ struct SearchMediaCellModelImpl: SearchMediaCellModel {
     var author: String
     var description: String?
     var imageURL: URL
-    var price: Double
+    var price: Double?
     var viewURL: URL
     
     init(media: Media) {

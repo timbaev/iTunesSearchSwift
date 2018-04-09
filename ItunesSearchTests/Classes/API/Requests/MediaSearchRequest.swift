@@ -17,11 +17,12 @@ class MediaSearchRequest: Request {
     
     let countryKey = "country"
     let termKey = "term"
-    let mediaKey = "media"
+    let entityKey = "entity"
     let limitKey = "limit"
+    let sortKey = "sort"
     
-    init(media: String, limit: Int, term: String, country: String) {
-        self.parameters = [termKey: term, mediaKey: media, limitKey: limit, countryKey: country]
+    init(entity: String, limit: Int, term: String, country: String, sort: String = "popular") {
+        self.parameters = [termKey: term, entityKey: entity, limitKey: limit, countryKey: country, sortKey: sort]
     }
     
 }
