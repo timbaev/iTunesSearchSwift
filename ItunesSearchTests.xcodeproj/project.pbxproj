@@ -65,6 +65,7 @@
 		CBBDB137207CDB6300F96EB0 /* SettingsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDB136207CDB6300F96EB0 /* SettingsPresenterTests.swift */; };
 		CBBDB13B207CF16500F96EB0 /* SettingsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDB13A207CF16500F96EB0 /* SettingsInteractorTests.swift */; };
 		CBBDB13F207D6B1F00F96EB0 /* SettingsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDB13E207D6B1F00F96EB0 /* SettingsRouterTests.swift */; };
+		CBBDB142207D6EBD00F96EB0 /* SettingsConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDB141207D6EBD00F96EB0 /* SettingsConfiguratorTests.swift */; };
 		CBD22D31207A727900C28700 /* DeviceTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D30207A727900C28700 /* DeviceTypeViewController.swift */; };
 		CBD22D33207A729300C28700 /* DeviceTypeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D32207A729300C28700 /* DeviceTypeViewInput.swift */; };
 		CBD22D35207A72A400C28700 /* DeviceTypeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D34207A72A400C28700 /* DeviceTypeViewOutput.swift */; };
@@ -179,6 +180,7 @@
 		CBBDB136207CDB6300F96EB0 /* SettingsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterTests.swift; sourceTree = "<group>"; };
 		CBBDB13A207CF16500F96EB0 /* SettingsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractorTests.swift; sourceTree = "<group>"; };
 		CBBDB13E207D6B1F00F96EB0 /* SettingsRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouterTests.swift; sourceTree = "<group>"; };
+		CBBDB141207D6EBD00F96EB0 /* SettingsConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfiguratorTests.swift; sourceTree = "<group>"; };
 		CBD22D30207A727900C28700 /* DeviceTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeViewController.swift; sourceTree = "<group>"; };
 		CBD22D32207A729300C28700 /* DeviceTypeViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeViewInput.swift; sourceTree = "<group>"; };
 		CBD22D34207A72A400C28700 /* DeviceTypeViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeViewOutput.swift; sourceTree = "<group>"; };
@@ -614,6 +616,7 @@
 		CBBDB131207CD12D00F96EB0 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				CBBDB140207D6E9F00F96EB0 /* Configurator */,
 				CBBDB13D207D6B0E00F96EB0 /* Router */,
 				CBBDB139207CF11D00F96EB0 /* Interactor */,
 				CBBDB135207CDB5000F96EB0 /* Presenter */,
@@ -652,6 +655,14 @@
 				CBBDB13E207D6B1F00F96EB0 /* SettingsRouterTests.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		CBBDB140207D6E9F00F96EB0 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				CBBDB141207D6EBD00F96EB0 /* SettingsConfiguratorTests.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		CBD22D28207A720800C28700 /* DeviceType */ = {
@@ -1158,6 +1169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBBDB129207CD0FD00F96EB0 /* ItunesSearchTestsTests.swift in Sources */,
+				CBBDB142207D6EBD00F96EB0 /* SettingsConfiguratorTests.swift in Sources */,
 				CBBDB134207CD1A900F96EB0 /* SettingsViewTests.swift in Sources */,
 				CBBDB137207CDB6300F96EB0 /* SettingsPresenterTests.swift in Sources */,
 				CBBDB13F207D6B1F00F96EB0 /* SettingsRouterTests.swift in Sources */,
