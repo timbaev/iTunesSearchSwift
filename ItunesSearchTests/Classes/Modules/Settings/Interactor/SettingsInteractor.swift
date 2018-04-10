@@ -16,17 +16,21 @@ class SettingsInteractor: SettingsInteractorInput {
     private let emptyCountOfResults = 0
     private let defaultCountOfResults = 1
     
-    func prepareSettingsScrren() {
+    func getSavedMediaType() {
         guard let mediaType = settingsUserDefaultsManager.getMediaType() else { return }
         presenter.didGetSavedMediaType(mediaType)
-        
+    }
+    
+    func getSavedCountOfResults() {
         let countOfResults = settingsUserDefaultsManager.getCountOfResults()
         if (countOfResults == emptyCountOfResults) {
             presenter.didGettingSavedCountOfResults(defaultCountOfResults)
         } else {
             presenter.didGettingSavedCountOfResults(countOfResults)
         }
-        
+    }
+    
+    func getSavedDeviceType() {
         guard let deviceType = settingsUserDefaultsManager.getDeviceType() else { return }
         presenter.didGetSavedDeviceType(deviceType)
     }

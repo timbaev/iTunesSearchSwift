@@ -28,7 +28,9 @@ class SettingsPreseter: SettingsViewOutput, SettingsInteractorOutput {
     }
     
     func onViewWillAppear() {
-        interactor.prepareSettingsScrren()
+        interactor.getSavedMediaType()
+        interactor.getSavedDeviceType()
+        interactor.getSavedCountOfResults()
     }
     
     func didSelectSettingRow(at indexPath: IndexPath) {

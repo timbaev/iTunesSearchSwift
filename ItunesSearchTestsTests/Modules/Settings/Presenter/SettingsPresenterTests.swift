@@ -35,7 +35,7 @@ class ViewPresenerTests: XCTestCase {
         XCTAssertTrue(viewMock.prepareTableViewCalled)
     }
     
-    func testWhenOnViewWillAppearThenPrepareSettingsScreenCalled() {
+    func testWhenOnViewWillAppearThenGetUsersSettingsCalled() {
         //given
         let interactorMock = SettingsInteractorMock()
         settingsPresenter.interactor = interactorMock
@@ -44,7 +44,9 @@ class ViewPresenerTests: XCTestCase {
         settingsPresenter.onViewWillAppear()
         
         //then
-        XCTAssertTrue(interactorMock.prepareSettingsScreenCalled)
+        XCTAssertTrue(interactorMock.getSavedMediaTypeCalled)
+        XCTAssertTrue(interactorMock.getSavedCountOfResultsCalled)
+        XCTAssertTrue(interactorMock.getSavedDeviceTypeCalled)
     }
     
     func testWhenDidSelectSettingRowThenShowExpectedRouterScreen() {
@@ -97,10 +99,20 @@ class SettingsViewMock: SettingsViewInput {
 
 class SettingsInteractorMock: SettingsInteractorInput {
     
-    var prepareSettingsScreenCalled = false
+    var getSavedMediaTypeCalled = false
+    var getSavedCountOfResultsCalled = false
+    var getSavedDeviceTypeCalled = false
     
-    func prepareSettingsScrren() {
-        prepareSettingsScreenCalled = true
+    func getSavedMediaType() {
+        getSavedMediaTypeCalled = true
+    }
+    
+    func getSavedCountOfResults() {
+        getSavedCountOfResultsCalled = true
+    }
+    
+    func getSavedDeviceType() {
+        getSavedDeviceTypeCalled = true
     }
 
 }

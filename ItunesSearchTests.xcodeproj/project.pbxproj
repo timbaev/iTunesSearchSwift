@@ -62,7 +62,8 @@
 		CB8269042076EC6700DDC995 /* SettingsUserDefaultsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8269032076EC6700DDC995 /* SettingsUserDefaultsImpl.swift */; };
 		CBBDB129207CD0FD00F96EB0 /* ItunesSearchTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDB128207CD0FD00F96EB0 /* ItunesSearchTestsTests.swift */; };
 		CBBDB134207CD1A900F96EB0 /* SettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDB133207CD1A900F96EB0 /* SettingsViewTests.swift */; };
-		CBBDB137207CDB6300F96EB0 /* ViewPresenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDB136207CDB6300F96EB0 /* ViewPresenerTests.swift */; };
+		CBBDB137207CDB6300F96EB0 /* SettingsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDB136207CDB6300F96EB0 /* SettingsPresenterTests.swift */; };
+		CBBDB13B207CF16500F96EB0 /* SettingsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDB13A207CF16500F96EB0 /* SettingsInteractorTests.swift */; };
 		CBD22D31207A727900C28700 /* DeviceTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D30207A727900C28700 /* DeviceTypeViewController.swift */; };
 		CBD22D33207A729300C28700 /* DeviceTypeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D32207A729300C28700 /* DeviceTypeViewInput.swift */; };
 		CBD22D35207A72A400C28700 /* DeviceTypeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD22D34207A72A400C28700 /* DeviceTypeViewOutput.swift */; };
@@ -174,7 +175,8 @@
 		CBBDB128207CD0FD00F96EB0 /* ItunesSearchTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchTestsTests.swift; sourceTree = "<group>"; };
 		CBBDB12A207CD0FD00F96EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBBDB133207CD1A900F96EB0 /* SettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTests.swift; sourceTree = "<group>"; };
-		CBBDB136207CDB6300F96EB0 /* ViewPresenerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresenerTests.swift; sourceTree = "<group>"; };
+		CBBDB136207CDB6300F96EB0 /* SettingsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterTests.swift; sourceTree = "<group>"; };
+		CBBDB13A207CF16500F96EB0 /* SettingsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractorTests.swift; sourceTree = "<group>"; };
 		CBD22D30207A727900C28700 /* DeviceTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeViewController.swift; sourceTree = "<group>"; };
 		CBD22D32207A729300C28700 /* DeviceTypeViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeViewInput.swift; sourceTree = "<group>"; };
 		CBD22D34207A72A400C28700 /* DeviceTypeViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeViewOutput.swift; sourceTree = "<group>"; };
@@ -610,6 +612,7 @@
 		CBBDB131207CD12D00F96EB0 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				CBBDB139207CF11D00F96EB0 /* Interactor */,
 				CBBDB135207CDB5000F96EB0 /* Presenter */,
 				CBBDB132207CD16900F96EB0 /* View */,
 			);
@@ -627,9 +630,17 @@
 		CBBDB135207CDB5000F96EB0 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				CBBDB136207CDB6300F96EB0 /* ViewPresenerTests.swift */,
+				CBBDB136207CDB6300F96EB0 /* SettingsPresenterTests.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CBBDB139207CF11D00F96EB0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CBBDB13A207CF16500F96EB0 /* SettingsInteractorTests.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		CBD22D28207A720800C28700 /* DeviceType */ = {
@@ -1137,7 +1148,8 @@
 			files = (
 				CBBDB129207CD0FD00F96EB0 /* ItunesSearchTestsTests.swift in Sources */,
 				CBBDB134207CD1A900F96EB0 /* SettingsViewTests.swift in Sources */,
-				CBBDB137207CDB6300F96EB0 /* ViewPresenerTests.swift in Sources */,
+				CBBDB137207CDB6300F96EB0 /* SettingsPresenterTests.swift in Sources */,
+				CBBDB13B207CF16500F96EB0 /* SettingsInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
