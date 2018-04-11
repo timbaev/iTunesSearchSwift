@@ -11,7 +11,7 @@ import Foundation
 struct MediaParser: Codable {
     
     let results: [RawMediaReponse]
-    struct RawMediaReponse: Codable {
+    struct RawMediaReponse: Codable, Equatable {
         let trackName: String
         let artistName: String
         let shortDescription: String?
@@ -19,6 +19,23 @@ struct MediaParser: Codable {
         let artworkUrl60: URL
         let trackViewUrl: URL
         let supportedDevices: [String]?
+        
+        init(
+            trackName: String,
+            artistName: String,
+            shortDescription: String?,
+            trackPrice: Double?,
+            artworkUrl60: URL,
+            trackViewUrl: URL,
+            supportedDevices: [String]?) {
+                self.trackName = trackName
+                self.artistName = artistName
+                self.shortDescription = shortDescription
+                self.trackPrice = trackPrice
+                self.artworkUrl60 = artworkUrl60
+                self.trackViewUrl = trackViewUrl
+                self.supportedDevices = supportedDevices
+        }
         
         init(from decoder: Decoder) throws {
             let values = try decoder.container(keyedBy: CodingKeys.self)

@@ -23,6 +23,9 @@
 		CB0BC5FE207E97ED00CC6B80 /* DeviceTypeConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC5FD207E97ED00CC6B80 /* DeviceTypeConfiguratorTests.swift */; };
 		CB0BC602207E997800CC6B80 /* SearchMediaViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC601207E997800CC6B80 /* SearchMediaViewTests.swift */; };
 		CB0BC605207EA4E000CC6B80 /* SearchMediaPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC604207EA4E000CC6B80 /* SearchMediaPresenterTests.swift */; };
+		CB0BC60D207EB4A500CC6B80 /* SearchMediaInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC60C207EB4A500CC6B80 /* SearchMediaInteractorTests.swift */; };
+		CB0BC610207EC23900CC6B80 /* SearchMediaRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC60F207EC23900CC6B80 /* SearchMediaRouterTests.swift */; };
+		CB0BC613207EC81B00CC6B80 /* SearchMediaConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC612207EC81B00CC6B80 /* SearchMediaConfiguratorTests.swift */; };
 		CB1FA1B620781BF3001B5C7D /* CountOfMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B520781BF3001B5C7D /* CountOfMediaViewController.swift */; };
 		CB1FA1B820781C30001B5C7D /* CountOfMediaViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B720781C30001B5C7D /* CountOfMediaViewInput.swift */; };
 		CB1FA1BA20781C4C001B5C7D /* CountOfMediaViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B920781C4C001B5C7D /* CountOfMediaViewOutput.swift */; };
@@ -149,6 +152,9 @@
 		CB0BC5FD207E97ED00CC6B80 /* DeviceTypeConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeConfiguratorTests.swift; sourceTree = "<group>"; };
 		CB0BC601207E997800CC6B80 /* SearchMediaViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaViewTests.swift; sourceTree = "<group>"; };
 		CB0BC604207EA4E000CC6B80 /* SearchMediaPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaPresenterTests.swift; sourceTree = "<group>"; };
+		CB0BC60C207EB4A500CC6B80 /* SearchMediaInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractorTests.swift; sourceTree = "<group>"; };
+		CB0BC60F207EC23900CC6B80 /* SearchMediaRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaRouterTests.swift; sourceTree = "<group>"; };
+		CB0BC612207EC81B00CC6B80 /* SearchMediaConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaConfiguratorTests.swift; sourceTree = "<group>"; };
 		CB1FA1B520781BF3001B5C7D /* CountOfMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewController.swift; sourceTree = "<group>"; };
 		CB1FA1B720781C30001B5C7D /* CountOfMediaViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewInput.swift; sourceTree = "<group>"; };
 		CB1FA1B920781C4C001B5C7D /* CountOfMediaViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewOutput.swift; sourceTree = "<group>"; };
@@ -412,6 +418,9 @@
 		CB0BC5FF207E995D00CC6B80 /* SearchMedia */ = {
 			isa = PBXGroup;
 			children = (
+				CB0BC611207EC80B00CC6B80 /* Configurator */,
+				CB0BC60E207EC22D00CC6B80 /* Router */,
+				CB0BC609207EB44F00CC6B80 /* Interactor */,
 				CB0BC603207EA4D200CC6B80 /* Presenter */,
 				CB0BC600207E996800CC6B80 /* View */,
 			);
@@ -432,6 +441,30 @@
 				CB0BC604207EA4E000CC6B80 /* SearchMediaPresenterTests.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CB0BC609207EB44F00CC6B80 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BC60C207EB4A500CC6B80 /* SearchMediaInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CB0BC60E207EC22D00CC6B80 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BC60F207EC23900CC6B80 /* SearchMediaRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CB0BC611207EC80B00CC6B80 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BC612207EC81B00CC6B80 /* SearchMediaConfiguratorTests.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		CB1FA1AF20781BA7001B5C7D /* CountOfMedia */ = {
@@ -1353,6 +1386,8 @@
 			files = (
 				CB0BC5EA207E6BBC00CC6B80 /* CountOfMediaPresenterTests.swift in Sources */,
 				CBBDB142207D6EBD00F96EB0 /* SettingsConfiguratorTests.swift in Sources */,
+				CB0BC610207EC23900CC6B80 /* SearchMediaRouterTests.swift in Sources */,
+				CB0BC613207EC81B00CC6B80 /* SearchMediaConfiguratorTests.swift in Sources */,
 				CBBDB14C207D864C00F96EB0 /* MediaTypeInteractorTests.swift in Sources */,
 				CB0BC5E8207DF29900CC6B80 /* CountOfMediaViewTests.swift in Sources */,
 				CB0BC5EC207E75A900CC6B80 /* CountOfMediaInteractorTests.swift in Sources */,
@@ -1365,6 +1400,7 @@
 				CB0BC5FB207E918300CC6B80 /* DeviceTypeInteractorTests.swift in Sources */,
 				CBBDB146207D755800F96EB0 /* MediaTypeViewTests.swift in Sources */,
 				CBBDB13F207D6B1F00F96EB0 /* SettingsRouterTests.swift in Sources */,
+				CB0BC60D207EB4A500CC6B80 /* SearchMediaInteractorTests.swift in Sources */,
 				CBBDB13B207CF16500F96EB0 /* SettingsInteractorTests.swift in Sources */,
 				CB0BC5F3207E7E3E00CC6B80 /* DeviceTypeViewTests.swift in Sources */,
 				CB0BC602207E997800CC6B80 /* SearchMediaViewTests.swift in Sources */,
