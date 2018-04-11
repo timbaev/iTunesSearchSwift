@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol DownloadImageDelgate {
+protocol DownloadImageDelegate {
     
     func downloadImage(from url: URL, at indexPath: IndexPath)
     

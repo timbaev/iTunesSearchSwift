@@ -11,7 +11,7 @@ import UIKit
 protocol SearchMediaDatasourceInput: UITableViewDelegate, UITableViewDataSource {
     
     var selectDelegate: OnCellSelectDelegate? { get set }
-    var downloadImageDelegate: DownloadImageDelgate? { get set }
+    var downloadImageDelegate: DownloadImageDelegate? { get set }
     
     //Setters
     func set(cellModels models: [SearchMediaCellModel])

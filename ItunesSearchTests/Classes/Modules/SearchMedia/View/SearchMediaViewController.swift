@@ -53,7 +53,7 @@ class SearchMediaViewController: UIViewController, SearchMediaViewInput {
     }
     
     func prepareDatasource() {
-        searchMediaDatasource.downloadImageDelegate = presenter as? DownloadImageDelgate
+        searchMediaDatasource.downloadImageDelegate = presenter as? DownloadImageDelegate
         searchMediaDatasource.selectDelegate = presenter as? OnCellSelectDelegate
     }
     

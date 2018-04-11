@@ -21,6 +21,8 @@
 		CB0BC5F8207E8B4300CC6B80 /* DeviceTypePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC5F7207E8B4300CC6B80 /* DeviceTypePresenterTests.swift */; };
 		CB0BC5FB207E918300CC6B80 /* DeviceTypeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC5FA207E918300CC6B80 /* DeviceTypeInteractorTests.swift */; };
 		CB0BC5FE207E97ED00CC6B80 /* DeviceTypeConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC5FD207E97ED00CC6B80 /* DeviceTypeConfiguratorTests.swift */; };
+		CB0BC602207E997800CC6B80 /* SearchMediaViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC601207E997800CC6B80 /* SearchMediaViewTests.swift */; };
+		CB0BC605207EA4E000CC6B80 /* SearchMediaPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC604207EA4E000CC6B80 /* SearchMediaPresenterTests.swift */; };
 		CB1FA1B620781BF3001B5C7D /* CountOfMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B520781BF3001B5C7D /* CountOfMediaViewController.swift */; };
 		CB1FA1B820781C30001B5C7D /* CountOfMediaViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B720781C30001B5C7D /* CountOfMediaViewInput.swift */; };
 		CB1FA1BA20781C4C001B5C7D /* CountOfMediaViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B920781C4C001B5C7D /* CountOfMediaViewOutput.swift */; };
@@ -145,6 +147,8 @@
 		CB0BC5F7207E8B4300CC6B80 /* DeviceTypePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypePresenterTests.swift; sourceTree = "<group>"; };
 		CB0BC5FA207E918300CC6B80 /* DeviceTypeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeInteractorTests.swift; sourceTree = "<group>"; };
 		CB0BC5FD207E97ED00CC6B80 /* DeviceTypeConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeConfiguratorTests.swift; sourceTree = "<group>"; };
+		CB0BC601207E997800CC6B80 /* SearchMediaViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaViewTests.swift; sourceTree = "<group>"; };
+		CB0BC604207EA4E000CC6B80 /* SearchMediaPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaPresenterTests.swift; sourceTree = "<group>"; };
 		CB1FA1B520781BF3001B5C7D /* CountOfMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewController.swift; sourceTree = "<group>"; };
 		CB1FA1B720781C30001B5C7D /* CountOfMediaViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewInput.swift; sourceTree = "<group>"; };
 		CB1FA1B920781C4C001B5C7D /* CountOfMediaViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewOutput.swift; sourceTree = "<group>"; };
@@ -403,6 +407,31 @@
 				CB0BC5FD207E97ED00CC6B80 /* DeviceTypeConfiguratorTests.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		CB0BC5FF207E995D00CC6B80 /* SearchMedia */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BC603207EA4D200CC6B80 /* Presenter */,
+				CB0BC600207E996800CC6B80 /* View */,
+			);
+			path = SearchMedia;
+			sourceTree = "<group>";
+		};
+		CB0BC600207E996800CC6B80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BC601207E997800CC6B80 /* SearchMediaViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB0BC603207EA4D200CC6B80 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BC604207EA4E000CC6B80 /* SearchMediaPresenterTests.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		CB1FA1AF20781BA7001B5C7D /* CountOfMedia */ = {
@@ -723,6 +752,7 @@
 		CBBDB130207CD12100F96EB0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CB0BC5FF207E995D00CC6B80 /* SearchMedia */,
 				CB0BC5F0207E7E2200CC6B80 /* DeviceType */,
 				CB0BC5E3207DF25E00CC6B80 /* CountOfMedia */,
 				CBBDB143207D752700F96EB0 /* MediaType */,
@@ -1326,6 +1356,7 @@
 				CBBDB14C207D864C00F96EB0 /* MediaTypeInteractorTests.swift in Sources */,
 				CB0BC5E8207DF29900CC6B80 /* CountOfMediaViewTests.swift in Sources */,
 				CB0BC5EC207E75A900CC6B80 /* CountOfMediaInteractorTests.swift in Sources */,
+				CB0BC605207EA4E000CC6B80 /* SearchMediaPresenterTests.swift in Sources */,
 				CB0BC5F8207E8B4300CC6B80 /* DeviceTypePresenterTests.swift in Sources */,
 				CB0BC5EF207E7C6900CC6B80 /* CountOfMediaConfiguratorTests.swift in Sources */,
 				CBBDB134207CD1A900F96EB0 /* SettingsViewTests.swift in Sources */,
@@ -1336,6 +1367,7 @@
 				CBBDB13F207D6B1F00F96EB0 /* SettingsRouterTests.swift in Sources */,
 				CBBDB13B207CF16500F96EB0 /* SettingsInteractorTests.swift in Sources */,
 				CB0BC5F3207E7E3E00CC6B80 /* DeviceTypeViewTests.swift in Sources */,
+				CB0BC602207E997800CC6B80 /* SearchMediaViewTests.swift in Sources */,
 				CB0BC5E2207DF02600CC6B80 /* MediaTypeConfiguratorTests.swift in Sources */,
 				CB0BC5FE207E97ED00CC6B80 /* DeviceTypeConfiguratorTests.swift in Sources */,
 			);
