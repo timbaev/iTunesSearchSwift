@@ -15,7 +15,7 @@ class SettingsViewTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        settingsViewController = UIStoryboard(storyboard: .main).instantiateViewController() as SettingsViewController
+        settingsViewController = SettingsViewController()
     }
     
     override func tearDown() {
@@ -62,7 +62,7 @@ class SettingsViewTests: XCTestCase {
     
 }
 
-class SettingsPresenterMock: SettingsViewOutput {
+fileprivate class SettingsPresenterMock: SettingsViewOutput {
     
     var viewIsReadyCalled = false
     var viewWillAppearCalled = false

@@ -25,7 +25,7 @@ class SettingsInteractorTests: XCTestCase {
     
     func testWhenGetSavedMediaTypeThenDidGetSavedMediaTypeCalled() {
         //given
-        let presenterMock = PresenterMock()
+        let presenterMock = SettingsPresenterMock()
         let settingsUserDefaultsManagerMock = SettingsUserDefaultsManagerMock()
         settingsInteractor.presenter = presenterMock
         settingsInteractor.settingsUserDefaultsManager = settingsUserDefaultsManagerMock
@@ -39,7 +39,7 @@ class SettingsInteractorTests: XCTestCase {
     
     func testWhenGetSavedCountOfResultsThenDidGettingSavedCountOfResultsCalled() {
         //given
-        let presenterMock = PresenterMock()
+        let presenterMock = SettingsPresenterMock()
         let settingsUserDefaultsManagerMock = SettingsUserDefaultsManagerMock()
         settingsInteractor.presenter = presenterMock
         settingsInteractor.settingsUserDefaultsManager = settingsUserDefaultsManagerMock
@@ -53,7 +53,7 @@ class SettingsInteractorTests: XCTestCase {
     
     func testWhenGetSavedDeviceTypeThenDidGetSavedDeviceTypeCalled() {
         //given
-        let presenterMock = PresenterMock()
+        let presenterMock = SettingsPresenterMock()
         let settingsUserDefaultsManagerMock = SettingsUserDefaultsManagerMock()
         settingsInteractor.presenter = presenterMock
         settingsInteractor.settingsUserDefaultsManager = settingsUserDefaultsManagerMock
@@ -67,7 +67,7 @@ class SettingsInteractorTests: XCTestCase {
     
 }
 
-class PresenterMock: SettingsInteractorOutput {
+fileprivate class SettingsPresenterMock: SettingsInteractorOutput {
     
     var getSavedMediaTypeCalled = false
     var getSavedCountOfResultsCalled = false
@@ -87,7 +87,7 @@ class PresenterMock: SettingsInteractorOutput {
     
 }
 
-class SettingsUserDefaultsManagerMock: SettingsUserDefaultsManager {
+fileprivate class SettingsUserDefaultsManagerMock: SettingsUserDefaultsManager {
     
     let userDefaults = UserDefaults.standard
     

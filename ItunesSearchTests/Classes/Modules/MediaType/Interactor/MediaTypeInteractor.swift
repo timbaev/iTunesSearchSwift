@@ -13,8 +13,8 @@ class MediaTypeInteractor: MediaTypeInteractorInput {
     weak var presenter: MediaTypeInteractorOutput!
     var settingsUserDefaultsManager: SettingsUserDefaultsManager!
     
-    private var mediaTypes = [MediaTypes]()
-    private let defaultPosition = 0
+    var mediaTypes = [MediaTypes]()
+    let defaultPosition = 0
     
     func prepareMediaTypes() {
         mediaTypes = MediaTypes.allValues

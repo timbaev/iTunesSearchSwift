@@ -75,7 +75,7 @@ class ViewPresenerTests: XCTestCase {
     
 }
 
-class SettingsViewMock: SettingsViewInput {
+fileprivate class SettingsViewMock: SettingsViewInput {
     
     var prepareTableViewCalled = false
     
@@ -97,7 +97,7 @@ class SettingsViewMock: SettingsViewInput {
     
 }
 
-class SettingsInteractorMock: SettingsInteractorInput {
+fileprivate class SettingsInteractorMock: SettingsInteractorInput {
     
     var getSavedMediaTypeCalled = false
     var getSavedCountOfResultsCalled = false
@@ -117,7 +117,7 @@ class SettingsInteractorMock: SettingsInteractorInput {
 
 }
 
-class SettingsRouterMock: SettingsRouterInput {
+fileprivate class SettingsRouterMock: SettingsRouterInput {
     
     var mediaTypeScreenShowed = false
     var countOfMediaScreenShowed = false

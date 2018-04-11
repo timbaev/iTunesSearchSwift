@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="P77-lx-dhn">
             <objects>
-                <viewController title="Media type" id="3W0-18-HTy" customClass="MediaTypeViewController" customModule="ItunesSearchTests" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MediaTypeViewController" title="Media type" id="3W0-18-HTy" customClass="MediaTypeViewController" customModule="ItunesSearchTests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zwu-Gj-a80">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
