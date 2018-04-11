@@ -26,6 +26,7 @@
 		CB0BC60D207EB4A500CC6B80 /* SearchMediaInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC60C207EB4A500CC6B80 /* SearchMediaInteractorTests.swift */; };
 		CB0BC610207EC23900CC6B80 /* SearchMediaRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC60F207EC23900CC6B80 /* SearchMediaRouterTests.swift */; };
 		CB0BC613207EC81B00CC6B80 /* SearchMediaConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC612207EC81B00CC6B80 /* SearchMediaConfiguratorTests.swift */; };
+		CB0BC617207ECFAE00CC6B80 /* CommonAlertsFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC616207ECFAE00CC6B80 /* CommonAlertsFactoryTests.swift */; };
 		CB1FA1B620781BF3001B5C7D /* CountOfMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B520781BF3001B5C7D /* CountOfMediaViewController.swift */; };
 		CB1FA1B820781C30001B5C7D /* CountOfMediaViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B720781C30001B5C7D /* CountOfMediaViewInput.swift */; };
 		CB1FA1BA20781C4C001B5C7D /* CountOfMediaViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B920781C4C001B5C7D /* CountOfMediaViewOutput.swift */; };
@@ -155,6 +156,7 @@
 		CB0BC60C207EB4A500CC6B80 /* SearchMediaInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractorTests.swift; sourceTree = "<group>"; };
 		CB0BC60F207EC23900CC6B80 /* SearchMediaRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaRouterTests.swift; sourceTree = "<group>"; };
 		CB0BC612207EC81B00CC6B80 /* SearchMediaConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaConfiguratorTests.swift; sourceTree = "<group>"; };
+		CB0BC616207ECFAE00CC6B80 /* CommonAlertsFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAlertsFactoryTests.swift; sourceTree = "<group>"; };
 		CB1FA1B520781BF3001B5C7D /* CountOfMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewController.swift; sourceTree = "<group>"; };
 		CB1FA1B720781C30001B5C7D /* CountOfMediaViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewInput.swift; sourceTree = "<group>"; };
 		CB1FA1B920781C4C001B5C7D /* CountOfMediaViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewOutput.swift; sourceTree = "<group>"; };
@@ -467,6 +469,22 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		CB0BC614207ECF7800CC6B80 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BC615207ECF9100CC6B80 /* AlertsFactory */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CB0BC615207ECF9100CC6B80 /* AlertsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BC616207ECFAE00CC6B80 /* CommonAlertsFactoryTests.swift */,
+			);
+			path = AlertsFactory;
+			sourceTree = "<group>";
+		};
 		CB1FA1AF20781BA7001B5C7D /* CountOfMedia */ = {
 			isa = PBXGroup;
 			children = (
@@ -776,6 +794,7 @@
 		CBBDB127207CD0FD00F96EB0 /* ItunesSearchTestsTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB0BC614207ECF7800CC6B80 /* Helpers */,
 				CBBDB130207CD12100F96EB0 /* Modules */,
 				CBBDB12A207CD0FD00F96EB0 /* Info.plist */,
 			);
@@ -1403,6 +1422,7 @@
 				CB0BC60D207EB4A500CC6B80 /* SearchMediaInteractorTests.swift in Sources */,
 				CBBDB13B207CF16500F96EB0 /* SettingsInteractorTests.swift in Sources */,
 				CB0BC5F3207E7E3E00CC6B80 /* DeviceTypeViewTests.swift in Sources */,
+				CB0BC617207ECFAE00CC6B80 /* CommonAlertsFactoryTests.swift in Sources */,
 				CB0BC602207E997800CC6B80 /* SearchMediaViewTests.swift in Sources */,
 				CB0BC5E2207DF02600CC6B80 /* MediaTypeConfiguratorTests.swift in Sources */,
 				CB0BC5FE207E97ED00CC6B80 /* DeviceTypeConfiguratorTests.swift in Sources */,
