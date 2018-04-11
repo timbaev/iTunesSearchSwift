@@ -12,7 +12,7 @@ protocol CountOfmediaViewInput: class {
     
     //Setters
     func set(numberOfComponents currentNumber: Int)
-    func set(numberOfCountRows currentNumber: Int)
+    func set(numberOfRows currentNumber: Int)
     func set(titleOfRow currentTitle: String)
     func set(selectedRow indexOfRow: Int)
     

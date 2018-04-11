@@ -20,7 +20,6 @@ class CountOfMediaPresenter: CountOfMediaViewOutput, CountOfMediaInteractorOutpu
     
     func viewIsReady() {
         interactor.prepareData()
-        view.preparePickerView()
     }
     
     func onViewWillAppear() {
@@ -46,7 +45,7 @@ class CountOfMediaPresenter: CountOfMediaViewOutput, CountOfMediaInteractorOutpu
     //MARK: - Interactor ouput
     
     func didGettingNumberOfCount(_ number: Int) {
-        view.set(numberOfCountRows: number)
+        view.set(numberOfRows: number)
     }
     
     func didGettingTitleForRow(_ title: String) {
@@ -55,6 +54,10 @@ class CountOfMediaPresenter: CountOfMediaViewOutput, CountOfMediaInteractorOutpu
     
     func didGettingCountOfMediaResults(indexOfResult: Int) {
         view.set(selectedRow: indexOfResult)
+    }
+    
+    func didFinishPrepareData() {
+        view.preparePickerView()
     }
     
 }

@@ -12,7 +12,7 @@ class SearchMediaDatasource: NSObject, SearchMediaDatasourceInput {
     
     private var cellModels = [SearchMediaCellModel]()
     var selectDelegate: OnCellSelectDelegate?
-    var downloadImageDelegate: DownloadImageDelgate?
+    var downloadImageDelegate: DownloadImageDelegate?
     
     //MARK: - Datasource input
     

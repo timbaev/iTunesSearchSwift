@@ -13,9 +13,9 @@ class CountOfMediaInteractor: CountOfMediaInteractorInput {
     weak var presenter: CountOfMediaInteractorOutput!
     var settingsUserDefaultsManager: SettingsUserDefaultsManager!
     
-    private var numberArray = [Int]()
-    private let startCount = 1
-    private let endCount = 200
+    var numberArray = [Int]()
+    let startCount = 1
+    let endCount = 200
     
     func prepareData() {
         var numberArray = [Int]()
@@ -23,6 +23,7 @@ class CountOfMediaInteractor: CountOfMediaInteractorInput {
             numberArray.append(number)
         }
         self.numberArray = numberArray
+        presenter.didFinishPrepareData()
     }
     
     func getNumberOfCount() {

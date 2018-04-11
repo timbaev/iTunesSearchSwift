@@ -29,9 +29,4 @@ protocol MediaTypeViewOutput: class {
     /// - Parameter indexPath: index of position of cell
     func didSelectMediaType(at indexPath: IndexPath)
     
-    /// Set checkmark to cell
-    ///
-    /// - Parameter index: index of media type
-    func setCheckedCell(at index: Int)
-    
 }

@@ -25,4 +25,7 @@ protocol CountOfMediaInteractorOutput: class {
     /// - Parameter indexOfResult: index of result
     func didGettingCountOfMediaResults(indexOfResult: Int)
     
+    /// Data is ready
+    func didFinishPrepareData()
+    
 }

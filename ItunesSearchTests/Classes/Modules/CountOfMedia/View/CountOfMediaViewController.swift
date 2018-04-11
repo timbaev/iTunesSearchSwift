@@ -42,7 +42,7 @@ class CountOfMediaViewController: UIViewController, CountOfmediaViewInput {
         currentNumberOfComponents = currentNumber
     }
     
-    func set(numberOfCountRows currentNumber: Int) {
+    func set(numberOfRows currentNumber: Int) {
         currentNumberOfCountRows = currentNumber
     }
     

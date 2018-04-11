@@ -60,7 +60,7 @@ class SearchMediaPresenter: SearchMediaViewOutput, SearchMediaInteractorOutput {
 }
 
 //MARK: - Download image delegate
-extension SearchMediaPresenter: DownloadImageDelgate {
+extension SearchMediaPresenter: DownloadImageDelegate {
     
     func downloadImage(from url: URL, at indexPath: IndexPath) {
         interactor.downloadImage(from: url, at: indexPath)
