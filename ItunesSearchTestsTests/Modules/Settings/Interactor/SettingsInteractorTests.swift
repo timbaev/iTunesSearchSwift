@@ -37,18 +37,36 @@ class SettingsInteractorTests: XCTestCase {
         XCTAssertTrue(presenterMock.getSavedMediaTypeCalled)
     }
     
-    func testWhenGetSavedCountOfResultsThenDidGettingSavedCountOfResultsCalled() {
+    func testWhenGetSavedCountOfResultsThenDidGettingSavedCountOfResultsCalledIfCountOfResultsExists() {
         //given
         let presenterMock = SettingsPresenterMock()
         let settingsUserDefaultsManagerMock = SettingsUserDefaultsManagerMock()
         settingsInteractor.presenter = presenterMock
         settingsInteractor.settingsUserDefaultsManager = settingsUserDefaultsManagerMock
         
+        settingsUserDefaultsManagerMock.save(countOfResults: 1)
+        
         //when
         settingsInteractor.getSavedCountOfResults()
         
         //then
         XCTAssertTrue(presenterMock.getSavedCountOfResultsCalled)
+    }
+    
+    func testWhenGetSavedCountOfResultThenDidGettingSavedCountOfResultsIfCountOfResultsNotExists() {
+        //given
+        let presenterMock = SettingsPresenterMock()
+        let settingsUserDefaultsManagerMock = SettingsUserDefaultsManagerMock()
+        settingsInteractor.presenter = presenterMock
+        settingsInteractor.settingsUserDefaultsManager = settingsUserDefaultsManagerMock
+        
+        settingsInteractor.defaultCountOfResults = -1
+        
+        //when
+        settingsInteractor.getSavedCountOfResults()
+        
+        //then
+        XCTAssertTrue(presenterMock.getSavedCountOfResultsCalledWithEmptyResult)
     }
     
     func testWhenGetSavedDeviceTypeThenDidGetSavedDeviceTypeCalled() {
@@ -72,13 +90,21 @@ fileprivate class SettingsPresenterMock: SettingsInteractorOutput {
     var getSavedMediaTypeCalled = false
     var getSavedCountOfResultsCalled = false
     var getSavedDeviceTypeCalled = false
+    var getSavedCountOfResultsCalledWithEmptyResult = false
+    
+    var emptyCountOfResults = -1
     
     func didGetSavedMediaType(_ mediaType: MediaTypes) {
         getSavedMediaTypeCalled = true
     }
     
     func didGettingSavedCountOfResults(_ count: Int) {
-        getSavedCountOfResultsCalled = true
+        if count == emptyCountOfResults {
+            getSavedCountOfResultsCalledWithEmptyResult = true
+        } else {
+            getSavedCountOfResultsCalled = true
+        }
+        
     }
     
     func didGetSavedDeviceType(_ deviceType: DeviceTypes) {
@@ -89,7 +115,7 @@ fileprivate class SettingsPresenterMock: SettingsInteractorOutput {
 
 fileprivate class SettingsUserDefaultsManagerMock: SettingsUserDefaultsManager {
     
-    let userDefaults = UserDefaults.standard
+    var savedCountOfResults = 0
     
     func save(mediaType: MediaTypes) {
         
@@ -100,11 +126,11 @@ fileprivate class SettingsUserDefaultsManagerMock: SettingsUserDefaultsManager {
     }
     
     func save(countOfResults: Int) {
-        
+        savedCountOfResults = countOfResults
     }
     
     func getCountOfResults() -> Int {
-        return 1
+        return savedCountOfResults
     }
     
     func save(deviceType: DeviceTypes) {
