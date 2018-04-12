@@ -10,7 +10,7 @@ import UIKit
 
 class SearchMediaDatasource: NSObject, SearchMediaDatasourceInput {
     
-    private var cellModels = [SearchMediaCellModel]()
+    var cellModels = [SearchMediaCellModel]()
     var selectDelegate: OnCellSelectDelegate?
     var downloadImageDelegate: DownloadImageDelegate?
     

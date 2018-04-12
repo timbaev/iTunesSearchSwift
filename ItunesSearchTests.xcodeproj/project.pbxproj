@@ -40,6 +40,8 @@
 		CB1FA1C820781CF0001B5C7D /* CountOfMediaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C720781CF0001B5C7D /* CountOfMediaConfigurator.swift */; };
 		CB1FA1CA20781D18001B5C7D /* CountOfMediaInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C920781D18001B5C7D /* CountOfMediaInitializer.swift */; };
 		CB2B333C207FDCDF004C583B /* ImageDownloadManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2B333B207FDCDF004C583B /* ImageDownloadManagerTests.swift */; };
+		CB2B3340207FE962004C583B /* SearchMediaTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2B333F207FE962004C583B /* SearchMediaTableViewCellTests.swift */; };
+		CB2B3343207FF250004C583B /* SearchMediaDatasourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2B3342207FF250004C583B /* SearchMediaDatasourceTests.swift */; };
 		CB71E972207A3CEE001D0D87 /* DownloadImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E971207A3CEE001D0D87 /* DownloadImageDelegate.swift */; };
 		CB71E976207A5810001D0D87 /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E974207A5810001D0D87 /* ImageDownloadManager.swift */; };
 		CB71E977207A5810001D0D87 /* ImageDownloadManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E975207A5810001D0D87 /* ImageDownloadManagerImpl.swift */; };
@@ -172,6 +174,8 @@
 		CB1FA1C720781CF0001B5C7D /* CountOfMediaConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaConfigurator.swift; sourceTree = "<group>"; };
 		CB1FA1C920781D18001B5C7D /* CountOfMediaInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaInitializer.swift; sourceTree = "<group>"; };
 		CB2B333B207FDCDF004C583B /* ImageDownloadManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadManagerTests.swift; sourceTree = "<group>"; };
+		CB2B333F207FE962004C583B /* SearchMediaTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaTableViewCellTests.swift; sourceTree = "<group>"; };
+		CB2B3342207FF250004C583B /* SearchMediaDatasourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDatasourceTests.swift; sourceTree = "<group>"; };
 		CB71E971207A3CEE001D0D87 /* DownloadImageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageDelegate.swift; sourceTree = "<group>"; };
 		CB71E974207A5810001D0D87 /* ImageDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
 		CB71E975207A5810001D0D87 /* ImageDownloadManagerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManagerImpl.swift; sourceTree = "<group>"; };
@@ -572,6 +576,31 @@
 			path = ImageDownloadManager;
 			sourceTree = "<group>";
 		};
+		CB2B333D207FE935004C583B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				CB2B3341207FF23E004C583B /* Datasources */,
+				CB2B333E207FE949004C583B /* Cells */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		CB2B333E207FE949004C583B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CB2B333F207FE962004C583B /* SearchMediaTableViewCellTests.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CB2B3341207FF23E004C583B /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				CB2B3342207FF250004C583B /* SearchMediaDatasourceTests.swift */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
 		CB71E973207A5810001D0D87 /* ImageDownloadManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -823,6 +852,7 @@
 		CBBDB127207CD0FD00F96EB0 /* ItunesSearchTestsTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB2B333D207FE935004C583B /* TableView */,
 				CB0BC618207ED35900CC6B80 /* Managers */,
 				CB0BC614207ECF7800CC6B80 /* Helpers */,
 				CBBDB130207CD12100F96EB0 /* Modules */,
@@ -1441,12 +1471,14 @@
 				CB0BC61B207ED3CC00CC6B80 /* SettingsUserDefaultsManagerTests.swift in Sources */,
 				CB0BC5E8207DF29900CC6B80 /* CountOfMediaViewTests.swift in Sources */,
 				CB0BC5EC207E75A900CC6B80 /* CountOfMediaInteractorTests.swift in Sources */,
+				CB2B3340207FE962004C583B /* SearchMediaTableViewCellTests.swift in Sources */,
 				CB0BC605207EA4E000CC6B80 /* SearchMediaPresenterTests.swift in Sources */,
 				CB0BC5F8207E8B4300CC6B80 /* DeviceTypePresenterTests.swift in Sources */,
 				CB0BC5EF207E7C6900CC6B80 /* CountOfMediaConfiguratorTests.swift in Sources */,
 				CB2B333C207FDCDF004C583B /* ImageDownloadManagerTests.swift in Sources */,
 				CBBDB134207CD1A900F96EB0 /* SettingsViewTests.swift in Sources */,
 				CBBDB137207CDB6300F96EB0 /* SettingsPresenterTests.swift in Sources */,
+				CB2B3343207FF250004C583B /* SearchMediaDatasourceTests.swift in Sources */,
 				CBBDB149207D7D3A00F96EB0 /* MediaTypePresenterTests.swift in Sources */,
 				CB0BC5FB207E918300CC6B80 /* DeviceTypeInteractorTests.swift in Sources */,
 				CBBDB146207D755800F96EB0 /* MediaTypeViewTests.swift in Sources */,
