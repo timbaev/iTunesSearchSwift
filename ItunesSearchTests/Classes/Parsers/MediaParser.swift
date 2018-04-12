@@ -94,9 +94,11 @@ struct MediaParser: Codable {
             var container = encoder.container(keyedBy: CodingKeys.self)
             try container.encode(trackName, forKey: .trackName)
             try container.encode(artistName, forKey: .artistName)
-            try container.encode(shortDescription, forKey: .shortDescription)
-            try container.encode(trackPrice, forKey: .trackPrice)
+            try container.encodeIfPresent(shortDescription, forKey: .shortDescription)
+            try container.encodeIfPresent(trackPrice, forKey: .trackPrice)
             try container.encode(artworkUrl60, forKey: .artworkUrl60)
+            try container.encode(trackViewUrl, forKey: .trackViewUrl)
+            try container.encodeIfPresent(supportedDevices, forKey: .supportedDevices)
         }
         
         enum CodingKeys: String, CodingKey {
