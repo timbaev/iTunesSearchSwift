@@ -10,8 +10,8 @@ import UIKit
 
 class CommonAlertsFactoryImpl: CommonAlertsFactory {
     
-    private let errorTitle = "Ошибка"
-    private let okButtonText = "OK"
+    let errorTitle = "Ошибка"
+    let okButtonText = "OK"
     
     func getErrorAlert(with message: String) -> UIViewController {
         let alert = createEmptyAlert(with: errorTitle, and: message)

@@ -13,11 +13,13 @@ class MediaApiProvider: ApiProvier {
     
     var baseURL = URL(string: "https://itunes.apple.com")!
     
+    var sessionManager = SessionManager.default
+    
     func make(_ request: Request, completionBlock: @escaping (Data?) -> ()) {
         let url = baseURL.appendingPathComponent(request.endPoint)
-        Alamofire.request(url, method: request.method, parameters: request.parameters)
+        sessionManager.request(url, method: request.method, parameters: request.parameters)
             .responseData { (response) in
-                guard response.result.isSuccess else {
+                guard response.result.isSuccess, response.response?.statusCode == 200 else {
                     print("Error while make request: \(String(describing: response.result.error))")
                     completionBlock(nil)
                     return

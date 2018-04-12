@@ -87,6 +87,56 @@ class MediaTypeViewTests: XCTestCase {
         XCTAssertTrue(presenterMock.didSelectMediaTypeCalled)
     }
     
+    func testThatSetCheckedCellSetupAccessoryTypeToCheckmark() {
+        //given
+        let tableView = UITableView()
+        
+        let indexPathOfRow = IndexPath(row: 0, section: 0)
+        let presenterMock = MediaTypePresneterMock()
+        mediaTypeViewController.presenter = presenterMock
+        mediaTypeViewController.tableView = tableView
+        
+        mediaTypeViewController.currentNumberOfRows = 1
+        tableView.delegate = mediaTypeViewController
+        tableView.dataSource = mediaTypeViewController
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: mediaTypeViewController.cellIdentifier)
+        tableView.reloadData()
+        
+        //when
+        mediaTypeViewController.setCheckedCell(at: indexPathOfRow)
+        
+        //then
+        let cell = tableView.cellForRow(at: indexPathOfRow)
+        XCTAssertNotNil(cell)
+        XCTAssertEqual(cell?.accessoryType, UITableViewCellAccessoryType.checkmark)
+    }
+    
+    func testThatSetUncheckedCellSetupAccessotyTypeToNone() {
+        //given
+        let presenterMock = MediaTypePresneterMock()
+        mediaTypeViewController.presenter = presenterMock
+        
+        let tableView = UITableView()
+        mediaTypeViewController.tableView = tableView
+        
+        let indexPathOfRow = IndexPath(row: 0, section: 0)
+        mediaTypeViewController.currentNumberOfRows = 1
+        tableView.delegate = mediaTypeViewController
+        tableView.dataSource = mediaTypeViewController
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: mediaTypeViewController.cellIdentifier)
+        tableView.reloadData()
+        
+        let cell = tableView.cellForRow(at: indexPathOfRow)
+        cell?.accessoryType = .checkmark
+        
+        //when
+        mediaTypeViewController.setUncheckedCell(at: indexPathOfRow)
+        
+        //then
+        XCTAssertNotNil(cell)
+        XCTAssertEqual(cell?.accessoryType, UITableViewCellAccessoryType.none)
+    }
+    
 }
 
 fileprivate class MediaTypePresneterMock: MediaTypeViewOutput {
