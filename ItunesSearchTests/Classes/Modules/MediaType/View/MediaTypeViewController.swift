@@ -66,11 +66,11 @@ extension MediaTypeViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         presenter.updateMediaTypeTitle(at: indexPath)
         cell.textLabel?.text = currentMediaTitle
-        cell.selectionStyle = .none
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         presenter.didSelectMediaType(at: indexPath)
     }
     

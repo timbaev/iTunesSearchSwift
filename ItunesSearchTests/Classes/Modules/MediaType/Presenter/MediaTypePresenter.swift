@@ -35,6 +35,7 @@ class MediaTypePresenter: MediaTypeViewOutput, MediaTypeInteractorOutput {
     }
     
     func didSelectMediaType(at indexPath: IndexPath) {
+        guard indexPath != lastCheckedIndexPath else { return }
         view.setCheckedCell(at: indexPath)
         if let lastCheckedIndexPath = self.lastCheckedIndexPath {
             view.setUncheckedCell(at: lastCheckedIndexPath)
