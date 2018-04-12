@@ -13,8 +13,8 @@ class SettingsInteractor: SettingsInteractorInput {
     weak var presenter: SettingsInteractorOutput!
     var settingsUserDefaultsManager: SettingsUserDefaultsManager!
     
-    private let emptyCountOfResults = 0
-    private let defaultCountOfResults = 1
+    var emptyCountOfResults = 0
+    var defaultCountOfResults = 1
     
     func getSavedMediaType() {
         guard let mediaType = settingsUserDefaultsManager.getMediaType() else { return }

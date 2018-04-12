@@ -48,7 +48,7 @@ class SearchMediaPresenterTests: XCTestCase {
         searchMediaPresenter.didUpdateSearchText("")
         
         //then
-        XCTAssertTrue(viewMock.prepareTableViewCalled)
+        XCTAssertTrue(viewMock.reloadTableViewCalled)
         XCTAssertTrue(viewMock.clearAllDataCalled)
         XCTAssertFalse(interactorMock.searchMediaCalled)
     }

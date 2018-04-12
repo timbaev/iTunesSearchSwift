@@ -54,14 +54,13 @@ class ImageDownloadManagerImpl: ImageDownloadManager {
         
     }
     
-    private func getFromCache(for key: String, completion: @escaping (UIImage?) -> Void) {
-        let imageCache = SDImageCache(namespace: cacheNamespace)
-        imageCache.queryCacheOperation(forKey: key) { (image, _, _) in
+    func getFromCache(for key: String, completion: @escaping (UIImage?) -> Void) {
+        SDImageCache.shared().queryCacheOperation(forKey: key) { (image, _, _) in
             completion(image)
         }
     }
     
-    private func saveToCache(image: UIImage?, for key: String) {
+    func saveToCache(image: UIImage?, for key: String) {
         SDImageCache.shared().store(image, forKey: key, toDisk: true, completion: nil)
     }
     

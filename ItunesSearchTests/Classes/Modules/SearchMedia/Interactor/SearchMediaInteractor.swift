@@ -51,7 +51,7 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
     
     //MARK: - Private methods
     
-    private func delayedSearchMedia(with keyword: String) {
+    func delayedSearchMedia(with keyword: String) {
         var mediaType = defaultMediaType
         var countOfResults = defaultCountOfResults
         var deviceType = defaultDeviceType
@@ -105,7 +105,7 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
         }
     }
     
-    private func filter(_ results: [MediaParser.RawMediaReponse], deviceType: DeviceTypes) -> [MediaParser.RawMediaReponse] {
+    func filter(_ results: [MediaParser.RawMediaReponse], deviceType: DeviceTypes) -> [MediaParser.RawMediaReponse] {
         let filteredResult = results.filter { (rawMediaResponse) in
             guard let supportedDevices = rawMediaResponse.supportedDevices else { return true }
             if deviceType == .iPhone {

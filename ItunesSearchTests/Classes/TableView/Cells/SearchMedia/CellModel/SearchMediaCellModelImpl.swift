@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SearchMediaCellModelImpl: SearchMediaCellModel {
+struct SearchMediaCellModelImpl: SearchMediaCellModel, Equatable {
     
     var name: String
     var author: String
