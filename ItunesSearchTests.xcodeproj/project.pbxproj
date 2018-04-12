@@ -27,6 +27,7 @@
 		CB0BC610207EC23900CC6B80 /* SearchMediaRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC60F207EC23900CC6B80 /* SearchMediaRouterTests.swift */; };
 		CB0BC613207EC81B00CC6B80 /* SearchMediaConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC612207EC81B00CC6B80 /* SearchMediaConfiguratorTests.swift */; };
 		CB0BC617207ECFAE00CC6B80 /* CommonAlertsFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC616207ECFAE00CC6B80 /* CommonAlertsFactoryTests.swift */; };
+		CB0BC61B207ED3CC00CC6B80 /* SettingsUserDefaultsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BC61A207ED3CC00CC6B80 /* SettingsUserDefaultsManagerTests.swift */; };
 		CB1FA1B620781BF3001B5C7D /* CountOfMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B520781BF3001B5C7D /* CountOfMediaViewController.swift */; };
 		CB1FA1B820781C30001B5C7D /* CountOfMediaViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B720781C30001B5C7D /* CountOfMediaViewInput.swift */; };
 		CB1FA1BA20781C4C001B5C7D /* CountOfMediaViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1B920781C4C001B5C7D /* CountOfMediaViewOutput.swift */; };
@@ -38,6 +39,7 @@
 		CB1FA1C620781CD7001B5C7D /* CountOfMediaRotuerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C520781CD7001B5C7D /* CountOfMediaRotuerInput.swift */; };
 		CB1FA1C820781CF0001B5C7D /* CountOfMediaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C720781CF0001B5C7D /* CountOfMediaConfigurator.swift */; };
 		CB1FA1CA20781D18001B5C7D /* CountOfMediaInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA1C920781D18001B5C7D /* CountOfMediaInitializer.swift */; };
+		CB2B333C207FDCDF004C583B /* ImageDownloadManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2B333B207FDCDF004C583B /* ImageDownloadManagerTests.swift */; };
 		CB71E972207A3CEE001D0D87 /* DownloadImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E971207A3CEE001D0D87 /* DownloadImageDelegate.swift */; };
 		CB71E976207A5810001D0D87 /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E974207A5810001D0D87 /* ImageDownloadManager.swift */; };
 		CB71E977207A5810001D0D87 /* ImageDownloadManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E975207A5810001D0D87 /* ImageDownloadManagerImpl.swift */; };
@@ -157,6 +159,7 @@
 		CB0BC60F207EC23900CC6B80 /* SearchMediaRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaRouterTests.swift; sourceTree = "<group>"; };
 		CB0BC612207EC81B00CC6B80 /* SearchMediaConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaConfiguratorTests.swift; sourceTree = "<group>"; };
 		CB0BC616207ECFAE00CC6B80 /* CommonAlertsFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAlertsFactoryTests.swift; sourceTree = "<group>"; };
+		CB0BC61A207ED3CC00CC6B80 /* SettingsUserDefaultsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserDefaultsManagerTests.swift; sourceTree = "<group>"; };
 		CB1FA1B520781BF3001B5C7D /* CountOfMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewController.swift; sourceTree = "<group>"; };
 		CB1FA1B720781C30001B5C7D /* CountOfMediaViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewInput.swift; sourceTree = "<group>"; };
 		CB1FA1B920781C4C001B5C7D /* CountOfMediaViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaViewOutput.swift; sourceTree = "<group>"; };
@@ -168,6 +171,7 @@
 		CB1FA1C520781CD7001B5C7D /* CountOfMediaRotuerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaRotuerInput.swift; sourceTree = "<group>"; };
 		CB1FA1C720781CF0001B5C7D /* CountOfMediaConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaConfigurator.swift; sourceTree = "<group>"; };
 		CB1FA1C920781D18001B5C7D /* CountOfMediaInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfMediaInitializer.swift; sourceTree = "<group>"; };
+		CB2B333B207FDCDF004C583B /* ImageDownloadManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadManagerTests.swift; sourceTree = "<group>"; };
 		CB71E971207A3CEE001D0D87 /* DownloadImageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageDelegate.swift; sourceTree = "<group>"; };
 		CB71E974207A5810001D0D87 /* ImageDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
 		CB71E975207A5810001D0D87 /* ImageDownloadManagerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManagerImpl.swift; sourceTree = "<group>"; };
@@ -485,6 +489,23 @@
 			path = AlertsFactory;
 			sourceTree = "<group>";
 		};
+		CB0BC618207ED35900CC6B80 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CB2B333A207FDCCF004C583B /* ImageDownloadManager */,
+				CB0BC619207ED3B700CC6B80 /* SettingsUserDefaultsManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CB0BC619207ED3B700CC6B80 /* SettingsUserDefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BC61A207ED3CC00CC6B80 /* SettingsUserDefaultsManagerTests.swift */,
+			);
+			path = SettingsUserDefaultsManager;
+			sourceTree = "<group>";
+		};
 		CB1FA1AF20781BA7001B5C7D /* CountOfMedia */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,6 +562,14 @@
 				CB1FA1C920781D18001B5C7D /* CountOfMediaInitializer.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		CB2B333A207FDCCF004C583B /* ImageDownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				CB2B333B207FDCDF004C583B /* ImageDownloadManagerTests.swift */,
+			);
+			path = ImageDownloadManager;
 			sourceTree = "<group>";
 		};
 		CB71E973207A5810001D0D87 /* ImageDownloadManager */ = {
@@ -794,6 +823,7 @@
 		CBBDB127207CD0FD00F96EB0 /* ItunesSearchTestsTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB0BC618207ED35900CC6B80 /* Managers */,
 				CB0BC614207ECF7800CC6B80 /* Helpers */,
 				CBBDB130207CD12100F96EB0 /* Modules */,
 				CBBDB12A207CD0FD00F96EB0 /* Info.plist */,
@@ -1408,11 +1438,13 @@
 				CB0BC610207EC23900CC6B80 /* SearchMediaRouterTests.swift in Sources */,
 				CB0BC613207EC81B00CC6B80 /* SearchMediaConfiguratorTests.swift in Sources */,
 				CBBDB14C207D864C00F96EB0 /* MediaTypeInteractorTests.swift in Sources */,
+				CB0BC61B207ED3CC00CC6B80 /* SettingsUserDefaultsManagerTests.swift in Sources */,
 				CB0BC5E8207DF29900CC6B80 /* CountOfMediaViewTests.swift in Sources */,
 				CB0BC5EC207E75A900CC6B80 /* CountOfMediaInteractorTests.swift in Sources */,
 				CB0BC605207EA4E000CC6B80 /* SearchMediaPresenterTests.swift in Sources */,
 				CB0BC5F8207E8B4300CC6B80 /* DeviceTypePresenterTests.swift in Sources */,
 				CB0BC5EF207E7C6900CC6B80 /* CountOfMediaConfiguratorTests.swift in Sources */,
+				CB2B333C207FDCDF004C583B /* ImageDownloadManagerTests.swift in Sources */,
 				CBBDB134207CD1A900F96EB0 /* SettingsViewTests.swift in Sources */,
 				CBBDB137207CDB6300F96EB0 /* SettingsPresenterTests.swift in Sources */,
 				CBBDB149207D7D3A00F96EB0 /* MediaTypePresenterTests.swift in Sources */,
