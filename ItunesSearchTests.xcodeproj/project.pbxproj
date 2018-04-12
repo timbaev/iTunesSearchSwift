@@ -42,6 +42,7 @@
 		CB2B333C207FDCDF004C583B /* ImageDownloadManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2B333B207FDCDF004C583B /* ImageDownloadManagerTests.swift */; };
 		CB2B3340207FE962004C583B /* SearchMediaTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2B333F207FE962004C583B /* SearchMediaTableViewCellTests.swift */; };
 		CB2B3343207FF250004C583B /* SearchMediaDatasourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2B3342207FF250004C583B /* SearchMediaDatasourceTests.swift */; };
+		CB2B3347207FFA11004C583B /* MediaApiProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2B3346207FFA11004C583B /* MediaApiProviderTests.swift */; };
 		CB71E972207A3CEE001D0D87 /* DownloadImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E971207A3CEE001D0D87 /* DownloadImageDelegate.swift */; };
 		CB71E976207A5810001D0D87 /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E974207A5810001D0D87 /* ImageDownloadManager.swift */; };
 		CB71E977207A5810001D0D87 /* ImageDownloadManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71E975207A5810001D0D87 /* ImageDownloadManagerImpl.swift */; };
@@ -176,6 +177,7 @@
 		CB2B333B207FDCDF004C583B /* ImageDownloadManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadManagerTests.swift; sourceTree = "<group>"; };
 		CB2B333F207FE962004C583B /* SearchMediaTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaTableViewCellTests.swift; sourceTree = "<group>"; };
 		CB2B3342207FF250004C583B /* SearchMediaDatasourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDatasourceTests.swift; sourceTree = "<group>"; };
+		CB2B3346207FFA11004C583B /* MediaApiProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaApiProviderTests.swift; sourceTree = "<group>"; };
 		CB71E971207A3CEE001D0D87 /* DownloadImageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageDelegate.swift; sourceTree = "<group>"; };
 		CB71E974207A5810001D0D87 /* ImageDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
 		CB71E975207A5810001D0D87 /* ImageDownloadManagerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManagerImpl.swift; sourceTree = "<group>"; };
@@ -601,6 +603,22 @@
 			path = Datasources;
 			sourceTree = "<group>";
 		};
+		CB2B3344207FF9E6004C583B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CB2B3345207FF9F3004C583B /* Providers */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CB2B3345207FF9F3004C583B /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				CB2B3346207FFA11004C583B /* MediaApiProviderTests.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
 		CB71E973207A5810001D0D87 /* ImageDownloadManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -852,6 +870,7 @@
 		CBBDB127207CD0FD00F96EB0 /* ItunesSearchTestsTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB2B3344207FF9E6004C583B /* API */,
 				CB2B333D207FE935004C583B /* TableView */,
 				CB0BC618207ED35900CC6B80 /* Managers */,
 				CB0BC614207ECF7800CC6B80 /* Helpers */,
@@ -1469,6 +1488,7 @@
 				CB0BC613207EC81B00CC6B80 /* SearchMediaConfiguratorTests.swift in Sources */,
 				CBBDB14C207D864C00F96EB0 /* MediaTypeInteractorTests.swift in Sources */,
 				CB0BC61B207ED3CC00CC6B80 /* SettingsUserDefaultsManagerTests.swift in Sources */,
+				CB2B3347207FFA11004C583B /* MediaApiProviderTests.swift in Sources */,
 				CB0BC5E8207DF29900CC6B80 /* CountOfMediaViewTests.swift in Sources */,
 				CB0BC5EC207E75A900CC6B80 /* CountOfMediaInteractorTests.swift in Sources */,
 				CB2B3340207FE962004C583B /* SearchMediaTableViewCellTests.swift in Sources */,
@@ -1677,6 +1697,7 @@
 		};
 		CBBDB12D207CD0FD00F96EB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4B73A7FA8C87D0E59A40839 /* Pods-ItunesSearchTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
